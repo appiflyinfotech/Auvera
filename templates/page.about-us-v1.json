@@ -289,7 +289,9 @@
         },
         "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-0": {
           "type": "image_block",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Hero_engagement_banner_mobile.webp"
+          }
         }
       },
       "block_order": [
@@ -395,6 +397,7 @@
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0": {
           "type": "member",
           "settings": {
+            "image": "shopify://shop_images/young-handsome-man-smiling-with-crossed-arms-grey-wall_1.webp",
             "name": "Abdul Khalek",
             "position": "CEO & Founder",
             "twitter": "https://twitter.com/",
@@ -406,6 +409,7 @@
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1": {
           "type": "member",
           "settings": {
+            "image": "shopify://shop_images/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign.webp",
             "name": "Vera Duncan",
             "position": "Producer",
             "twitter": "https://twitter.com/",
@@ -417,6 +421,7 @@
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2": {
           "type": "member",
           "settings": {
+            "image": "shopify://shop_images/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded.webp",
             "name": "Michella Ore",
             "position": "Developer",
             "twitter": "https://twitter.com/",
@@ -424,25 +429,12 @@
             "facebook": "https://www.facebook.com/",
             "linkedin": "https://www.linkedin.com/"
           }
-        },
-        "da71da3f-22ff-40d5-be4f-f445f70629e5": {
-          "type": "member",
-          "disabled": true,
-          "settings": {
-            "name": "John Smith",
-            "position": "CEO",
-            "twitter": "#",
-            "google": "#",
-            "facebook": "#",
-            "linkedin": ""
-          }
         }
       },
       "block_order": [
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0",
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1",
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2",
-        "da71da3f-22ff-40d5-be4f-f445f70629e5"
+        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2"
       ],
       "settings": {
         "animation": "fade",
