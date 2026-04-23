@@ -1,5 +1,47 @@
-
 {%- render 'style-section' -%}
+
+<style>
+  /* Custom Button Styles matching the uploaded design */
+  .customstyle{{ section.id }} .btn,
+  .customstyle{{ section.id }} .button {
+    background-color: #d2b285 !important; /* Beige/Tan color */
+    color: #ffffff !important;
+    border: 3px solid #1a1a1a !important; /* Thick black border */
+    border-radius: 99px !important; /* Pill shape */
+    box-shadow: -6px 6px 0px 0px #1a1a1a !important; /* Hard bottom-left shadow */
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 16px !important;
+    padding: 14px 40px !important;
+    transition: all 0.15s ease !important;
+    
+    /* White text with black outline effect */
+    -webkit-text-stroke: 1px #1a1a1a;
+    text-shadow: 2px 2px 0px #1a1a1a; /* Slight 3D pop on the text */
+  }
+
+  .customstyle{{ section.id }} .btn:hover,
+  .customstyle{{ section.id }} .button:hover {
+    transform: translate(-2px, 2px) !important;
+    box-shadow: -4px 4px 0px 0px #1a1a1a !important; /* Shadow shrinks on hover */
+    color: #ffffff !important;
+  }
+
+  .customstyle{{ section.id }} .btn:active,
+  .customstyle{{ section.id }} .button:active {
+    transform: translate(-6px, 6px) !important;
+    box-shadow: 0px 0px 0px 0px #1a1a1a !important; /* Button pushes in completely on click */
+  }
+  
+  /* Fix icon alignment inside the button */
+  .customstyle{{ section.id }} .btn i {
+    -webkit-text-stroke: 0px; /* Removes outline from icon if present */
+    text-shadow: none;
+    margin-left: 8px;
+  }
+</style>
+
 <div class="customstyle{{ section.id }}">
   <div class="contact container">
     {%- render 'section-heading' -%}
