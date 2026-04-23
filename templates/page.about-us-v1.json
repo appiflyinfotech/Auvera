@@ -279,7 +279,7 @@
             "subtitle": "Our Mission",
             "title": "Lightbox's cut quality",
             "size_text": "h2",
-            "text": "<div class=\"pr-lg-5 mr-lg-4\">\n<p>Every Lightbox lab-grown diamond has been measured as 'Very Good', and our Lightbox Finest™ stones are ‘Excellent’, offering exceptional brilliance and fire. </p>\n      <div class=\"mt-5 pt-4 px-lg-5\">\n        <img class=\"lazyload\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0845/7899/2401/files/420054325_1321520528598373_3940841634569687341_n.jpg?v=1706206452\">\n      </div>\n    \n</div>",
+            "text": "<div class=\"pr-lg-5 mr-lg-4\">\n<p>Every Lightbox lab-grown diamond has been measured as 'Very Good', and our Lightbox Finest™ stones are ‘Excellent’, offering exceptional brilliance and fire. </p>\n      <div class=\"mt-5 pt-4 px-lg-5\">\n        <img class=\"lazyload\" loading=\"lazy\" data-src=\"https://appifly-demo.myshopify.com/cdn/shop/files/the-4Cs-slot-1-1080x1080px.jpg?v=1775471168&amp;width=800\">\n      </div>\n    \n</div>",
             "answer_content": "",
             "style_btn": "btn-underline btn-underline-white",
             "button": "",
@@ -292,7 +292,7 @@
         "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-0": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/Hero_engagement_banner_mobile.webp"
+            "image": "shopify://shop_images/LR-142_3.webp"
           }
         }
       },
