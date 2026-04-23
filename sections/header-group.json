@@ -121,7 +121,7 @@
           "settings": {
             "menu_title": "shop",
             "menu_width": "container",
-            "menu_column": 2,
+            "menu_column": 4,
             "enable_menu_banner": true,
             "menu_banner_width": 60,
             "menu_banner_height": 340,
