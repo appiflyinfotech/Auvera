@@ -86,6 +86,7 @@
       "blocks": {
         "a2730c80-674d-41f6-9f75-d2dea64fcd6b": {
           "type": "menu-banner",
+          "disabled": true,
           "settings": {
             "menu_title": "home",
             "menu_width": "container",
