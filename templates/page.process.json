@@ -145,6 +145,7 @@
         "template--21109130330392__e13e1749-573b-4891-9b47-954cde47b500-item-1",
         "item_Ujtyzq"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade",
         "size_text": "h2",
