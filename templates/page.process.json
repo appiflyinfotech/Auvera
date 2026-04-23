@@ -67,7 +67,6 @@
           "type": "image",
           "settings": {
             "img-in-hero": 68,
-            "image": "shopify://shop_images/burst_ea9619e3-cd69-4501-8c13-509e5acbf264.webp",
             "image_link": ""
           }
         },
@@ -168,7 +167,6 @@
           "settings": {
             "width": "50%",
             "align": "auto",
-            "image": "shopify://shop_images/MENS_6.webp",
             "width_image": 100,
             "image_link": "",
             "enable_top": false,
@@ -243,7 +241,6 @@
           "settings": {
             "width": "50%",
             "align": "auto",
-            "image": "shopify://shop_images/SILVER_4.jpg",
             "width_image": 100,
             "image_link": "",
             "enable_top": false,
@@ -385,7 +382,6 @@
             "rate": 5,
             "author": "—  Kai Felix",
             "info": "",
-            "avatar": "shopify://shop_images/h4_b1.jpg",
             "product_item": "",
             "product_style": "light"
           }
@@ -398,7 +394,6 @@
             "rate": 5,
             "author": "—  Jaycie Glove",
             "info": "",
-            "avatar": "shopify://shop_images/h5_b6.webp",
             "product_item": "",
             "product_style": "light"
           }
@@ -411,7 +406,6 @@
             "rate": 5,
             "author": "— Susan P.",
             "info": "",
-            "avatar": "shopify://shop_images/h4_b3.jpg",
             "product_item": "",
             "product_style": "light"
           }
@@ -449,9 +443,7 @@
       "blocks": {
         "template--21109130330392__4e23e5dd-3451-47fa-a801-2e98e58aaadd-image_block-1": {
           "type": "image_block",
-          "settings": {
-            "image": "shopify://shop_images/GRECA_BANNER_05.webp"
-          }
+          "settings": {}
         },
         "template--21109130330392__4e23e5dd-3451-47fa-a801-2e98e58aaadd-text_block-1": {
           "type": "text_block",
@@ -559,7 +551,6 @@
           "type": "banner",
           "settings": {
             "width": "4",
-            "image": "shopify://shop_images/GOLD_1_3224c7b5-1552-406b-87ad-f08df4d4a35c.jpg",
             "title": "30 Stores",
             "button_link": ""
           }
@@ -568,7 +559,6 @@
           "type": "banner",
           "settings": {
             "width": "4",
-            "image": "shopify://shop_images/SUSTAINABILITY_1.webp",
             "title": "300+ Employees",
             "button_link": ""
           }
@@ -577,7 +567,6 @@
           "type": "banner",
           "settings": {
             "width": "4",
-            "image": "shopify://shop_images/NECKLACE-SETS-DESKTOP_1_d4ea98e4-c961-45c8-a7da-e4c4380e8a92.jpg",
             "title": "50 Countries",
             "button_link": ""
           }
@@ -588,6 +577,7 @@
         "template--19549171155264__9023d9a5-f48d-400d-86ac-2821223f115d-banner-1",
         "d6983657-3f32-4b37-a862-fc26b411eefe"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -609,56 +599,48 @@
         "1660925094098c539e-0": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/insta_1.jpg",
             "image_link": "https://www.instagram.com/p/Cu3wKNqvfPG/"
           }
         },
         "1660925094098c539e-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/insta_2.jpg",
             "image_link": "https://www.instagram.com/p/CuyrWWgPTY6/"
           }
         },
         "1660925094098c539e-4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/insta_3.jpg",
             "image_link": "https://www.instagram.com/p/CtQ1RAMvvGv/"
           }
         },
         "1660925094098c539e-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/insta_4.jpg",
             "image_link": "https://www.instagram.com/p/CueN3LZPQYA/"
           }
         },
         "1660925094098c539e-3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/insta_5.jpg",
             "image_link": "#"
           }
         },
         "1660925094098c539e-5": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/insta_6.jpg",
             "image_link": "#"
           }
         },
         "83431eab-b920-4ada-bc47-e933a9822c95": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/insta_7.jpg",
             "image_link": ""
           }
         },
         "b49c6fee-b0f8-4475-9fc8-6f7924a635bb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/insta_8.jpg",
             "image_link": ""
           }
         }
@@ -673,6 +655,7 @@
         "83431eab-b920-4ada-bc47-e933a9822c95",
         "b49c6fee-b0f8-4475-9fc8-6f7924a635bb"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container-fluid",
