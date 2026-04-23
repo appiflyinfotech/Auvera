@@ -1,46 +1,41 @@
 {%- render 'style-section' -%}
 
 <style>
-  /* Import Auvera Fonts */
-  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;700&family=Cormorant:wght@400;500;600;700&display=swap');
-
   /* Custom Button Styles matching the uploaded design */
   .customstyle{{ section.id }} .btn,
   .customstyle{{ section.id }} .button {
-    background-color: #D4B27E !important; /* Auvera Gold */
+    background-color: #d2b285 !important; /* Beige/Tan color */
     color: #ffffff !important;
-    border: 3px solid #1E1E1E !important; /* Auvera Charcoal */
-    border-radius: 999px !important; /* Pill shape */
-    box-shadow: -6px 6px 0px 0px #1E1E1E !important; /* Hard bottom-left shadow */
+    border: 3px solid #1a1a1a !important; /* Thick black border */
+    border-radius: 99px !important; /* Pill shape */
+    box-shadow: -6px 6px 0px 0px #1a1a1a !important; /* Hard bottom-left shadow */
     
-    /* Font Updates to match the extra-thick blocky screenshot */
-    font-family: 'Arial Black', Impact, sans-serif !important; /* Wide, heavy block font */
-    font-weight: 900 !important; 
+    /* Simple Bold Font Updates */
+    font-family: Arial, Helvetica, sans-serif !important; /* Simple font */
+    font-weight: 900 !important; /* Maximum Bold weight */
     text-transform: uppercase !important;
-    letter-spacing: 1.5px !important;
-    font-size: 24px !important; /* Larger, chunkier text */
+    letter-spacing: 1px !important;
+    font-size: 16px !important; /* Standard readable size */
     
     padding: 14px 40px !important;
     transition: all 0.15s ease !important;
     
-    /* White text with THICK black outline */
-    -webkit-text-fill-color: #ffffff !important;
-    -webkit-text-stroke: 2.5px #1E1E1E !important; /* Thicker font border */
+    /* White text with thin black outline */
+    -webkit-text-stroke: 1px #1a1a1a !important; /* Thinner font border */
     text-shadow: none !important;
   }
 
   .customstyle{{ section.id }} .btn:hover,
   .customstyle{{ section.id }} .button:hover {
-    background-color: #C8A46A !important; /* Auvera Gold Hover */
-    transform: translate(-3px, 3px) !important;
-    box-shadow: -3px 3px 0px 0px #1E1E1E !important; /* Shadow shrinks on hover */
+    transform: translate(-2px, 2px) !important;
+    box-shadow: -4px 4px 0px 0px #1a1a1a !important; /* Shadow shrinks on hover */
     color: #ffffff !important;
   }
 
   .customstyle{{ section.id }} .btn:active,
   .customstyle{{ section.id }} .button:active {
     transform: translate(-6px, 6px) !important;
-    box-shadow: 0px 0px 0px 0px #1E1E1E !important; /* Button pushes in completely on click */
+    box-shadow: 0px 0px 0px 0px #1a1a1a !important; /* Button pushes in completely on click */
   }
   
   /* Fix icon alignment inside the button */
