@@ -29,46 +29,36 @@
   {%- endif -%}
 
   /* --- Custom Pill Button Design for Quickshop --- */
-/* --- Custom Icon Button Design for Quickshop --- */
   .product-recommendations .quick-add-btn,
   .product-recommendations .quick-view-btn,
   .product-recommendations .btn-quickview,
   .product-recommendations .quickshop-button,
   .product-recommendations .product-card .btn {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #c5a67a; 
+    background-color: #c5a67a; /* Tan background matching the image */
     color: #ffffff;
-    border: 2px solid #111111; /* Slightly thinner border for a smaller button */
-    border-radius: 50%; /* Changes it from a wide pill to a perfect circle */
+    border: 3px solid #111111; /* Thick black border */
+    border-radius: 50px; /* Pill shape */
     
+    /* Updated Font Styling */
     font-family: 'Barlow Condensed', sans-serif !important;
-    font-size: 14px; /* Reduced font size in case it contains an icon/text */
+    font-size: 16px;
     font-weight: 300; 
     text-transform: uppercase;
-    -webkit-text-fill-color: #ffffff; 
-    -webkit-text-stroke: 0px #111111; 
+    letter-spacing: 0.05em;
+    -webkit-text-fill-color: #ffffff; /* Ensures inner text is white */
+    -webkit-text-stroke: 0px #111111; /* Thicker black outline to create the overlapping effect */
     
-    padding: 10px; /* Drastically reduced padding */
-    width: 45px; /* Fixed width to make it icon-sized */
-    height: 45px; /* Fixed height to match width */
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    box-shadow: -3px 3px 0px 0px #111111; /* Scaled down drop shadow */
+    box-shadow: -4px 4px 0px 0px #111111; /* Solid bottom-left drop shadow */
     transition: transform 0.1s ease, box-shadow 0.1s ease;
+    width: 100%;
     margin-top: 10px;
-  }
-
-  /* Click/Active effect */
-  .product-recommendations .quick-add-btn:active,
-  .product-recommendations .quick-view-btn:active,
-  .product-recommendations .btn-quickview:active,
-  .product-recommendations .quickshop-button:active,
-  .product-recommendations .product-card .btn:active {
-    transform: translate(-2px, 2px);
-    box-shadow: -1px 1px 0px 0px #111111;
   }
 
   /* Click/Active effect to make it feel like a physical button pressing down */
