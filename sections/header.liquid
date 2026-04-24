@@ -18,6 +18,7 @@
     max-width: 100% !important;
   }
 </style>
+
 {%- liquid
   assign layout_header = section.settings.layout_header
   assign header_border_color = section.settings.background | color_mix: section.settings.textcolor, 86
@@ -28,10 +29,8 @@
   assign sl_menu_vertical = section.settings.sl_menu_vertical
   assign main_linklist = section.settings.main_linklist
   assign blocks = section.blocks
-  
 -%}
 {% render 'header-oncss', layout_header: layout_header, header_border_color: header_border_color, type_sticky: type_sticky %}
-<!-- header.liquid -->
 <header class="{% if section.settings.menu_active == 'thick-line' %} thick-lineactive {% endif %} {{ layout_header }} size-header-{{ height_header }} section-{{ section.id }} site-header page-element is-moved-by-drawer header-{{ type_sticky }} {% if type_sticky == 'sticky' or type_sticky == 'sticky-top' %} site-header--sticky {% endif %} {% if section.settings.enable_transparent %} site-header--transparent {% if section.settings.enable_white %} site-header-white {% endif %} {% endif %} site-header--full {% if template contains 'index' %} index-header {% endif %} " 
   role="banner" 
   data-section-id="{{ section.id }}" 
