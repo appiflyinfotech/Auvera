@@ -29,7 +29,6 @@
   {%- endif -%}
 
   /* --- Custom Pill Button Design for Quickshop --- */
-/* --- Custom Pill Button Design for Quickshop --- */
   .product-recommendations .quick-add-btn,
   .product-recommendations .quick-view-btn,
   .product-recommendations .btn-quickview,
@@ -38,37 +37,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #c5a67a; 
+    background-color: #c5a67a; /* Tan background matching the image */
     color: #ffffff;
-    border: 3px solid #111111; 
-    border-radius: 50px; 
+    border: 3px solid #111111; /* Thick black border */
+    border-radius: 50px; /* Pill shape */
     
+    /* Updated Font Styling */
     font-family: 'Barlow Condensed', sans-serif !important;
     font-size: 16px;
     font-weight: 300; 
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    -webkit-text-fill-color: #ffffff; 
-    -webkit-text-stroke: 0px #111111; 
+    -webkit-text-fill-color: #ffffff; /* Ensures inner text is white */
+    -webkit-text-stroke: 0px #111111; /* Thicker black outline to create the overlapping effect */
     
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    box-shadow: -4px 4px 0px 0px #111111; 
+    box-shadow: -4px 4px 0px 0px #111111; /* Solid bottom-left drop shadow */
     transition: transform 0.1s ease, box-shadow 0.1s ease;
     width: 100%;
     margin-top: 10px;
-  }
-
-  /* Click/Active effect */
-  .product-recommendations .quick-add-btn:active,
-  .product-recommendations .quick-view-btn:active,
-  .product-recommendations .btn-quickview:active,
-  .product-recommendations .quickshop-button:active,
-  .product-recommendations .product-card .btn:active {
-    transform: translate(-2px, 2px);
-    box-shadow: -3px 3px 0px 0px #111111;
   }
 
   /* Click/Active effect to make it feel like a physical button pressing down */
