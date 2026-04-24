@@ -20,7 +20,50 @@
       font-size: var(--g-h3-font-size-mobile);
     }
   }
+
+  /* --- Custom Pill Button Design Applied to Recently Viewed --- */
+  .section-productsviewed .quick-add-btn,
+  .section-productsviewed .quick-view-btn,
+  .section-productsviewed .btn-quickview,
+  .section-productsviewed .quickshop-button,
+  .section-productsviewed .product-card .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5a67a; /* Tan background */
+    color: #ffffff;
+    border: 3px solid #111111; /* Thick black border */
+    border-radius: 50px; /* Pill shape */
+    
+    /* Font Styling */
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-size: 16px;
+    font-weight: 300; 
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    -webkit-text-fill-color: #ffffff; 
+    
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: -4px 4px 0px 0px #111111; /* Solid bottom-left drop shadow */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Click Effect */
+  .section-productsviewed .quick-add-btn:active,
+  .section-productsviewed .quick-view-btn:active,
+  .section-productsviewed .btn-quickview:active,
+  .section-productsviewed .quickshop-button:active,
+  .section-productsviewed .product-card .btn:active {
+    transform: translate(-2px, 2px);
+    box-shadow: -3px 3px 0px 0px #111111;
+  }
 </style>
+{%- render 'style-section' -%}
 {%- render 'style-section' -%}  
 <div class="customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}" >
   <recently-productsviewed section-id="{{ section.id }}" products-count="{{ section.settings.limit }}" class="d-block section-productsviewed" style="--g-view-limit:{{ section.settings.limit }}">
