@@ -28,94 +28,49 @@
     }
   {%- endif -%}
 
-  /* =========================================================
-     1. PILL BUTTON DESIGN (QUICKSHOP)
-     ========================================================= */
+  /* --- Custom Pill Button Design for Quickshop --- */
   .product-recommendations .quick-add-btn,
   .product-recommendations .quick-view-btn,
   .product-recommendations .btn-quickview,
   .product-recommendations .quickshop-button,
-  .product-recommendations .product-card .btn:not(.wishlist-btn) { /* Excludes wishlist so it doesn't stretch */
+  .product-recommendations .product-card .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #c5a67a; /* Tan background */
+    background-color: #c5a67a; /* Tan background matching the image */
     color: #ffffff;
     border: 3px solid #111111; /* Thick black border */
     border-radius: 50px; /* Pill shape */
     
+    /* Updated Font Styling */
     font-family: 'Barlow Condensed', sans-serif !important;
     font-size: 16px;
-    font-weight: 700; /* Increased to bolder weight to match screenshot */
+    font-weight: 300; 
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    -webkit-text-fill-color: #ffffff; 
+    -webkit-text-fill-color: #ffffff; /* Ensures inner text is white */
+    -webkit-text-stroke: 0px #111111; /* Thicker black outline to create the overlapping effect */
     
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    box-shadow: -5px 5px 0px 0px #111111; /* Solid bottom-left drop shadow */
+    box-shadow: -4px 4px 0px 0px #111111; /* Solid bottom-left drop shadow */
     transition: transform 0.1s ease, box-shadow 0.1s ease;
     width: 100%;
     margin-top: 10px;
   }
 
-  /* Pill Button Click Effect */
+  /* Click/Active effect to make it feel like a physical button pressing down */
   .product-recommendations .quick-add-btn:active,
   .product-recommendations .quick-view-btn:active,
   .product-recommendations .btn-quickview:active,
   .product-recommendations .quickshop-button:active,
-  .product-recommendations .product-card .btn:not(.wishlist-btn):active {
+  .product-recommendations .product-card .btn:active {
     transform: translate(-2px, 2px);
     box-shadow: -3px 3px 0px 0px #111111;
   }
-
-  /* =========================================================
-     2. CIRCULAR BUTTON DESIGN (HEART / WISHLIST)
-     ========================================================= */
-  /* NOTE: Add your theme's specific heart button class here if it differs */
-  .product-recommendations .wishlist-btn,
-  .product-recommendations .swym-button,
-  .product-recommendations .wk-button,
-  .product-recommendations .heart-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #c5a67a;
-    color: #ffffff;
-    border: 3px solid #111111;
-    border-radius: 50%; /* Perfect circle */
-    
-    width: 44px; /* Fixed width prevents stretching */
-    height: 44px; /* Fixed height matches width */
-    padding: 0; /* Remove padding to keep it round */
-    
-    cursor: pointer;
-    box-shadow: -5px 5px 0px 0px #111111;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-  }
-
-  /* Forces the SVG icon inside to be white and centered */
-  .product-recommendations .wishlist-btn svg,
-  .product-recommendations .swym-button svg,
-  .product-recommendations .wk-button svg,
-  .product-recommendations .heart-button svg {
-    width: 20px;
-    height: 20px;
-    fill: transparent; 
-    stroke: #ffffff;
-    stroke-width: 2px;
-  }
-
-  /* Circle Button Click Effect */
-  .product-recommendations .wishlist-btn:active,
-  .product-recommendations .swym-button:active,
-  .product-recommendations .wk-button:active,
-  .product-recommendations .heart-button:active {
-    transform: translate(-2px, 2px);
-    box-shadow: -3px 3px 0px 0px #111111;
-  }
+  /* ----------------------------------------------- */
 
 {%- endstyle -%}
 <div class="section-{{ section.id }}-padding" data-aos="{{ section.settings.animation }}" >
