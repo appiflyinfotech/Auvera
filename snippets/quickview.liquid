@@ -1,5 +1,5 @@
 <style>
-  .qv-content{text-align:left}.rtl .qv-content{text-align:right}#qv-product-images{margin:0 0 24px;min-height: 400px;opacity: 0;transition: opacity 0.1s ease-in;}#jsQuickview .option-selection{margin-bottom:16px}#jsQuickview select.option{width: calc(100% - 120px);}#jsQuickview span.option{min-width:120px;display:inline-block;text-transform:capitalize;margin-bottom:6px;}#jsQuickview .slick-dots{bottom:20px}#jsQuickview .slick-dots li button:before{font-size:35px;color:#000;transition:all ease .3s}#jsQuickview .qv-product-price{display:inline-block;margin:0}#jsQuickview .qv-product-price .money{color:{{ settings.color_primary }}}#jsQuickview .qv-add-button{display: inline-block; float: left; margin-left: 20px; width: calc(100% - 120px);}#jsQuickview .qv-product-description{max-height:180px;overflow:hidden;position:relative;}#jsQuickview .qv-product-description:after{position:absolute;content:"";width:100%;left:0;bottom:0;background:#fff}.rtl #jsQuickview .qv-product-description:after{right:0;left:auto}.qv-add-to-cart .quantity{height:40px;display:inline-block;width:100px;float:left}.qv-add-to-cart .quantity span{display:none}.qv-quantity{height:50px;width:100%;text-align:center;}
+  .qv-content{text-align:left}.rtl .qv-content{text-align:right}#qv-product-images{margin:0 0 24px;min-height: 400px;opacity: 0;transition: opacity 0.1s ease-in;}#jsQuickview .option-selection{margin-bottom:16px}#jsQuickview select.option{width: calc(100% - 120px);}#jsQuickview span.option{min-width:120px;display:inline-block;text-transform:capitalize;margin-bottom:6px;}#jsQuickview .slick-dots{bottom:20px}#jsQuickview .slick-dots li button:before{font-size:35px;color:#000;transition:all ease .3s}#jsQuickview .qv-product-price{display:inline-block;margin:0}#jsQuickview .qv-product-price .money{color:{{ settings.color_primary }}}#jsQuickview .qv-product-description{max-height:180px;overflow:hidden;position:relative;}#jsQuickview .qv-product-description:after{position:absolute;content:"";width:100%;left:0;bottom:0;background:#fff}.rtl #jsQuickview .qv-product-description:after{right:0;left:auto}.qv-add-to-cart .quantity{height:40px;display:inline-block;width:100px;float:left}.qv-add-to-cart .quantity span{display:none}.qv-quantity{height:50px;width:100%;text-align:center;}
   #qv-product-images .slick-prev{left: 20px;}#qv-product-images .slick-next{right: 20px;}
   #qv-product-images .slick-prev,#qv-product-images .slick-next{opacity: 0;transition: all 0.3s ease;}
   #qv-product-images:hover .slick-next{opacity: 1;}
@@ -154,12 +154,65 @@
     border-radius: 0;
   }
 
-  /*.round-color.list-product-options .color label[data-value=white], .round-color.list-product-options .color label[data-value=White]{
-    border:1px solid #ddd!important;
-  }*/
- 
+  /* ─── Auvera Brutalist Buttons Applied to Quickview ─── */
+  #jsQuickview .qv-add-button {
+    background: #D4B27E !important;
+    border: 2.5px solid #1E1E1E !important;
+    border-radius: 60px !important;
+    color: #ffffff !important;
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    box-shadow: -4px 4px 0px #1E1E1E !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease !important;
+    -webkit-text-stroke: 0px #1E1E1E;
+    paint-order: stroke fill;
+    padding: 14px 24px !important;
+    height: auto !important;
+    min-height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: calc(100% - 120px) !important; /* Preserved layout width */
+    margin-left: 20px !important;         /* Preserved layout margin */
+    float: left !important;
+  }
+
+  #jsQuickview .qv-add-button:hover {
+    background: #C8A46A !important;
+    transform: translate(-3px, 3px) !important;
+    box-shadow: -2px 2px 0px #1E1E1E !important;
+  }
+
+  /* ─── Dynamic Checkout Button (Buy it Now) ─── */
+  #jsQuickview .shopify-payment-button__button--unbranded {
+    background: #1E1E1E !important;
+    border: 2.5px solid #1E1E1E !important;
+    border-radius: 60px !important;
+    color: #D4B27E !important;
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    box-shadow: -5px 5px 0px #D4B27E !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+    padding: 14px 24px !important;
+    height: auto !important;
+    min-height: 54px !important;
+    width: 100% !important;
+    margin-top: 15px !important;
+  }
+
+  #jsQuickview .shopify-payment-button__button--unbranded:hover {
+    background: #000000 !important;
+    transform: translate(-3px, 3px) !important;
+    box-shadow: -2px 2px 0px #D4B27E !important;
+  }
 </style>
-<!-- quickview.liquid -->
+
 <div class="modal fade bd-example-modal-lg" id="jsQuickview" role="dialog" aria-hidden="true" data-type="{{ settings.select_product_option_display }}" 
   data-color="{{ settings.qv_variant }}">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -186,7 +239,7 @@
               {%- endif -%}
               <div class="qv-add-to-cart clearfix pt-3 pb-4">
                 {%- if settings.select_product_option_display == 'list' -%}
-                	<div class="qv-product-options list-product-options {% if settings.type_color == 'circle' %} round-color {% elsif settings.type_color == 'square' %} square-color {% else %} square-color-txt {% endif %}"></div>
+                  <div class="qv-product-options list-product-options {% if settings.type_color == 'circle' %} round-color {% elsif settings.type_color == 'square' %} square-color {% else %} square-color-txt {% endif %}"></div>
                 {%- else -%}
             <div class="qv-product-options"></div>
                 {%- endif -%}
