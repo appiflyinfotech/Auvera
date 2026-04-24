@@ -315,23 +315,30 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "ee7e9ebd-b251-4a10-a5c6-5ccd33043f75": {
-      "type": "image-content-3",
+    "image_content_PbegNW": {
+      "type": "image-content",
+      "blocks": {
+        "image_block_CbLEgR": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/eU7aV3WmHIXWU9KnFyo-e3guMduTrUEKT7GdGI7bSwhzbeabzbdgGzCN-KxGJrG9Ekmf5RWPme5SF5kSt7CGQdlHQ8q9eeCtBbItlt39QDIsqg2vsCwMJKzZL9YSxKjC3kOmQdT7MYyv23r2jM6uFbX5OdcxJmBHJcH7U8-NiyhdvkIuGEje4z6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_CbLEgR"
+      ],
+      "name": "Image with text",
       "settings": {
-        "animation": "fade-up",
+        "animation": "",
+        "setwidth": "container-fluid",
         "bgsection": "#ffffff",
-        "subtitle": "OUR MISSION",
-        "title": "Ethical And Sustainable",
-        "size_text": "h2",
-        "des": "Need a little newness in your life? We've got you covered. Bringing you the latest drop of more killer clothes, versatile accessories, stand-out footwear, and much, much more. Update those lifesaving essentials or bag a knock-out, night-out number.",
-        "button": "",
-        "link": "",
-        "style_btn": "btn-theme",
-        "linkimg": "",
-        "bgimage": "#e6f0f2",
-        "enable_subbg": true,
-        "leftimage": false,
-        "paddingsection": "100px 0px 100px 0px",
+        "rangebg": 0,
+        "bgbefore": "transparent",
+        "bg_pos": "left",
+        "enable_padding": true,
+        "align_center": true,
+        "paddingsection": "0px 0px 0px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -404,77 +411,6 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "abb14abe-2a33-4a6b-aaa1-d36d5422d78d": {
-      "type": "s_team_member",
-      "blocks": {
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0": {
-          "type": "member",
-          "settings": {
-            "name": "Abdul Khalek",
-            "position": "CEO & Founder",
-            "twitter": "https://twitter.com/",
-            "google": "https://plus.google.com",
-            "facebook": "https://www.facebook.com/",
-            "linkedin": "https://www.linkedin.com/"
-          }
-        },
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1": {
-          "type": "member",
-          "settings": {
-            "name": "Vera Duncan",
-            "position": "Producer",
-            "twitter": "https://twitter.com/",
-            "google": "https://plus.google.com",
-            "facebook": "https://www.facebook.com/",
-            "linkedin": "https://www.linkedin.com/"
-          }
-        },
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2": {
-          "type": "member",
-          "settings": {
-            "name": "Michella Ore",
-            "position": "Developer",
-            "twitter": "https://twitter.com/",
-            "google": "https://plus.google.com",
-            "facebook": "https://www.facebook.com/",
-            "linkedin": "https://www.linkedin.com/"
-          }
-        },
-        "da71da3f-22ff-40d5-be4f-f445f70629e5": {
-          "type": "member",
-          "disabled": true,
-          "settings": {
-            "name": "John Smith",
-            "position": "CEO",
-            "twitter": "#",
-            "google": "#",
-            "facebook": "#",
-            "linkedin": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0",
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1",
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2",
-        "da71da3f-22ff-40d5-be4f-f445f70629e5"
-      ],
-      "settings": {
-        "animation": "fade",
-        "setwidth": "container",
-        "bgsection": "",
-        "title_top": "",
-        "title": "Team Of Highly Skilled",
-        "des": "We are very fortunate to have formed excellent partnerships with many of our clients.",
-        "align-heading": "center",
-        "items": "3",
-        "layout": "2",
-        "paddingsection": "90px 0px 40px 0px",
-        "paddingmobile": "60px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
     "a035e328-7cfe-4cf0-81d0-e2f5f0188740": {
       "type": "map",
       "settings": {
@@ -504,96 +440,6 @@
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
-    },
-    "895c09e5-5c6d-4c4d-8492-727381e40aa0": {
-      "type": "service",
-      "blocks": {
-        "16485444103c52f5e9-0": {
-          "type": "service",
-          "settings": {
-            "bgblock": "rgba(0,0,0,0)",
-            "title": "Free shipping",
-            "description": "Estimated 3-5 days",
-            "type_icon": "svg",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 82 82\"><path d=\"M7.238 68.717H1.867V2.12H58.4v16.736h3.886c9.755 0 17.663 7.908 17.663 17.663v32.199h-5.917M55.781 68.717H25.487\"></path><path d=\"M58.334 42.124h15.068v-4.27c0-6.82-5.53-12.35-12.351-12.35h-2.718v16.62M73.909 70.236a9.125 9.125 0 1 0-18.013-2.931 9.125 9.125 0 0 0 18.013 2.93ZM25.367 70.235a9.125 9.125 0 1 0-18.012-2.931 9.125 9.125 0 0 0 7.54 10.471 9.125 9.125 0 0 0 10.472-7.54Z\"></path><path d=\"M13.723 77.507c-3.966.658-7.937 1.51-11.857 2.593M60.373 76.736c-10.512-1.212-24.298-1.969-38.645-.451M79.768 80.121s-4.96-1.222-12.975-2.395\"></path></svg>",
-            "link_block": "",
-            "button": "",
-            "style_btn": "btn-underline"
-          }
-        },
-        "8fb6874d-8c42-405c-9da3-134f7a8a0c73": {
-          "type": "service",
-          "settings": {
-            "bgblock": "rgba(0,0,0,0)",
-            "title": "The Beach Club",
-            "description": "Be rewarded every time",
-            "type_icon": "svg",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-plant-based\" viewbox=\"0 0 82 82\"><path d=\"M41 20.701V80M56.735 26.294c0 8.703-7.045 15.758-15.735 15.758s-15.735-7.055-15.735-15.758C25.265 14.719 41 2 41 2s15.735 12.719 15.735 24.294ZM30.479 46.972c6.145 6.154 6.145 16.132 0 22.285-6.145 6.154-16.107 6.154-22.252 0C.054 61.072 2.2 40.936 2.2 40.936s20.106-2.149 28.279 6.036Z\"></path><path d=\"M41 77.861S27.525 60.403 10.092 50.177M51.412 46.972c-6.145 6.154-6.145 16.132 0 22.285 6.145 6.153 16.107 6.154 22.252 0 8.173-8.185 6.027-28.321 6.027-28.321s-20.106-2.149-28.279 6.036Z\"></path><path d=\"M40.891 77.861s13.475-17.458 30.908-27.684\"></path></svg>",
-            "link_block": "",
-            "button": "",
-            "style_btn": "btn-underline"
-          }
-        },
-        "16485444103c52f5e9-1": {
-          "type": "service",
-          "settings": {
-            "bgblock": "rgba(0,0,0,0)",
-            "title": "Instant Refunds",
-            "description": "Return money within 30 days",
-            "type_icon": "svg",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 82 82\"><path d=\"M80 21v39L41 80 2 60V21L41 2l39 19Z\"></path><path d=\"m2 21 39 20 38.571-19.807M41 41.478v38.338\"></path><path d=\"m27.715 8.643 38.409 19.473v17.543l-11.617 6.067V33.83L16.098 14.355\"></path></svg>",
-            "link_block": "",
-            "button": "",
-            "style_btn": "btn-underline"
-          }
-        },
-        "16485444103c52f5e9-2": {
-          "type": "service",
-          "settings": {
-            "bgblock": "rgba(0,0,0,0)",
-            "title": "Wear Now",
-            "description": "Pay in easy instalments.",
-            "type_icon": "svg",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-shield\" viewbox=\"0 0 64 64\"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class=\"a\" d=\"M21.18 31.69L28.54 39l15.91-15.88\"></path><path class=\"a\" d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54z\"></path></svg>",
-            "link_block": "",
-            "button": "",
-            "style_btn": "btn-underline"
-          }
-        }
-      },
-      "block_order": [
-        "16485444103c52f5e9-0",
-        "8fb6874d-8c42-405c-9da3-134f7a8a0c73",
-        "16485444103c52f5e9-1",
-        "16485444103c52f5e9-2"
-      ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "title_top": "",
-        "title": "",
-        "des": "",
-        "align-heading": "center",
-        "paddingbox": "0px 0px 0px 0px",
-        "iconcolor": "#202025",
-        "titlecolor": "#202025",
-        "subcolor": "#5f6c79",
-        "bordercolor": "#e5e5e5",
-        "borderradius": 5,
-        "size": 44,
-        "service_heading": "h6",
-        "layout": "style-2",
-        "enable_carousel": false,
-        "arrows": false,
-        "draggable": true,
-        "dots": true,
-        "infinite": false,
-        "paddingsection": "30px 0px 30px 0px",
-        "paddingmobile": "30px 0px 10px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
     }
   },
   "order": [
@@ -605,11 +451,9 @@
     "d72bcc8c-88fe-4415-96f0-06511b070083",
     "24a28133-2e01-4361-8b00-ad164f72336f",
     "image_content_CbjC89",
-    "ee7e9ebd-b251-4a10-a5c6-5ccd33043f75",
+    "image_content_PbegNW",
     "559f6024-64db-446e-a9dc-976582972dce",
-    "abb14abe-2a33-4a6b-aaa1-d36d5422d78d",
     "a035e328-7cfe-4cf0-81d0-e2f5f0188740",
-    "e07a205a-2023-4ca5-b589-a46cd70b3237",
-    "895c09e5-5c6d-4c4d-8492-727381e40aa0"
+    "e07a205a-2023-4ca5-b589-a46cd70b3237"
   ]
 }
