@@ -449,27 +449,28 @@
         /* ============================================================================
           Base Neo-Brutalist Button Style for Newsletter
         ============================================================================== */
-        .footer-email .btn-theme {
-          background-color: {{ block.settings.btn_bg_new }} !important;
-          color: #ffffff !important;
-          border-radius: 50px !important;
-          padding: 14px 48px !important;
-          letter-spacing: 0.1em !important;
-          text-transform: uppercase !important;
-          font-size: 16px !important;
-          font-weight: 900 !important;
-          display: inline-flex !important;
-          align-items: center !important;
-          justify-content: center !important;
-          transition: all 0.15s ease-in-out !important;
-          line-height: 1 !important;
-          border: 3px solid #111111 !important;
-          box-shadow: -8px 8px 0px 0px #111111 !important;
-          -webkit-text-stroke: 1.5px #111111 !important;
-          margin-bottom: 12px; /* Adding margin so the shadow doesn't get cut off */
-          margin-left: 12px;
-        }
-        
+    .footer-email .btn-theme {
+  background-color: {{ block.settings.btn_bg_new }} !important;
+  color: #ffffff !important;
+  border-radius: 50px !important;
+  padding: 14px 48px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.15s ease-in-out !important;
+  line-height: 1 !important;
+
+  border: none !important; /* Removed border */
+
+  box-shadow: -8px 8px 0px 0px #111111 !important;
+  -webkit-text-stroke: 1.5px #111111 !important;
+  margin-bottom: 12px;
+  margin-left: 12px;
+}
         .footer-email .btn-theme:hover {
           color: {{ block.settings.btn_cl_new_hover }} !important;
           transform: translate(-4px, 4px) !important;
