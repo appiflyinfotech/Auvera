@@ -67,14 +67,14 @@
         "02d7795e-308f-44d9-b007-aa374d77dbcb": {
           "type": "heading",
           "settings": {
-            "title": "Our Culture",
+            "title": "OUR CRAFTSMANSHIP",
             "size_text": "h2"
           }
         },
         "5b0f48ed-12f4-43e7-a7fd-3e3ea948966e": {
           "type": "paragraph",
           "settings": {
-            "subtext": "Since 1983, Running Bare has been privately owned and operated by the Powell family with my mother, Corin and myself at the helm. As lifelong Sydneysiders, and women in business, it is very important that we continue to support our local community — just as we have done for almost 40 years of being in the activewear trade. All activewear fabrics are cut on site at our headquarters in sunny Sydney, Australia, while just one suburb over, garments are being crafted and sewn. Being so close to the action means we can personally check production at a moment’s notice. At Running Bare, we are on a mission to keep it local, which not only guarantees exceptionally high quality, but also boosts our local economy and gifts people from all over the world a little slice of iconic Sydney."
+            "subtext": "Since our journey began, we have been dedicated to delivering excellence in every diamond we create. Rooted in precision and passion, our process blends traditional artistry with modern innovation.\n\nEach diamond is carefully selected, expertly cut, and thoroughly inspected by skilled artisans and gemologists to ensure unmatched brilliance and quality. From sourcing to final finishing, every step is handled with attention to detail and a commitment to perfection.\n\nWe believe in maintaining the highest standards — not just in craftsmanship, but in trust, transparency, and authenticity. Our mission is to bring you diamonds that are not only beautiful, but timeless symbols of elegance and value."
           }
         }
       },
@@ -99,74 +99,26 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "b2ef3f00-5f4f-4e93-8187-3970a28a8f9e": {
-      "type": "parallax-banner",
-      "blocks": {
-        "template--19549173514560__b2ef3f00-5f4f-4e93-8187-3970a28a8f9e-sub_title-1": {
-          "type": "sub_title",
-          "disabled": true,
-          "settings": {
-            "subtitle": "DAQUÏNI® active"
-          }
-        },
-        "template--19549173514560__b2ef3f00-5f4f-4e93-8187-3970a28a8f9e-heading-1": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "We do a premium activewear",
-            "size_text": "h1"
-          }
-        },
-        "94c7371c-d71f-4781-892e-d23c731daa77": {
-          "type": "paragraph",
-          "disabled": true,
-          "settings": {
-            "subtext": "Clothing may not change the world, but the women who wear them will"
-          }
-        }
-      },
-      "block_order": [
-        "template--19549173514560__b2ef3f00-5f4f-4e93-8187-3970a28a8f9e-sub_title-1",
-        "template--19549173514560__b2ef3f00-5f4f-4e93-8187-3970a28a8f9e-heading-1",
-        "94c7371c-d71f-4781-892e-d23c731daa77"
-      ],
-      "settings": {
-        "animation": "fade",
-        "setwidth": "full",
-        "bgsection": "#ffffff",
-        "parrallax_enable": true,
-        "height_section": "650",
-        "height_section_mobile": "450",
-        "align": "center",
-        "position_text": "mid-center",
-        "bg_box": "#ffffff",
-        "opacity_bgbox": 0,
-        "title_color": "#ffffff",
-        "bg_overlay": "#000000",
-        "gradient_bg": "",
-        "opacity_bg_overlay": 0.2,
-        "paddingsection": "0px 0px 0px 0px",
-        "marginsection": "0px 0px 0px 0px"
-      }
-    },
     "3a37a7d4-3633-4dd9-93c8-8609cd17d9c4": {
       "type": "image-content",
       "blocks": {
         "18d2b540-6aa2-4967-b7fd-c7eefd2bd1e5": {
           "type": "image_block",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/QFgthEYE79l10S8kMBRug7_ez-kzLypNtgKCcnWzVKy2ih5jvtUkeEXFdm5AZ-PDORFUNFhT7zoqiSofgcSBi2YHOfheKZfuP9ES-jHYG-EfhNW_GfI2AYhYLQZCYZePTrrzrnx8CjReG6l4n21INuI0tVUfRhuxac2bObvE5HfmvLKJp1gCgVN.jpg"
+          }
         },
         "e3cdf781-1586-4bad-94d6-ba09691910ac": {
           "type": "text_block",
           "settings": {
-            "width": "75%",
+            "width": "100%",
             "bgtext": "rgba(0,0,0,0)",
             "title_color": "#ffffff",
-            "subtitle": "premium products",
-            "title": "Our Operations",
+            "subtitle": "Process of",
+            "title": "Diamond Creation",
             "size_text": "h2",
             "text": "",
-            "answer_content": "<p>The production hub of Running Bare is the Operations team. From testing zippers through to warehousing, our Operations team are driven by a desire to deliver Running Bare garments to the highest level of quality & sustainability. They are the engine room that keeps Running Bare headquarters flowing seamlessly. Running Bare products are intimately connected to our own community & country. We actively pursue sustainability across all key areas of our brand: our fabric mills; our factories; our cutting room & our operations. All our stretch items are manufactured locally & we pride ourselves on the high quality garments that are consciously crafted at our factory in Sydney, Australia. At the heart of everything we do is our heritage: we are Australian born & bred, Australian owned & Australian made, creating premium products of which we are proud.</p>",
+            "answer_content": "<p>Every diamond begins with a carefully selected seed, chosen for its purity and potential. The seed is placed on a specialized surface and transferred into a controlled growth chamber, where carbon-rich gases are introduced. Under extreme heat and pressure—replicating natural conditions—carbon atoms gradually bond to the seed, forming a diamond crystal. Layer by layer, the diamond grows over time while experts closely monitor the entire process to ensure precision and quality. Once fully formed, the diamond is carefully extracted and then expertly cut and polished to achieve maximum brilliance, clarity, and perfection.</p>",
             "style_btn": "btn-underline btn-underline-white",
             "button": "",
             "link": "",
@@ -667,7 +619,6 @@
     "main",
     "49b0a5ba-1ebd-493b-ae50-1ec847159046",
     "f172e7b1-989c-4feb-a20b-ac2934933476",
-    "b2ef3f00-5f4f-4e93-8187-3970a28a8f9e",
     "3a37a7d4-3633-4dd9-93c8-8609cd17d9c4",
     "2d11636f-e0da-4a86-b3b5-c1eda5735347",
     "d72bcc8c-88fe-4415-96f0-06511b070083",
