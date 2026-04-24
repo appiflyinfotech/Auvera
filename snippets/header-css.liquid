@@ -306,7 +306,7 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:bl
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-{{ '' | asset_url | stylesheet_tag: preload: true }}
+{{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
 <style>
 
   .spinner-grow, .spinner-border{
