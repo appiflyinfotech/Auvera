@@ -29,35 +29,35 @@
   {%- endif -%}
 
   /* --- Custom Pill Button Design for Quickshop --- */
-/* --- Custom Pill Button Design for Quickshop --- */
+/* --- Custom Icon Button Design for Quickshop --- */
   .product-recommendations .quick-add-btn,
   .product-recommendations .quick-view-btn,
   .product-recommendations .btn-quickview,
   .product-recommendations .quickshop-button,
   .product-recommendations .product-card .btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: #c5a67a; 
     color: #ffffff;
-    border: 3px solid #111111; 
-    border-radius: 50px; 
+    border: 2px solid #111111; /* Slightly thinner border for a smaller button */
+    border-radius: 50%; /* Changes it from a wide pill to a perfect circle */
     
     font-family: 'Barlow Condensed', sans-serif !important;
-    font-size: 16px;
+    font-size: 14px; /* Reduced font size in case it contains an icon/text */
     font-weight: 300; 
     text-transform: uppercase;
-    letter-spacing: 0.05em;
     -webkit-text-fill-color: #ffffff; 
     -webkit-text-stroke: 0px #111111; 
     
-    padding: 12px 24px;
+    padding: 10px; /* Drastically reduced padding */
+    width: 45px; /* Fixed width to make it icon-sized */
+    height: 45px; /* Fixed height to match width */
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    box-shadow: -4px 4px 0px 0px #111111; 
+    box-shadow: -3px 3px 0px 0px #111111; /* Scaled down drop shadow */
     transition: transform 0.1s ease, box-shadow 0.1s ease;
-    width: 100%;
     margin-top: 10px;
   }
 
@@ -68,7 +68,7 @@
   .product-recommendations .quickshop-button:active,
   .product-recommendations .product-card .btn:active {
     transform: translate(-2px, 2px);
-    box-shadow: -3px 3px 0px 0px #111111;
+    box-shadow: -1px 1px 0px 0px #111111;
   }
 
   /* Click/Active effect to make it feel like a physical button pressing down */
