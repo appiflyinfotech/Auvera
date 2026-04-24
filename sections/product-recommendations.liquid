@@ -29,73 +29,37 @@
   {%- endif -%}
 
   /* --- Custom Pill Button Design for Quickshop --- */
-/* --- 1. SHARED DESIGN (Colors, Borders, Shadows for BOTH) --- */
-  .product-recommendations .quick-add-btn,
-  .product-recommendations .quick-view-btn,
-  .product-recommendations .btn-quickview,
-  .product-recommendations .quickshop-button,
-  .product-recommendations .product-card .btn,
-  .your-favorite-button-class { /* <-- ADD YOUR HEART BUTTON CLASS HERE */
-    background-color: #c5a67a; /* Tan background */
-    color: #ffffff;
-    border: 3px solid #111111; /* Thick black border */
-    box-shadow: -4px 4px 0px 0px #111111; /* Solid bottom-left drop shadow */
-    cursor: pointer;
-    text-decoration: none;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-  }
-
-  /* Click/Active effect for both */
-  .product-recommendations .quick-add-btn:active,
-  .product-recommendations .quick-view-btn:active,
-  .product-recommendations .btn-quickview:active,
-  .product-recommendations .quickshop-button:active,
-  .product-recommendations .product-card .btn:active,
-  .your-favorite-button-class:active {
-    transform: translate(-2px, 2px);
-    box-shadow: -2px 2px 0px 0px #111111;
-  }
-
-  /* --- 2. QUICKSHOP BUTTON SIZING (Pill Shape) --- */
+/* --- Quickshop Button - Pill Design --- */
   .product-recommendations .quick-add-btn,
   .product-recommendations .quick-view-btn,
   .product-recommendations .btn-quickview,
   .product-recommendations .quickshop-button,
   .product-recommendations .product-card .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px; /* Pill shape */
-    padding: 12px 24px;
-    width: 100%;
-    margin-top: 10px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #c5a67a !important; 
+    color: #ffffff !important;
+    border: 3px solid #111111 !important; 
+    border-radius: 50px !important; 
     
-    /* Text Styling */
     font-family: 'Barlow Condensed', sans-serif !important;
-    font-size: 16px;
-    font-weight: 600; /* Increased slightly to match your image */
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    -webkit-text-fill-color: #ffffff; 
+    font-size: 16px !important;
+    font-weight: 600 !important; 
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    
+    padding: 12px 24px !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+    box-shadow: -4px 4px 0px 0px #111111 !important; 
+    transition: transform 0.1s ease, box-shadow 0.1s ease !important;
   }
 
-  /* --- 3. FAVORITE BUTTON SIZING (Circle Shape) --- */
-  .your-favorite-button-class {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%; /* Perfect circle */
-    width: 48px; /* Fixed width */
-    height: 48px; /* Fixed height */
-    padding: 0; /* Remove padding to keep icon centered */
-  }
-
-  /* Ensures the SVG icon inside the heart button is centered and white */
-  .your-favorite-button-class svg {
-    width: 22px;
-    height: 22px;
-    stroke: #ffffff;
-    fill: transparent;
+  .product-recommendations .quickshop-button:active,
+  .product-recommendations .product-card .btn:active {
+    transform: translate(-2px, 2px) !important;
+    box-shadow: -2px 2px 0px 0px #111111 !important;
   }
 
   /* Click/Active effect to make it feel like a physical button pressing down */
