@@ -29,37 +29,36 @@
   {%- endif -%}
 
   /* --- Custom Pill Button Design for Quickshop --- */
-/* --- Quickshop Button - Pill Design --- */
   .product-recommendations .quick-add-btn,
   .product-recommendations .quick-view-btn,
   .product-recommendations .btn-quickview,
   .product-recommendations .quickshop-button,
   .product-recommendations .product-card .btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background-color: #c5a67a !important; 
-    color: #ffffff !important;
-    border: 3px solid #111111 !important; 
-    border-radius: 50px !important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5a67a; /* Tan background matching the image */
+    color: #ffffff;
+    border: 3px solid #111111; /* Thick black border */
+    border-radius: 50px; /* Pill shape */
     
+    /* Updated Font Styling */
     font-family: 'Barlow Condensed', sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 600 !important; 
-    text-transform: uppercase !important;
-    letter-spacing: 0.05em !important;
+    font-size: 16px;
+    font-weight: 300; 
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    -webkit-text-fill-color: #ffffff; /* Ensures inner text is white */
+    -webkit-text-stroke: 0px #111111; /* Thicker black outline to create the overlapping effect */
     
-    padding: 12px 24px !important;
-    width: 100% !important;
-    margin-top: 10px !important;
-    box-shadow: -4px 4px 0px 0px #111111 !important; 
-    transition: transform 0.1s ease, box-shadow 0.1s ease !important;
-  }
-
-  .product-recommendations .quickshop-button:active,
-  .product-recommendations .product-card .btn:active {
-    transform: translate(-2px, 2px) !important;
-    box-shadow: -2px 2px 0px 0px #111111 !important;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: -4px 4px 0px 0px #111111; /* Solid bottom-left drop shadow */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    width: 100%;
+    margin-top: 10px;
   }
 
   /* Click/Active effect to make it feel like a physical button pressing down */
