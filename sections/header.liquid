@@ -1,3 +1,23 @@
+<style>
+  /* * CUSTOM CSS: Reduces the size of the menu/navigation icons. 
+   * Adjust "40px" up or down to get the exact size you want.
+   */
+  .site-header .d-flex img,
+  .site-header .slide-menu img,
+  .site-header li img,
+  .site-header a img {
+    max-width: 40px !important; 
+    height: auto !important;
+    object-fit: contain;
+  }
+  
+  /* Exclude the main logo and large promo banners from shrinking */
+  .site-header .site-header__logo img,
+  .site-header .logo img,
+  .site-header .menu-banner-image img {
+    max-width: 100% !important;
+  }
+</style>
 {%- liquid
   assign layout_header = section.settings.layout_header
   assign header_border_color = section.settings.background | color_mix: section.settings.textcolor, 86
