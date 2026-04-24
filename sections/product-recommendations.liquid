@@ -28,81 +28,49 @@
     }
   {%- endif -%}
 
-  /* --- Neo-Brutalism Button Styles (Shared) --- */
-  .product-recommendations .quick-add-btn,
-  .product-recommendations .quick-view-btn,
-  .product-recommendations .btn-quickview,
-  .product-recommendations .quickshop-button,
-  .product-recommendations .product-card .btn,
-  .product-recommendations .wishlist-btn { /* Make sure .wishlist-btn matches your heart button class */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #bfa17d; /* Tan matching the image */
-    color: #ffffff;
-    border: 4px solid #111111; /* Thick black border */
-    box-shadow: -5px 5px 0px 0px #111111; /* Solid bottom-left shadow */
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-    cursor: pointer;
-    text-decoration: none;
-    -webkit-text-fill-color: #ffffff;
-  }
-
-  /* Active/Click Effect */
-  .product-recommendations .quick-add-btn:active,
-  .product-recommendations .quick-view-btn:active,
-  .product-recommendations .btn-quickview:active,
-  .product-recommendations .quickshop-button:active,
-  .product-recommendations .product-card .btn:active,
-  .product-recommendations .wishlist-btn:active {
-    transform: translate(-2px, 2px);
-    box-shadow: -3px 3px 0px 0px #111111;
-  }
-
-  /* 1. Pill Shape (Quickshop) */
+  /* --- Custom Pill Button Design for Quickshop --- */
   .product-recommendations .quick-add-btn,
   .product-recommendations .quick-view-btn,
   .product-recommendations .btn-quickview,
   .product-recommendations .quickshop-button,
   .product-recommendations .product-card .btn {
-    border-radius: 50px; 
-    padding: 12px 24px;
-    font-family: 'Barlow Condensed', sans-serif !important;
-    font-size: 20px; 
-    font-weight: 600; 
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  /* 2. Circle Shape (Heart/Wishlist) */
-  .product-recommendations .wishlist-btn {
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
-    padding: 0;
-    margin-top: 10px;
-    flex-shrink: 0; 
-  }
-
-  /* Optional Layout: If you wrap both buttons in a div with class "button-action-group" in product-card.liquid */
-  .product-recommendations .button-action-group {
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+    background-color: #c5a67a; /* Tan background matching the image */
+    color: #ffffff;
+    border: 3px solid #111111; /* Thick black border */
+    border-radius: 50px; /* Pill shape */
+    
+    /* Updated Font Styling */
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-size: 16px;
+    font-weight: 300; 
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    -webkit-text-fill-color: #ffffff; /* Ensures inner text is white */
+    -webkit-text-stroke: 0px #111111; /* Thicker black outline to create the overlapping effect */
+    
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: -4px 4px 0px 0px #111111; /* Solid bottom-left drop shadow */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
     width: 100%;
     margin-top: 10px;
   }
-  .product-recommendations .button-action-group .quickshop-button,
-  .product-recommendations .button-action-group .btn {
-      width: auto;
-      flex-grow: 1;
-      margin-top: 0;
+
+  /* Click/Active effect to make it feel like a physical button pressing down */
+  .product-recommendations .quick-add-btn:active,
+  .product-recommendations .quick-view-btn:active,
+  .product-recommendations .btn-quickview:active,
+  .product-recommendations .quickshop-button:active,
+  .product-recommendations .product-card .btn:active {
+    transform: translate(-2px, 2px);
+    box-shadow: -3px 3px 0px 0px #111111;
   }
-  .product-recommendations .button-action-group .wishlist-btn {
-      margin-top: 0;
-  }
+  /* ----------------------------------------------- */
 
 {%- endstyle -%}
 <div class="section-{{ section.id }}-padding" data-aos="{{ section.settings.animation }}" >
