@@ -28,80 +28,48 @@
     }
   {%- endif -%}
 
-/* ===== BUTTON GROUP (BOTH BUTTONS SIDE BY SIDE) ===== */
-.product-recommendations .product-card .custom-btn-group {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 10px;
-}
+  /* --- Custom Pill Button Design for Quickshop --- */
+  .product-recommendations .quick-add-btn,
+  .product-recommendations .quick-view-btn,
+  .product-recommendations .btn-quickview,
+  .product-recommendations .quickshop-button,
+  .product-recommendations .product-card .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5a67a; /* Tan background matching the image */
+    color: #ffffff;
+    border: 3px solid #111111; /* Thick black border */
+    border-radius: 50px; /* Pill shape */
+    
+    /* Updated Font Styling */
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-size: 16px;
+    font-weight: 300; 
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    -webkit-text-fill-color: #ffffff; /* Ensures inner text is white */
+    -webkit-text-stroke: 0px #111111; /* Thicker black outline to create the overlapping effect */
+    
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: -4px 4px 0px 0px #111111; /* Solid bottom-left drop shadow */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
 
-/* ===== ROUND WISHLIST BUTTON ===== */
-.product-recommendations .product-card .wishlist-btn {
-  width: 46px;
-  height: 46px;
-  min-width: 46px;
-  border-radius: 50%;
-  background: #c5a67a;
-  border: 3px solid #0f1419;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: -4px 4px 0px #0f1419;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.product-recommendations .product-card .wishlist-btn svg {
-  width: 20px;
-  height: 20px;
-  stroke: #ffffff;
-  fill: none;
-  stroke-width: 2;
-}
-
-/* CLICK EFFECT */
-.product-recommendations .product-card .wishlist-btn:active {
-  transform: translate(-2px, 2px);
-  box-shadow: -2px 2px 0px #0f1419;
-}
-
-/* ===== QUICKSHOP BUTTON ===== */
-.product-recommendations .product-card .quickshop-btn {
-  flex: 1;
-  height: 46px;
-  border-radius: 50px;
-  background: #c5a67a;
-  border: 3px solid #0f1419;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-family: 'Barlow Condensed', sans-serif !important;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  box-shadow: -4px 4px 0px #0f1419;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-/* CLICK EFFECT */
-.product-recommendations .product-card .quickshop-btn:active {
-  transform: translate(-2px, 2px);
-  box-shadow: -2px 2px 0px #0f1419;
-}
-
-/* REMOVE OLD DEFAULT BUTTON STYLE */
-.product-recommendations .product-card .btn,
-.product-recommendations .quick-add-btn,
-.product-recommendations .quick-view-btn {
-  display: none !important;
-}
+  /* Click/Active effect to make it feel like a physical button pressing down */
+  .product-recommendations .quick-add-btn:active,
+  .product-recommendations .quick-view-btn:active,
+  .product-recommendations .btn-quickview:active,
+  .product-recommendations .quickshop-button:active,
+  .product-recommendations .product-card .btn:active {
+    transform: translate(-2px, 2px);
+    box-shadow: -3px 3px 0px 0px #111111;
+  }
   /* ----------------------------------------------- */
 
 {%- endstyle -%}
