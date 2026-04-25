@@ -141,10 +141,6 @@
         overflow: visible; /* Allows the next slide to peek out */
       }
       
-      .swipercollection .container-p .swiper-slide {
-        width: 65% !important; /* Elegant 65% width for peeking effect */
-      }
-      
       /* Typography Scaling */
       .customstyle{{ section.id }} .title-collection {
         font-size: 18px !important;
@@ -193,7 +189,7 @@
               data-section-type="swipercustom"
               data-perview-desktop="{{ section.settings.perviewDesktop }}"
               data-space-between="{{ section.settings.spaceBetween }}"
-              data-perview-mobile="1.6"
+              data-perview-mobile="{{ section.settings.perviewDesktop }}"
               >
                 <div class="collectionlist-slider swiper-wrapper" id="collection-list-{{ section.id }}">
                   {%- for block in section.blocks -%}
