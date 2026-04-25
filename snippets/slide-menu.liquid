@@ -11,7 +11,7 @@
           {%- for link in linksMenu -%}
             {%- if link.links != blank -%}
             <li class="side-menu__item">
-              <a href="{{ link.url }}" data-link="tab-{{ link.title | strip | downcase | handle }}" class="p-0 tablinks side-menu__link btn site-nav__link " {% if link.active %} aria-current="page" {% endif %}>
+              <a href="{{ link.url }}" data-link="tab-{{ link.title | strip | downcase | handle }}" class="p-0 tablinks side-menu__link btn site-nav__link " {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page" {% endif %}>
                 <span class="site-nav__title" data-link="tab-{{ link.title | strip | downcase | handle }}">
                     {{ link.title }}
                 </span>

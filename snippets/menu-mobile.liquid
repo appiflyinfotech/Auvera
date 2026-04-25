@@ -9,7 +9,7 @@
         {%- if link.links != blank -%}
           <li class="drawer__nav-item">
             <div class="drawer__nav-has-sublist">
-              <a href="{{ link.url }}" class="drawer__nav-link drawer__nav-link--top-level drawer__nav-link--split" id="DrawerLabel-{{ child_list_handle }}" {% if link.active %} aria-current="page"{% endif %}>
+              <a href="{{ link.url }}" class="drawer__nav-link drawer__nav-link--top-level drawer__nav-link--split" id="DrawerLabel-{{ child_list_handle }}" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
                 {%- render 'processMenuTitle' , itemName: link.title -%}
                 {%- render 'processMenuLabel' , itemName: link.title -%}
               </a>
@@ -30,7 +30,7 @@
           </li>
         {%- else -%}
           <li class="drawer__nav-item">
-            <a href="{{ link.url }}" class="drawer__nav-link drawer__nav-link--top-level" {% if link.active %} aria-current="page"{% endif %}>
+            <a href="{{ link.url }}" class="drawer__nav-link drawer__nav-link--top-level" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
               {%- render 'processMenuTitle' , itemName: link.title -%}
               {%- render 'processMenuLabel' , itemName: link.title -%}
             </a>
