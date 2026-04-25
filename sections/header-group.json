@@ -291,7 +291,7 @@
           "settings": {
             "sidebar_logo": true,
             "sidebar_bio": "<p><em>Auvera Craft is a fine jewelry brand that focuses on high-quality every day jewelry that does not hurt your skin.</em></p>",
-            "sidebar_image": true,
+            "sidebar_image": false,
             "sidebar_link": "",
             "sidebar_contact": true,
             "sidebar_social": true
@@ -344,9 +344,9 @@
         "menu_label_hot": "#d24418",
         "menu_label_sale": "#ffa800",
         "menu_label_other": "#848484",
-        "enable_menu_vertical": false,
+        "enable_menu_vertical": true,
         "sl_menu_vertical": "click-menu",
-        "main_linklist_vertical": "",
+        "main_linklist_vertical": "main-menu",
         "link_list_search": "",
         "sidebar_search": true,
         "e_hd_currency": true,
