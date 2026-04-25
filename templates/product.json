@@ -82,6 +82,7 @@
         },
         "bf089f50-667c-4417-a84a-9478625741a1": {
           "type": "list-info",
+          "disabled": true,
           "settings": {
             "block_style": "hoz",
             "product_vendor_enable": true,
@@ -92,6 +93,7 @@
         },
         "be13b3d2-2e01-4728-a83f-6488d1b7d4fa": {
           "type": "block_banner",
+          "disabled": true,
           "settings": {
             "banner_text": "Rewards",
             "banner_des": "Join to earn 84 points from this item",
@@ -187,7 +189,6 @@
         },
         "1be7473b-00b2-4ad9-a7c0-356b86de67a7": {
           "type": "shipping",
-          "disabled": true,
           "settings": {}
         },
         "83a6f5b6-88e4-4eb3-9899-a085ea9c58bd": {
