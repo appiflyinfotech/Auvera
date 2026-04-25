@@ -141,40 +141,36 @@
         overflow: visible; /* Allows the next slide to peek out */
       }
       
-      .swipercollection .container-p .swiper-slide {
-        width: 65% !important; /* Elegant 65% width for peeking effect */
-      }
-      
-      /* Typography Scaling */
+      /* Typography Scaling (Scaled down further to fit 4 items nicely) */
       .customstyle{{ section.id }} .title-collection {
-        font-size: 18px !important;
+        font-size: 14px !important;
         line-height: 1.2;
       }
       .customstyle{{ section.id }} .item-counts {
-        font-size: 12px !important;
+        font-size: 10px !important;
         margin-top: 4px;
         margin-bottom: 0;
       }
       .customstyle{{ section.id }} .title-collection a sup {
-        font-size: 11px !important;
+        font-size: 10px !important;
       }
       
       /* Card Layout/Padding Adjustments */
       .customstyle{{ section.id }} .collection-card__meta.p-4 {
-        padding: 16px !important; /* Overrides heavy bootstrap padding */
+        padding: 10px !important; /* Reduced padding for 4 items */
       }
       .customstyle{{ section.id }} .collection-card__meta.pt-3 {
-        padding-top: 12px !important;
+        padding-top: 8px !important;
       }
       
       /* Button & Icon Scaling */
       .customstyle{{ section.id }} .collection-card__meta .btn {
-        padding: 8px 16px !important;
-        font-size: 14px !important;
+        padding: 6px 10px !important;
+        font-size: 12px !important;
       }
       .customstyle{{ section.id }} .link-arrow svg {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
       }
     }
   </style>
@@ -193,7 +189,7 @@
               data-section-type="swipercustom"
               data-perview-desktop="{{ section.settings.perviewDesktop }}"
               data-space-between="{{ section.settings.spaceBetween }}"
-              data-perview-mobile="1.6"
+              data-perview-mobile="4"
               >
                 <div class="collectionlist-slider swiper-wrapper" id="collection-list-{{ section.id }}">
                   {%- for block in section.blocks -%}
