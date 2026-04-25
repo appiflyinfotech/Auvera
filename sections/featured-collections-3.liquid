@@ -141,9 +141,13 @@
         overflow: visible; /* Allows the next slide to peek out */
       }
       
+      .swipercollection .container-p .swiper-slide {
+        width: 45% !important; /* Perfect 2-column scroll base width */
+      }
+      
       /* Typography Scaling */
       .customstyle{{ section.id }} .title-collection {
-        font-size: 18px !important;
+        font-size: 16px !important;
         line-height: 1.2;
       }
       .customstyle{{ section.id }} .item-counts {
@@ -157,20 +161,20 @@
       
       /* Card Layout/Padding Adjustments */
       .customstyle{{ section.id }} .collection-card__meta.p-4 {
-        padding: 16px !important; /* Overrides heavy bootstrap padding */
+        padding: 12px !important; 
       }
       .customstyle{{ section.id }} .collection-card__meta.pt-3 {
-        padding-top: 12px !important;
+        padding-top: 10px !important;
       }
       
       /* Button & Icon Scaling */
       .customstyle{{ section.id }} .collection-card__meta .btn {
-        padding: 8px 16px !important;
-        font-size: 14px !important;
+        padding: 6px 12px !important;
+        font-size: 13px !important;
       }
       .customstyle{{ section.id }} .link-arrow svg {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
       }
     }
   </style>
@@ -189,7 +193,7 @@
               data-section-type="swipercustom"
               data-perview-desktop="{{ section.settings.perviewDesktop }}"
               data-space-between="{{ section.settings.spaceBetween }}"
-              data-perview-mobile="{{ section.settings.perviewDesktop }}"
+              data-perview-mobile="2.2"
               >
                 <div class="collectionlist-slider swiper-wrapper" id="collection-list-{{ section.id }}">
                   {%- for block in section.blocks -%}
