@@ -268,42 +268,55 @@
     padding: 6px 10px;
     box-shadow: -2px 2px 0px #1E1E1E;
   }
+}
 
-  /* ---- Force 2-Column x 2-Row Grid Layout on Mobile ---- */
-  .customstyle{{ section.id }} .prdtab-content,
-  .customstyle{{ section.id }} .slick-track {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px !important; /* Space between the cards */
-    width: 100% !important;
-    transform: none !important; /* Disables slider movement */
+/* ─── Mobile-Only Slider Arrows ────────────────────────────── */
+@media (min-width: 768px) {
+  /* Hide arrows on desktop */
+  .customstyle{{ section.id }} .slick-prev,
+  .customstyle{{ section.id }} .slick-next {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Show and style arrows on mobile */
+  .customstyle{{ section.id }} .slick-prev,
+  .customstyle{{ section.id }} .slick-next {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    background: #D4B27E;
+    border: 2px solid #1E1E1E;
+    border-radius: 50%;
+    color: #1E1E1E;
+    box-shadow: -2px 2px 0px #1E1E1E;
+    transition: all 0.15s ease;
   }
   
-  .customstyle{{ section.id }} .slick-list {
-    overflow: visible !important;
-    padding: 0 !important;
-    height: auto !important;
+  .customstyle{{ section.id }} .slick-prev:active,
+  .customstyle{{ section.id }} .slick-next:active {
+    transform: translate(-1px, 1px);
+    box-shadow: -1px 1px 0px #1E1E1E;
   }
 
-  .customstyle{{ section.id }} .producttab-item,
-  .customstyle{{ section.id }} .slick-slide {
-    width: 100% !important; /* Let the grid handle the width */
-    padding: 0 !important;
-    margin: 0 !important;
-    height: auto !important;
-    float: none !important;
+  /* Position the arrows inside the container */
+  .customstyle{{ section.id }} .slick-prev {
+    left: 5px;
   }
-
-  /* Restrict to exactly 2 rows (4 products). */
-  .customstyle{{ section.id }} .producttab-item:nth-child(n+5),
-  .customstyle{{ section.id }} .slick-slide:nth-child(n+5) {
-    display: none !important;
+  .customstyle{{ section.id }} .slick-next {
+    right: 5px;
   }
-
-  /* Hide slider arrows and dots on mobile since it's now a static grid */
-  .customstyle{{ section.id }} .slick-arrow,
-  .customstyle{{ section.id }} .slick-dots {
-    display: none !important;
+  
+  /* Ensure the slick slider icons/text inherit the color properly */
+  .customstyle{{ section.id }} .slick-prev::before,
+  .customstyle{{ section.id }} .slick-next::before {
+    color: #1E1E1E;
+    font-size: 18px;
+    opacity: 1;
   }
 }
 </style>
@@ -577,6 +590,12 @@ function goodrOpenMiniCart() {
       "type": "checkbox",
       "id": "enable_carousel",
       "label": "Enable Carousel",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "arrows",
+      "label": "Enable Arrows (Mobile)",
       "default": true
     },
     {
