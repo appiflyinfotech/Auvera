@@ -268,43 +268,6 @@
     padding: 6px 10px;
     box-shadow: -2px 2px 0px #1E1E1E;
   }
-
-  /* ---- Force 2-Column x 2-Row Grid Layout on Mobile ---- */
-  .customstyle{{ section.id }} .prdtab-content,
-  .customstyle{{ section.id }} .slick-track {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px !important; /* Space between the cards */
-    width: 100% !important;
-    transform: none !important; /* Disables slider movement */
-  }
-  
-  .customstyle{{ section.id }} .slick-list {
-    overflow: visible !important;
-    padding: 0 !important;
-    height: auto !important;
-  }
-
-  .customstyle{{ section.id }} .producttab-item,
-  .customstyle{{ section.id }} .slick-slide {
-    width: 100% !important; /* Let the grid handle the width */
-    padding: 0 !important;
-    margin: 0 !important;
-    height: auto !important;
-    float: none !important;
-  }
-
-  /* Restrict to exactly 2 rows (4 products). */
-  .customstyle{{ section.id }} .producttab-item:nth-child(n+5),
-  .customstyle{{ section.id }} .slick-slide:nth-child(n+5) {
-    display: none !important;
-  }
-
-  /* Hide slider arrows and dots on mobile since it's now a static grid */
-  .customstyle{{ section.id }} .slick-arrow,
-  .customstyle{{ section.id }} .slick-dots {
-    display: none !important;
-  }
 }
 </style>
 
