@@ -269,6 +269,56 @@
     box-shadow: -2px 2px 0px #1E1E1E;
   }
 }
+
+/* ─── Mobile-Only Slider Arrows ────────────────────────────── */
+@media (min-width: 768px) {
+  /* Hide arrows on desktop */
+  .customstyle{{ section.id }} .slick-prev,
+  .customstyle{{ section.id }} .slick-next {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Show and style arrows on mobile */
+  .customstyle{{ section.id }} .slick-prev,
+  .customstyle{{ section.id }} .slick-next {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    background: #D4B27E;
+    border: 2px solid #1E1E1E;
+    border-radius: 50%;
+    color: #1E1E1E;
+    box-shadow: -2px 2px 0px #1E1E1E;
+    transition: all 0.15s ease;
+  }
+  
+  .customstyle{{ section.id }} .slick-prev:active,
+  .customstyle{{ section.id }} .slick-next:active {
+    transform: translate(-1px, 1px);
+    box-shadow: -1px 1px 0px #1E1E1E;
+  }
+
+  /* Position the arrows inside the container */
+  .customstyle{{ section.id }} .slick-prev {
+    left: 5px;
+  }
+  .customstyle{{ section.id }} .slick-next {
+    right: 5px;
+  }
+  
+  /* Ensure the slick slider icons/text inherit the color properly */
+  .customstyle{{ section.id }} .slick-prev::before,
+  .customstyle{{ section.id }} .slick-next::before {
+    color: #1E1E1E;
+    font-size: 18px;
+    opacity: 1;
+  }
+}
 </style>
 
 <div class="customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}">
@@ -540,6 +590,12 @@ function goodrOpenMiniCart() {
       "type": "checkbox",
       "id": "enable_carousel",
       "label": "Enable Carousel",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "arrows",
+      "label": "Enable Arrows (Mobile)",
       "default": true
     },
     {
