@@ -1099,8 +1099,8 @@
         "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-2": {
           "type": "faq",
           "settings": {
-            "faq_title": "What are you doing to be more sustainable?",
-            "faq_des": "<p>Absolutely. We prioritize the security of our customers' data. Our website uses Secure Socket Layer (SSL) encryption to ensure that your personal and payment information is kept safe and private. This means that any information you input during the checkout process is encrypted before being transmitted over the internet. Additionally, we never store your credit card details on our servers. For more information about how we protect your data, please refer to our Privacy Policy.</p>"
+            "faq_title": "Do you offer customized jewellery?",
+            "faq_des": "<p>Yes, we offer customization options for selected designs. You can personalize pieces based on your preferences—perfect for gifts, weddings, and special occasions.</p>"
           }
         }
       },
