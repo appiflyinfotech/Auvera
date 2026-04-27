@@ -53,7 +53,7 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "settings": {
-        "enable": true,
+        "enable": false,
         "animation": "fade",
         "setwidth": "container-fluid",
         "background": "#b51515",
@@ -67,8 +67,8 @@
         "enable_social_topbar": false,
         "enable_login_topbar": false,
         "text_topbar": "Get up to 15% off + Free shipping",
-        "buttonall_topbar": "Shop now",
-        "buttonall_link_topbar": "shopify://collections/rings",
+        "buttonall_topbar": "",
+        "buttonall_link_topbar": "shopify://collections/all",
         "enable_block_link": true,
         "topbar_phone": "+91 99099 93274",
         "topbar_email": "",
