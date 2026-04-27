@@ -68,7 +68,7 @@
         "enable_login_topbar": false,
         "text_topbar": "Get up to 15% off + Free shipping",
         "buttonall_topbar": "Shop now",
-        "buttonall_link_topbar": "shopify://collections",
+        "buttonall_link_topbar": "shopify://collections/rings",
         "enable_block_link": true,
         "topbar_phone": "+91 99099 93274",
         "topbar_email": "",
