@@ -2091,13 +2091,14 @@
       "pnewsletter": {
         "type": "pnewsletter",
         "settings": {
-          "pnewletter_enable": false,
+          "pnewletter_enable": true,
           "pnew_style": "pnew_style-4",
           "pnew-width": 560,
           "pnew-height": 390,
           "pnewletter_time_delay": 3,
           "pnewletter_time": 20,
           "pnewletter_background": "#ffffff",
+          "pnewletter_bgimage": "shopify://shop_images/621a951fe59ef8aee1102e0c301274a87e01deb3-1440x500.avif",
           "subtitle": "FIRST TIMER?",
           "pnewletter_title": "Sign Up & Save 15%",
           "pnewletter_title_cl": "",
