@@ -29,6 +29,25 @@
       padding: {{ section.settings.paddingmobile }};
       margin: {{ section.settings.marginmobile }};
     }
+    /* Mobile specific sizing reductions */
+    .reviews-title {
+      font-size: 1.4rem !important;
+    }
+    .review-card-main {
+      padding: 0.85rem !important;
+    }
+    .review-card-main .quote-text {
+      font-size: 0.85rem !important;
+      margin-bottom: 0.8rem !important;
+    }
+    .author-right {
+      max-width: 220px !important; 
+    }
+    .quote-icon-wrap {
+      width: 26px !important;
+      height: 26px !important;
+      margin-bottom: 0.5rem !important;
+    }
   }
 
   /* Header Styling */
@@ -76,6 +95,9 @@
   }
 
   /* Featured Card Styling */
+  .quotes-slider.slick-slider {
+    margin-bottom: 0; /* Removes default slick margin */
+  }
   .review-card-main {
     background: #ffffff;
     border-radius: 10px;
@@ -179,7 +201,7 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    margin: 1rem 0;
+    margin: 0.5rem 0 1rem; /* Reduced top margin to push it closer to the cards */
   }
   .custom-slider-nav button {
     width: 32px;
