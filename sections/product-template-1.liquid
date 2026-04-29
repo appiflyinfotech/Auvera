@@ -498,12 +498,12 @@
                   <div class="d-flex align-items-center">
                     <div class="d-flex align-items-center flex-wrap">
                       {% if settings.enable_wishlsit %}
-                        <span class="js-btn-wishlist mr-4" title="{{ 'products.product.wishlist_text' | t }}" data-handle="{{ product.handle }}">
+                        <span class="js-btn-wishlist mr-4" data-handle="{{ product.handle }}">
                           {%- render 'icon-heart' -%}
                         </span>
                         {% endif %}
                       {% if settings.enable_compare %}
-                      <span class="btn js-btn-compare mr-4"  title="{{ 'products.product.compare_text' | t }}" data-handle="{{ product.handle }}">
+                      <span class="btn js-btn-compare mr-4" data-handle="{{ product.handle }}">
                         {%- render 'icon-exchange' -%}
                         {%- render 'icon-close-solid' -%}
                         <span>{{ 'products.product.compare_text' | t }}</span>
