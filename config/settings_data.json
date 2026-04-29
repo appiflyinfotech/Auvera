@@ -486,9 +486,8 @@
           "108726f6-4aa5-4791-b3da-44f38358c9b2": {
             "type": "image",
             "settings": {
-              "enable_video": true,
+              "enable_video": false,
               "video_hosted": "https://assets.friendlydiamonds.com/fdl/fd-campaign/womens-day/womens_desktop.mp4",
-              "image": "shopify://shop_images/the-making-of-missoma-fine-378595.jpg",
               "alignment": "center center",
               "text_alignment": "left center",
               "bgwrap": "#968574",
