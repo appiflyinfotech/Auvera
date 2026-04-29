@@ -134,6 +134,45 @@
   width: 40px; height: 20px; stroke: currentColor; stroke-width: 1.5;
 }
 
+/* ─── Mobile specific layout to match photo ───────────────────── */
+@media (max-width: 1023px) {
+  .goodr-section-{{ section.id }} .g-layout {
+    position: relative;
+  }
+  .goodr-section-{{ section.id }} .g-sidebar {
+    padding-right: 110px; /* Space for absolute arrows */
+  }
+  .goodr-section-{{ section.id }} .g-slider-controls {
+    position: absolute;
+    top: 5px;
+    right: 15px; /* Accounting for typical container padding */
+    margin: 0;
+    width: auto;
+    z-index: 10;
+  }
+  .goodr-section-{{ section.id }} .g-slider-controls > div:first-child {
+    display: none; /* Hide empty spacer */
+  }
+  .goodr-section-{{ section.id }} .g-arrow-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--g-border, #E8E2D9);
+    padding: 0;
+    background: transparent;
+  }
+  .goodr-section-{{ section.id }} .g-arrow-btn svg {
+    width: 20px;
+    height: 12px;
+  }
+  .goodr-section-{{ section.id }} .g-supertitle {
+    margin-bottom: 25px; /* Reduce gap to match photo */
+  }
+  .goodr-section-{{ section.id }} .g-title {
+    font-size: clamp(40px, 8vw, 60px); /* Better fit alongside arrows */
+  }
+}
+
 /* ─── Slider Grid ─────────────────────────────────────────────── */
 .goodr-section-{{ section.id }} .g-grid {
   display: flex;
