@@ -47,10 +47,16 @@
   border: none !important;
   border-bottom: none !important;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap;
+  gap: 8px;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding: 8px 6px 10px 6px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.section-{{ section.id }} .nav-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .section-{{ section.id }} .nav-tabs .nav-item.nav-link,
@@ -64,12 +70,17 @@
   background: transparent;
   border: 2px solid transparent !important;
   border-radius: 60px;
-  padding: 8px 22px;
+  padding: 9px 26px;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease;
   position: relative;
   white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-{{ section.id }} .nav-tabs a.nav-item.active,
@@ -78,7 +89,7 @@
   border: 2px solid #1E1E1E !important;
   box-shadow: -3px 3px 0px #1E1E1E !important;
   color: #1E1E1E !important;
-  transform: translate(1px, -1px);
+  transform: none;
 }
 
 .section-{{ section.id }} .nav-tabs a.nav-item:hover:not(.active) {
