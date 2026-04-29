@@ -377,10 +377,8 @@
             "quote": "<h4>“Absolutely loved it. The fit, the quality and the color. This is a slim fit jean like none other and the only one I will buy.”</h4>",
             "rate": 5,
             "author": "— Susan P.",
-            "info": "",
-            "avatar": "shopify://shop_images/the-4Cs-slot-1-1080x1080px.jpg",
-            "product_item": "",
-            "product_style": "light"
+            "verified": true,
+            "avatar": "shopify://shop_images/the-4Cs-slot-1-1080x1080px.jpg"
           }
         },
         "quote_BwPbN4": {
@@ -390,10 +388,8 @@
             "quote": "Add customer reviews and testimonials to showcase your store’s happy customers.",
             "rate": 5,
             "author": "Author's name",
-            "info": "",
-            "avatar": "shopify://shop_images/happy-woman.jpg",
-            "product_item": "",
-            "product_style": "light"
+            "verified": true,
+            "avatar": "shopify://shop_images/happy-woman.jpg"
           }
         },
         "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-1": {
@@ -403,10 +399,8 @@
             "quote": "<h4>“ The most comfortable shoes ever!! I have them in 3 colors. And I am not done. \"</h4>",
             "rate": 5,
             "author": "—  Jaycie Glove",
-            "info": "",
-            "avatar": "shopify://shop_images/long-haired-woman.jpg",
-            "product_item": "",
-            "product_style": "light"
+            "verified": true,
+            "avatar": "shopify://shop_images/long-haired-woman.jpg"
           }
         },
         "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-2": {
@@ -416,9 +410,7 @@
             "quote": "<h4>\" I love Lola! They're one of my favorite brands. Customer service is excellent. I have only returned items once and it was so easy. \" </h4>",
             "rate": 5,
             "author": "—  Kai Felix",
-            "info": "",
-            "product_item": "",
-            "product_style": "light"
+            "verified": true
           }
         }
       },
@@ -439,19 +431,16 @@
         "setwidth": "container",
         "bgsection": "#f7f7f7",
         "title_top": "",
-        "title": "review's",
+        "title": "REVIEW\"S",
         "des": "",
-        "align-heading": "center",
-        "color_rate": "#f1f1f1",
+        "more_love_title": "More Love",
+        "color_rate": "#d8c858",
         "color_rated": "#000000",
         "image_size": "landscape",
-        "size_text": "p",
-        "arrows": true,
         "draggable": true,
-        "dots": false,
         "infinite": true,
-        "paddingsection": "0px 0px 0px 0px",
-        "paddingmobile": "0px 0px 0px 0px",
+        "paddingsection": "15px 0px 4px 0px",
+        "paddingmobile": "15px 0px 4px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
