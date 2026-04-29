@@ -87,13 +87,37 @@
     padding-top: 24px;
   }
 
-  /* Mobile: smaller gap */
+  /* Active tab sits above the gray baseline */
+  .product-content #nav-tab-info .nav-tabs a.nav-item.active {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Mobile: horizontal scroll to prevent tabs wrapping to new rows */
   @media (max-width: 767px) {
+    .product-content #nav-tab-info .nav-tabs {
+      flex-wrap: nowrap !important;
+      overflow-x: auto;
+      overflow-y: visible;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .product-content #nav-tab-info .nav-tabs::-webkit-scrollbar {
+      display: none;
+    }
     .product-content #nav-tab-info .nav-tabs .nav-item {
-      margin: 0 1rem -2px 0;
+      margin: 0 1.2rem -2px 0;
+      flex-shrink: 0;
     }
     .product-content #nav-tab-info .nav-tabs a.nav-item {
       font-size: 14px;
+      white-space: nowrap;
+    }
+    /* Full-width content on mobile */
+    .product-content .nav-tab-info {
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
     }
   }
 </style>
