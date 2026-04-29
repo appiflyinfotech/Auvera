@@ -4673,8 +4673,8 @@ theme.wishlist = (function () {
     } else {
       wishlist.push(productHandle);
       allSimilarProducts.fadeOut('slow').fadeIn('fast').html(`${theme.strings.wishlistIconAdded}`);
-      // allSimilarProducts.attr('data-original-title', theme.strings.wishlistTextAdded);
-      // $('.tooltip-inner').text(theme.strings.wishlistTextAdded);
+      allSimilarProducts.attr('data-original-title', theme.strings.wishlistTextAdded);
+      $('.tooltip-inner').text(theme.strings.wishlistTextAdded);
     }
 
     localStorage.setItem('localWishlist', JSON.stringify(wishlist));
@@ -4728,7 +4728,7 @@ theme.wishlist = (function () {
       const iconWishlist = isProductAdded ? theme.strings.wishlistIconAdded : theme.strings.wishlistIcon;
       const textWishlist = isProductAdded ? theme.strings.wishlistTextAdded : theme.strings.wishlistText;
 
-      $(this).html(`${iconWishlist}`);
+      $(this).html(`${iconWishlist}`).attr('title', textWishlist);
     });
   }
 
@@ -4742,7 +4742,7 @@ theme.wishlist = (function () {
     const allSimilarProducts = $(`${btnWishlist}[data-handle="${productHandle}"]`);
 
     allSimilarProducts.html(`${theme.strings.wishlistIcon}`);
-    // allSimilarProducts.attr('data-original-title', theme.strings.wishlistText);
+    allSimilarProducts.attr('data-original-title', theme.strings.wishlistText);
 
     const productIndex = wishlist.indexOf(productHandle);
     if (productIndex !== -1) {
@@ -5618,19 +5618,19 @@ theme.popOver = (function(){
 
 
 // Tooltip
-// theme.tooltip = (function(){
-//   var selector = '[data-toggle="tooltip"],[data-tooltip="true"]';
-//   function loadTooltip(){
-//     $(selector).tooltip(); //Bootstrap 4
-//   };
-//   $(document).on('click',selector,function(){
-//     $(this).tooltip('hide');
-//   });
-//   loadTooltip();
-//   return{
-//     load:loadTooltip
-//   }
-// })()
+theme.tooltip = (function(){
+  var selector = '[data-toggle="tooltip"],[data-tooltip="true"]';
+  function loadTooltip(){
+    $(selector).tooltip(); //Bootstrap 4
+  };
+  $(document).on('click',selector,function(){
+    $(this).tooltip('hide');
+  });
+  loadTooltip();
+  return{
+    load:loadTooltip
+  }
+})()
 
 
 theme.hasInput = (function(){
