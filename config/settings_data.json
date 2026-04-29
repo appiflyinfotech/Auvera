@@ -486,7 +486,7 @@
           "108726f6-4aa5-4791-b3da-44f38358c9b2": {
             "type": "image",
             "settings": {
-              "enable_video": false,
+              "enable_video": true,
               "video_hosted": "https://assets.friendlydiamonds.com/fdl/fd-campaign/womens-day/womens_desktop.mp4",
               "image": "shopify://shop_images/b25b6c36-f9be-4a82-ba9e-2fefb051ca09_1.png",
               "alignment": "center center",
