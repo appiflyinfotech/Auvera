@@ -102,7 +102,7 @@
         "title_top": "Discover the Art of Fine Jewelry",
         "des": "",
         "txtbutton": "show all",
-        "urlbtn": "",
+        "urlbtn": "shopify://collections/all",
         "collection": "radiant",
         "rows": 4,
         "cols_desktop": "3",
