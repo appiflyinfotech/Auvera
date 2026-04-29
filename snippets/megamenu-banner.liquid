@@ -49,7 +49,7 @@
                     <a href="{{ grandchildlink.url }}" class="d-flex align-items-center">
                       
                       {%- if grandchildlink.type == 'collection_link' and grandchildlink.object.image != blank -%}
-                        <div class="menu-collection-icon me-3 flex-shrink-0">
+                        <div class="menu-collection-icon mr-3 flex-shrink-0">
                           <img src="{{ grandchildlink.object.image | image_url: width: 40 }}" 
                                alt="{{ grandchildlink.title | escape }}" 
                                loading="lazy" 
@@ -59,7 +59,7 @@
                                style="object-fit: contain;">
                         </div>
                       {%- elsif grandchildlink.type == 'collection_link' and grandchildlink.object.products.first.featured_image != blank -%}
-                        <div class="menu-collection-icon me-3 flex-shrink-0">
+                        <div class="menu-collection-icon mr-3 flex-shrink-0">
                           <img src="{{ grandchildlink.object.products.first.featured_image | image_url: width: 40 }}" 
                                alt="{{ grandchildlink.title | escape }}" 
                                loading="lazy" 
