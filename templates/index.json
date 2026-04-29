@@ -187,6 +187,9 @@
         "c59df49c-e4a4-42b3-8248-2c7d9bc139fb",
         "1b3d386a-acb0-4451-9149-d898f8d70cd4"
       ],
+      "custom_css": [
+        ".reviews-title {font-family: 'Barlow Condensed', sans-serif; font-size: 2.1rem; font-weight: 700; /* better for this font */ letter-spacing: 1px; color: #111;}"
+      ],
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -964,7 +967,9 @@
         "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-1",
         "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-2"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".reviews-title {font-family: \"Cormorant Garamond\", serif; font-size: 2.1rem; font-weight: 600; letter-spacing: 0.8px; color: #111;}"
+      ],
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
