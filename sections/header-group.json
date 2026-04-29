@@ -53,7 +53,7 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "settings": {
-        "enable": false,
+        "enable": true,
         "animation": "fade",
         "setwidth": "container-fluid",
         "background": "#b51515",
@@ -67,7 +67,7 @@
         "enable_social_topbar": false,
         "enable_login_topbar": false,
         "text_topbar": "Get up to 15% off + Free shipping",
-        "buttonall_topbar": "",
+        "buttonall_topbar": "Shop Now",
         "buttonall_link_topbar": "shopify://collections/all",
         "enable_block_link": true,
         "topbar_phone": "+91 99099 93274",
