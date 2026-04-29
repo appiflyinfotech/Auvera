@@ -490,7 +490,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "animation": "fade-up",
+        "animation": "",
         "setwidth": "container",
         "heading": "You may also like",
         "heading_size": "h3",
