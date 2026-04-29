@@ -29,125 +29,14 @@
     endfor
 -%}
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;700&family=Cormorant:wght@400;500;600;700&display=swap');
-
-/* ─── Section Wrapper ────────────────────────────────────────── */
-.section-{{ section.id }} {
-  background: #FAF8F5;
-  padding: 60px 0;
-}
-@media (max-width: 767px) {
-  .section-{{ section.id }} {
-    padding: 40px 0;
+  @media (min-width:768px){
+    .product-related.product-block{
+        padding: 0rem 0rem 0rem 2rem;
+    }
+    .product-content #nav-tab-info .nav-tabs .nav-item{
+        margin: 0 4rem -2px 0;
+    }
   }
-}
-
-/* ─── Tab Navigation ─────────────────────────────────────────── */
-.section-{{ section.id }} .nav-tabs {
-  border: none !important;
-  border-bottom: none !important;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 8px;
-  margin-bottom: 0;
-  padding: 8px 6px 10px 6px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.section-{{ section.id }} .nav-tabs::-webkit-scrollbar {
-  display: none;
-}
-
-.section-{{ section.id }} .nav-tabs .nav-item.nav-link,
-.section-{{ section.id }} .nav-tabs a.nav-item {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 15px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #1E1E1E;
-  background: transparent;
-  border: 2px solid transparent !important;
-  border-radius: 60px;
-  padding: 9px 26px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  position: relative;
-  white-space: nowrap;
-  flex-shrink: 0;
-  line-height: 1.2;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-{{ section.id }} .nav-tabs a.nav-item.active,
-.section-{{ section.id }} .nav-tabs .nav-link.active {
-  background: #D4B27E !important;
-  border: 2px solid #1E1E1E !important;
-  box-shadow: -3px 3px 0px #1E1E1E !important;
-  color: #1E1E1E !important;
-  transform: none;
-}
-
-.section-{{ section.id }} .nav-tabs a.nav-item:hover:not(.active) {
-  color: #D4B27E;
-}
-
-/* ─── Divider below tabs ─────────────────────────────────────── */
-.section-{{ section.id }} .pc-tab-divider {
-  height: 2px;
-  background: #E8E2D9;
-  margin: 18px 0 28px;
-  border-radius: 2px;
-}
-
-/* ─── Tab Content ────────────────────────────────────────────── */
-.section-{{ section.id }} .tab-content {
-  font-family: 'Barlow', sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #3a3a3a;
-}
-
-.section-{{ section.id }} .tab-content .tab-pane h1,
-.section-{{ section.id }} .tab-content .tab-pane h2,
-.section-{{ section.id }} .tab-content .tab-pane h3,
-.section-{{ section.id }} .tab-content .tab-pane h4 {
-  font-family: 'Cormorant', serif;
-  font-weight: 600;
-  color: #1E1E1E;
-  margin-bottom: 12px;
-  margin-top: 24px;
-}
-
-.section-{{ section.id }} .tab-content .tab-pane h3 {
-  font-size: 24px;
-}
-
-.section-{{ section.id }} .tab-content .tab-pane p {
-  margin-bottom: 16px;
-  text-align: left;
-}
-
-.section-{{ section.id }} .tab-content .tab-pane ul,
-.section-{{ section.id }} .tab-content .tab-pane ol {
-  padding-left: 20px;
-  margin-bottom: 16px;
-}
-
-.section-{{ section.id }} .tab-content .tab-pane li {
-  margin-bottom: 8px;
-}
-
-/* ─── Desktop tab item spacing ───────────────────────────────── */
-@media (min-width: 768px) {
-  .product-related.product-block {
-    padding: 0 0 0 2rem;
-  }
-}
 </style>
 
 <div class="section-{{ section.id }} product-content customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}" >
@@ -184,7 +73,6 @@
                             {%- endcase -%}
                     {%- endfor -%}
                 </div>
-                <div class="pc-tab-divider"></div>
                 <div class="tab-content">
                     {%- for block in section.blocks -%}
                         {%- liquid
