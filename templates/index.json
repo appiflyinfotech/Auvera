@@ -983,8 +983,8 @@
         "image_size": "landscape",
         "draggable": true,
         "infinite": true,
-        "paddingsection": "20px 0px 05px 0px",
-        "paddingmobile": "20px 0px 05px 0px",
+        "paddingsection": "20px 0px 04px 0px",
+        "paddingmobile": "20px 0px 04px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
