@@ -4672,7 +4672,7 @@ theme.wishlist = (function () {
       window.location.href = wishlistPageUrl;
     } else {
       wishlist.push(productHandle);
-      allSimilarProducts.fadeOut('slow').fadeIn('fast').html(`${theme.strings.wishlistIconAdded}${theme.strings.wishlistTextAdded}`);
+      allSimilarProducts.fadeOut('slow').fadeIn('fast').html(`${theme.strings.wishlistIconAdded}`);
       allSimilarProducts.attr('data-original-title', theme.strings.wishlistTextAdded);
       $('.tooltip-inner').text(theme.strings.wishlistTextAdded);
     }
@@ -4728,7 +4728,7 @@ theme.wishlist = (function () {
       const iconWishlist = isProductAdded ? theme.strings.wishlistIconAdded : theme.strings.wishlistIcon;
       const textWishlist = isProductAdded ? theme.strings.wishlistTextAdded : theme.strings.wishlistText;
 
-      $(this).html(`${iconWishlist}${textWishlist}`).attr('title', textWishlist);
+      $(this).html(`${iconWishlist}`).attr('title', textWishlist);
     });
   }
 
@@ -4741,7 +4741,7 @@ theme.wishlist = (function () {
     const productHandle = $(this).data('handle');
     const allSimilarProducts = $(`${btnWishlist}[data-handle="${productHandle}"]`);
 
-    allSimilarProducts.html(`${theme.strings.wishlistIcon}${theme.strings.wishlistText}`);
+    allSimilarProducts.html(`${theme.strings.wishlistIcon}`);
     allSimilarProducts.attr('data-original-title', theme.strings.wishlistText);
 
     const productIndex = wishlist.indexOf(productHandle);
