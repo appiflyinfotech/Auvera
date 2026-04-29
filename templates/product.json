@@ -376,7 +376,7 @@
             "title": "Wonderful !",
             "quote": "<h4>“Absolutely loved it. The fit, the quality and the color. This is a slim fit jean like none other and the only one I will buy.”</h4>",
             "rate": 5,
-            "author": "— Susan P.",
+            "author": "Susan P.",
             "verified": true,
             "avatar": "shopify://shop_images/the-4Cs-slot-1-1080x1080px.jpg"
           }
@@ -387,7 +387,7 @@
             "title": "Comment",
             "quote": "Add customer reviews and testimonials to showcase your store’s happy customers.",
             "rate": 5,
-            "author": "Author's name",
+            "author": "Sunny",
             "verified": true,
             "avatar": "shopify://shop_images/happy-woman.jpg"
           }
@@ -398,27 +398,16 @@
             "title": "perfect !",
             "quote": "<h4>“ The most comfortable shoes ever!! I have them in 3 colors. And I am not done. \"</h4>",
             "rate": 5,
-            "author": "—  Jaycie Glove",
+            "author": "Jaycie Glove",
             "verified": true,
             "avatar": "shopify://shop_images/long-haired-woman.jpg"
-          }
-        },
-        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-2": {
-          "type": "quote",
-          "settings": {
-            "title": "Awesome",
-            "quote": "<h4>\" I love Lola! They're one of my favorite brands. Customer service is excellent. I have only returned items once and it was so easy. \" </h4>",
-            "rate": 5,
-            "author": "—  Kai Felix",
-            "verified": true
           }
         }
       },
       "block_order": [
         "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-0",
         "quote_BwPbN4",
-        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-1",
-        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-2"
+        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-1"
       ],
       "custom_css": [
         "/* Testimonials Split – center left content text */.testimonials-split .testimonials-content,.testimonials-split .testimonials-content * {text-align: center;}",
