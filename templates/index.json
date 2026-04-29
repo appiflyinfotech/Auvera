@@ -964,12 +964,7 @@
         "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-1",
         "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-2"
       ],
-      "custom_css": [
-        "/* Testimonials Split – center left content text */.testimonials-split .testimonials-content,.testimonials-split .testimonials-content * {text-align: center;}",
-        " /* Center stars */.testimonials-split .rating,.testimonials-split .stars {justify-content: center;}",
-        " /* Center author name */.testimonials-split .testimonial-author {text-align: center;}",
-        " /* Center slider arrows */.testimonials-split .testimonial-nav {justify-content: center;}"
-      ],
+      "custom_css": [],
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -983,8 +978,8 @@
         "image_size": "landscape",
         "draggable": true,
         "infinite": true,
-        "paddingsection": "20px 0px 04px 0px",
-        "paddingmobile": "20px 0px 04px 0px",
+        "paddingsection": "10px 0px 04px 0px",
+        "paddingmobile": "10px 0px 04px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
