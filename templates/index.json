@@ -932,10 +932,8 @@
             "quote": "The ring is AMAZING. It's an eye catcher for everyone. Extremely well made and we love it",
             "rate": 5,
             "author": "— Joseph M.",
-            "info": "",
-            "avatar": "shopify://shop_images/happy-woman.jpg",
-            "product_item": "facet-1ct-pear-necklace",
-            "product_style": "dark"
+            "verified": true,
+            "avatar": "shopify://shop_images/happy-woman.jpg"
           }
         },
         "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-1": {
@@ -945,10 +943,8 @@
             "quote": "\" Thank you for giving us everything we were looking for to make the absolute perfect ring! \"",
             "rate": 5,
             "author": "— Scott O.",
-            "info": "",
-            "avatar": "shopify://shop_images/long-haired-woman.jpg",
-            "product_item": "earrings-1carat-outlet-bezel-solitaire-studs-white",
-            "product_style": "dark"
+            "verified": true,
+            "avatar": "shopify://shop_images/long-haired-woman.jpg"
           }
         },
         "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-2": {
@@ -958,10 +954,8 @@
             "quote": "Helpful, informative, and affordable, Clean Origin is the place to go for diamond rings.",
             "rate": 5,
             "author": "— Michael C.",
-            "info": "",
-            "avatar": "shopify://shop_images/Hero_engagement_banner_mobile.webp",
-            "product_item": "rings-1-carat-round-brilliant-constellation-yellow-gold-ring-white",
-            "product_style": "dark"
+            "verified": true,
+            "avatar": "shopify://shop_images/Hero_engagement_banner_mobile.webp"
           }
         }
       },
@@ -983,14 +977,11 @@
         "title_top": "",
         "title": "Review's",
         "des": "",
-        "align-heading": "center",
+        "more_love_title": "More Love",
         "color_rate": "#f1f1f1",
         "color_rated": "#14344a",
         "image_size": "landscape",
-        "size_text": "p",
-        "arrows": true,
         "draggable": true,
-        "dots": false,
         "infinite": true,
         "paddingsection": "0px 0px 0px 0px",
         "paddingmobile": "0px 0px 0px 0px",
