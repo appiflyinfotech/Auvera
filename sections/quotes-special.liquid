@@ -34,98 +34,110 @@
   /* Header Styling */
   .reviews-header-custom {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
   .reviews-subtitle {
     color: {{ section.settings.color_rate }};
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
   }
   .reviews-title {
     font-family: var(--font-heading-family), serif;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+    font-weight: 500;
     color: var(--g-color-heading, #111);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
   }
   .reviews-desc {
     color: #555;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
   }
   .reviews-divider {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    margin: 1.5rem 0;
+    gap: 10px;
+    margin: 0.8rem 0;
   }
   .reviews-divider span {
     display: block;
-    width: 40px;
+    width: 25px;
     height: 1px;
     background-color: {{ section.settings.color_rate }};
   }
   .reviews-divider svg {
     fill: {{ section.settings.color_rate }};
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
   }
 
   /* Featured Card Styling */
   .review-card-main {
     background: #ffffff;
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-    margin: 10px 15px;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    margin: 5px 10px;
     text-align: left;
   }
   @media (min-width: 768px) {
     .review-card-main {
-      padding: 2.5rem;
+      padding: 1.5rem;
     }
   }
+  
+  .review-card-subtitle {
+    color: #111111; 
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
   .quote-icon-wrap {
-    width: 44px;
-    height: 44px;
+    width: 30px;
+    height: 30px;
     background-color: #f0f5f8;
     color: #5b879d;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
   }
   .quote-icon-wrap svg {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
   }
   .review-card-main .quote-text {
-    font-size: 1.25rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.5;
     color: #333;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
   }
   .review-author-wrap {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     font-weight: 500;
+    font-size: 0.85rem;
   }
   .verified-badge {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
     color: #00798a;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 500;
   }
   
   .author-right .image-content__image-wrapper {
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     position: relative;
   }
@@ -143,13 +155,13 @@
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 3px;
-    margin-bottom: 1rem;
+    gap: 2px;
+    margin-bottom: 0.6rem;
   }
   .customstyle{{ section.id }} .rating li svg {
     fill: #e0e0e0;
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
   }
   .customstyle{{ section.id }} .rating li.rated svg {
     fill: {{ section.settings.color_rated }};
@@ -160,12 +172,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin: 2rem 0;
+    gap: 12px;
+    margin: 1rem 0;
   }
   .custom-slider-nav button {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background: #e6eff4;
     border: none;
@@ -180,42 +192,43 @@
     background: #d0e1e8;
   }
   .custom-slider-nav .fraction {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 500;
     color: #555;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
 
   /* More Love Section & Small Cards */
   .more-love-title {
     text-align: center;
-    font-family: var(--font-heading-family), serif;
-    font-size: 1.8rem;
-    margin: 3rem 0 2rem;
+    font-family: var(--font-heading-family), sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
   }
   .review-card-small {
     background: #ffffff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
-    margin: 10px;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    margin: 6px;
     text-align: left;
     height: 100%;
   }
   .review-card-small .quote-icon-wrap {
-    width: 36px;
-    height: 36px;
+    width: 26px;
+    height: 26px;
+    margin-bottom: 0.6rem;
+  }
+  .review-card-small .quote-icon-wrap svg { width: 10px; height: 10px; }
+  .review-card-small .quote-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #444;
     margin-bottom: 1rem;
   }
-  .review-card-small .quote-icon-wrap svg { width: 14px; height: 14px; }
-  .review-card-small .quote-text {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #444;
-    margin-bottom: 1.5rem;
-  }
   .small-slider-wrap .slick-dots {
-    bottom: -30px;
+    bottom: -20px;
   }
 {% endstyle %}
 
@@ -257,9 +270,9 @@
               <div class="review-card-main mx-auto">
                 <div class="row align-items-center">
                   <div class="col-12 col-md-6 order-2 order-md-1" data-aos="{{ section.settings.animation }}" data-aos-duration="800">
-                    <div class="pr-md-4 pt-4 pt-md-0">
+                    <div class="pr-md-4 pt-3 pt-md-0">
                       {%- if block.settings.title != blank -%}
-                        <div class="reviews-subtitle">{{ block.settings.title }}</div>
+                        <div class="review-card-subtitle">{{ block.settings.title }}</div>
                       {%- endif -%}
                       
                       {%- if block.settings.rate > 0 -%}
@@ -282,7 +295,7 @@
                         <span>&mdash; {{ block.settings.author }}</span>
                         {%- if block.settings.verified -%}
                           <span class="verified-badge">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                             Verified Buyer
                           </span>
                         {%- endif -%}
@@ -326,11 +339,11 @@
 
         <div class="custom-slider-nav" id="custom-nav-{{ section.id }}">
           <button class="nav-prev">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
           </button>
           <div class="fraction"><span class="current">1</span> / <span class="total">{{ featured_blocks.size }}</span></div>
           <button class="nav-next">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </button>
         </div>
       </div>
@@ -362,7 +375,7 @@
                     </div>
                     
                     {%- if block.settings.title != blank -%}
-                      <div class="reviews-subtitle">{{ block.settings.title }}</div>
+                      <div class="review-card-subtitle">{{ block.settings.title }}</div>
                     {%- endif -%}
                     
                     {%- if block.settings.rate > 0 -%}
@@ -523,13 +536,13 @@
       "type": "text",
       "id": "paddingsection",
       "label": "Padding Section Desktop",
-      "default": "60px 0px"
+      "default": "30px 0px"
     },
     {
       "type": "text",
       "id": "paddingmobile",
       "label": "Padding Section Mobile",
-      "default": "40px 0px"
+      "default": "20px 0px"
     },
     {
       "type": "header",
