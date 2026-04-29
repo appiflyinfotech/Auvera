@@ -685,7 +685,7 @@
         "align-heading": "center",
         "no_gutter": false,
         "gutter_padding": 0,
-        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection": "0px 100px 0px 100px",
         "paddingmobile": "0px 0px 0px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
