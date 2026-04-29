@@ -385,7 +385,7 @@
           "type": "quote",
           "settings": {
             "title": "Comment",
-            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers.",
+            "quote": "<h4>Add customer reviews and testimonials to showcase your store’s happy customers.</h4>",
             "rate": 5,
             "author": "Sunny",
             "verified": true,
