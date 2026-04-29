@@ -34,7 +34,53 @@
         padding: 0rem 0rem 0rem 2rem;
     }
     .product-content #nav-tab-info .nav-tabs .nav-item{
-        margin: 0 4rem -2px 0;
+        margin: 0 1.5rem -2px 0;
+    }
+  }
+
+  /* Tab link base styling */
+  .product-content #nav-tab-info .nav-tabs {
+    border-bottom: 1px solid #e0dbd4;
+    gap: 0;
+    padding-bottom: 0;
+  }
+  .product-content #nav-tab-info .nav-tabs .nav-item.nav-link,
+  .product-content #nav-tab-info .nav-tabs a.nav-item {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    white-space: nowrap;
+  }
+  .product-content #nav-tab-info .nav-tabs a.nav-item:hover {
+    color: #1a1a1a;
+    border-bottom-color: #1a1a1a;
+  }
+  .product-content #nav-tab-info .nav-tabs a.nav-item.active {
+    color: #1a1a1a;
+    font-weight: 600;
+    border-bottom: 2px solid #1a1a1a;
+    background: transparent;
+  }
+
+  /* Tab content spacing */
+  .product-content #nav-tab-info .tab-content {
+    padding-top: 24px;
+  }
+
+  /* Mobile: smaller gap */
+  @media (max-width: 767px) {
+    .product-content #nav-tab-info .nav-tabs .nav-item {
+      margin: 0 1rem -2px 0;
+    }
+    .product-content #nav-tab-info .nav-tabs a.nav-item {
+      font-size: 14px;
     }
   }
 </style>
