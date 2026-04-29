@@ -38,12 +38,24 @@
     }
   }
 
-  /* Tab link base styling */
+  /* Tab link base styling — single line */
   .product-content #nav-tab-info .nav-tabs {
     border-bottom: none !important;
+    box-shadow: none !important;
     gap: 0;
     padding-bottom: 0;
-    box-shadow: 0 1px 0 0 #e0dbd4;
+    position: relative;
+  }
+  /* Draw the single gray baseline via pseudo-element */
+  .product-content #nav-tab-info .nav-tabs::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #d8d3cc;
+    z-index: 0;
   }
   .product-content #nav-tab-info .nav-tabs .nav-item.nav-link,
   .product-content #nav-tab-info .nav-tabs a.nav-item {
