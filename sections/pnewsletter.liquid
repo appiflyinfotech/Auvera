@@ -79,12 +79,26 @@
     background-size: cover;
   }
   
-  /* --- Added Pill Button Style --- */
+  /* --- Added Retro/Neo-Brutalist Pill Button Style --- */
   .popupnew-{{ section.id }} .btn,
   .popupnew-{{ section.id }} button[type="submit"] {
-    border-radius: 50px !important;
-    padding-left: 30px;
-    padding-right: 30px;
+    background-color: #D4B685 !important; /* Tan background color */
+    color: #FFFFFF !important; /* White text */
+    font-weight: 800 !important; /* Extra Bold */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px !important; /* Pill shape */
+    border: 3px solid #1a1a1a !important; /* Thick dark border */
+    box-shadow: -5px 5px 0px 0px #1a1a1a !important; /* Solid bottom-left shadow */
+    padding: 12px 35px;
+    transition: all 0.1s ease-in-out;
+  }
+
+  /* Optional: Press-down effect on hover/active */
+  .popupnew-{{ section.id }} .btn:hover,
+  .popupnew-{{ section.id }} button[type="submit"]:hover {
+    box-shadow: -2px 2px 0px 0px #1a1a1a !important;
+    transform: translate(-3px, 3px);
   }
 
   @media (min-width: 992px){
