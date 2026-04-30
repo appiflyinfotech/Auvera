@@ -183,7 +183,7 @@
           "settings": {
             "title_tab": "Size Guide",
             "icon": "none",
-            "answer_content": "<ol><li>Find a tool to use (string, dental floss, headphone cord, measuring tape if you have it).</li><li>Find the length by wrapping it around your neck and marking it (for pendants, imagine the jewelry lower, for suspended, it should be in line).</li><li>Check the length against a ruler or lay it out flat and measure with a phone app.</li></ol>",
+            "answer_content": "<p>Use a string or measuring tape to check your perfect fit.<br/><br/><a href=\"/pages/size-guide\" target=\"_blank\" title=\"Size Guide\"><strong>View Size Guide</strong></a></p>",
             "page": "size-guide"
           }
         },
