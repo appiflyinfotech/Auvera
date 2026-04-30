@@ -1,4 +1,3 @@
-
 <!-- pnewsletter-1.liquid  -->
 {%- if section.settings.pnewletter_enable -%}
   {%- liquid
@@ -27,15 +26,15 @@
         {%- liquid
           case pnew_style 
             when 'pnew_style-1' 
-              render 'pnew-1' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
+              render 'pnew-1', pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
             when 'pnew_style-2' 
-                render 'pnew-1' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, image_right: image_right, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
+              render 'pnew-1', pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, image_right: image_right, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
             when 'pnew_style-3' 
-                render 'pnew-2' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
+              render 'pnew-2', pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
             when 'pnew_style-4' 
-                render 'pnew-3' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnewletter_bgimage: pnewletter_bgimage, pnew_size_heading: pnew_size_heading, button: button, , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
+              render 'pnew-3', pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnewletter_bgimage: pnewletter_bgimage, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
             else 
-            render 'pnew-1' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
+              render 'pnew-1', pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
           endcase 
         -%}
       </div>
@@ -43,7 +42,8 @@
   </div>
 </div>
 {%- endif -%}
-  {%- style -%}
+
+{%- style -%}
   .modal-content--newsletter{
     background-color:{{ section.settings.pnewletter_background }};
   }
@@ -54,7 +54,7 @@
   .popup-newsletter--title{
     line-height: 1.2;
   }
-  .popup-newsletter--title,.close-newsletter,.close-newsletter:hover{
+  .popup-newsletter--title, .close-newsletter, .close-newsletter:hover{
       color:{{ section.settings.pnewletter_title_cl }};
   }
   .popup-newsletter--description{
@@ -78,6 +78,15 @@
     background-position: center;
     background-size: cover;
   }
+  
+  /* --- Added Pill Button Style --- */
+  .popupnew-{{ section.id }} .btn,
+  .popupnew-{{ section.id }} button[type="submit"] {
+    border-radius: 50px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: 992px){
     .modal-dialog.modal-dialog--newsletter{
       max-width: {{ pnew-width }}px;
@@ -86,32 +95,32 @@
     .popup-newsletter--content{
       min-height: {{ pnew-height }}px;
     }
-  {%- elsif pnew_style == 'pnew_style-3'-%}
-    @media (min-width: 992px){
-      .pnew_style-3 .popup-newsletter--content{
-        min-height: {{ pnew-height }}px;
+    {%- elsif pnew_style == 'pnew_style-3'-%}
+      @media (min-width: 992px){
+        .pnew_style-3 .popup-newsletter--content{
+          min-height: {{ pnew-height }}px;
+        }
       }
-    }
-  {%- elsif pnew_style == 'pnew_style-4'-%}
-    .bg-newsletter{
-      background-image:none;
-    }
-    @media (min-width: 992px){
-      .bg-newsletter-padding{
-        min-height: {{ pnew-height }}px;
+    {%- elsif pnew_style == 'pnew_style-4'-%}
+      .bg-newsletter{
+        background-image:none;
       }
-      .pnew_style-4 .popup-newsletter--content{
-        min-height:auto;
+      @media (min-width: 992px){
+        .bg-newsletter-padding{
+          min-height: {{ pnew-height }}px;
+        }
+        .pnew_style-4 .popup-newsletter--content{
+          min-height:auto;
+        }
       }
-    }
-  {%- endif -%}
+    {%- endif -%}
   }
   @media (max-width:749px){
     .popup-btnwrap, .popup-btnwrap .btn{
       width:100%;
     }
   }
-  {%- endstyle -%}
+{%- endstyle -%}
 
 {% schema %}
 {
