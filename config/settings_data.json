@@ -439,8 +439,8 @@
           "1597367617767"
         ],
         "settings": {
-          "enable": false,
-          "duration": 8,
+          "enable": true,
+          "duration": 10,
           "text": "Someone recently bought",
           "verify": "Verified"
         }
