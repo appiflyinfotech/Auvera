@@ -393,23 +393,15 @@
           "1560580908623": {
             "type": "product",
             "settings": {
-              "product": "earrings-1carat-outlet-bezel-solitaire-studs-white",
+              "product": "marquise-cut-lab-grown-diamond-engagement-ring",
               "local": "in Blumenau, Brazil",
               "time": "About 50 minutes ago"
-            }
-          },
-          "1560581969631": {
-            "type": "product",
-            "settings": {
-              "product": "necklaces-0-5carat-outlet-bezel-solitaire-pendant-white",
-              "local": "in Bauru, Brazil",
-              "time": "about 35 minutes ago"
             }
           },
           "1560582020821": {
             "type": "product",
             "settings": {
-              "product": "facet-1ct-pear-necklace",
+              "product": "radiant-cut-lab-grown-diamond-engagement-ring",
               "local": "in Blackburn, UK",
               "time": "about 21 minutes ago"
             }
@@ -417,15 +409,7 @@
           "1590318690573": {
             "type": "product",
             "settings": {
-              "product": "earrings-2-carat-finest-solitaire-studs-blue",
-              "local": "in Blackburn, UK",
-              "time": "about 21 minutes ago"
-            }
-          },
-          "1597367617767": {
-            "type": "product",
-            "settings": {
-              "product": "loose-stone-finest-round-brilliant-1-75-carat-white",
+              "product": "marquise-cut-lab-grown-diamond-engagement-ring-copy-1",
               "local": "in Blackburn, UK",
               "time": "about 21 minutes ago"
             }
@@ -433,10 +417,8 @@
         },
         "block_order": [
           "1560580908623",
-          "1560581969631",
           "1560582020821",
-          "1590318690573",
-          "1597367617767"
+          "1590318690573"
         ],
         "settings": {
           "enable": true,
