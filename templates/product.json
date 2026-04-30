@@ -183,7 +183,7 @@
           "settings": {
             "title_tab": "Size Guide",
             "icon": "none",
-            "answer_content": "<p>Use a string or measuring tape to check your perfect fit.<br/><br/><a href=\"/pages/size-guide\" target=\"_blank\" title=\"Size Guide\"><strong>View Size Guide</strong></a></p>",
+            "answer_content": "<p>Use a string or measuring tape to check your perfect fit.<br/><br/>👉 <a href=\"/pages/size-guide\" target=\"_blank\" title=\"Size Guide\"><strong>View Size Guide</strong></a></p>",
             "page": "size-guide"
           }
         },
