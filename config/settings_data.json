@@ -422,7 +422,7 @@
         ],
         "settings": {
           "enable": true,
-          "duration": 12,
+          "duration": 15,
           "text": "Someone recently bought",
           "verify": "Verified"
         }
