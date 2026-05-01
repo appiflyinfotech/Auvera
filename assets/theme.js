@@ -4669,7 +4669,23 @@ theme.wishlist = (function () {
     const isAdded = wishlist.includes(productHandle);
 
     if (isAdded) {
-      window.location.href = wishlistPageUrl;
+      const productIndex = wishlist.indexOf(productHandle);
+      if (productIndex !== -1) {
+        wishlist.splice(productIndex, 1);
+      }
+      allSimilarProducts.fadeOut('slow').fadeIn('fast').html(`${theme.strings.wishlistIcon}`);
+      allSimilarProducts.attr('data-original-title', theme.strings.wishlistText);
+      $('.tooltip-inner').text(theme.strings.wishlistText);
+      
+      const pageWishlistItem = $(`.js-remove-wishlist[data-handle="${productHandle}"]`).closest('.js-wishlist-item');
+      if (pageWishlistItem.length) {
+        pageWishlistItem.fadeOut(() => {
+          pageWishlistItem.remove();
+          if (wishlist.length === 0) {
+            showNoResult();
+          }
+        });
+      }
     } else {
       wishlist.push(productHandle);
       allSimilarProducts.fadeOut('slow').fadeIn('fast').html(`${theme.strings.wishlistIconAdded}`);
