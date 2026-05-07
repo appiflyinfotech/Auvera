@@ -53,7 +53,7 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "settings": {
-        "enable": true,
+        "enable": false,
         "animation": "fade",
         "setwidth": "container-fluid",
         "background": "#b51515",
