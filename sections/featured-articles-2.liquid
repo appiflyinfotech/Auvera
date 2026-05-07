@@ -1,208 +1,201 @@
-<!-- featured-articles-2.liquid -->
-{%-liquid
-  assign buttonall = section.settings.buttonall
-  assign buttonall_link = section.settings.buttonall_link
+{%- liquid
+
+  assign image_size = section.settings.image_size
+  assign enable_btn_blog = section.settings.enable_btn_blog
+  assign enable_btn_line = section.settings.enable_btn_line
+  assign enable_date = section.settings.enable_date
+  assign enable_tag = section.settings.enable_tag
+  assign enable_comment = section.settings.enable_comment
+  assign enable_short = section.settings.enable_short
+  assign text_color = section.settings.title_color
   assign style_btn = section.settings.style_btn
-  -%}
+  
+-%}
 <style>
-    .blog-section{{ section.id }}{
-      position: relative;
-      z-index: {{ section.settings.zindex }};
-    }
-    .blog-section{{ section.id }}::before{
-      position: absolute;
-      top:0;
-      right:0;
-      left:0;
-      content: "";
-      height: {{ section.settings.rangebg }}%;
-      background-color: {{ section.settings.bgbefore }};
-    }
-    .blog-first .blog__item{
-        position: relative;
-    }
-    .blog-first .blog__content{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right:0;
-    }
-    .mask{
-        background: linear-gradient(transparent,rgba(0,0,0,.8));
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        position: absolute;
-    }
-    .blog-list-right .blog__item{
-        padding-bottom: var(--g-gutter);
-    }
-    .article__photo-wrapper.portrait{
-      padding-top: 120% !important;
-      overflow: hidden;
-    }
-    .article__photo-wrapper.square{
+  .customstyle{{ section.id }}{
+    {% if text_color != 'transparent' and text_color != 'rgba(0,0,0,0)' %}
+      --g-font-color-subtop: {{ text_color }};
+      --g-color-heading :  {{ text_color }};
+      --color-body-text : {{ text_color }};
+      --color-body-text-rgb: {{ text_color.red }}, {{ text_color.green }},  {{ text_color.blue }} ;
+      --g-color-heading-rgb: {{ text_color.red }}, {{ text_color.green }},  {{ text_color.blue }} ;
+    {% endif %}
+  }
+  .blog-section{{ section.id }}{
+    position: relative;
+    z-index: {{ section.settings.zindex }};
+  }
+  
+  /* Image sizing */
+  .article__photo-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .article__photo-wrapper.auto,
+  .article__photo-wrapper { padding-top: 75% !important; overflow: hidden; }
+  .article__photo-wrapper.portrait{ padding-top: 120% !important; overflow: hidden; }
+  .article__photo-wrapper.square{ padding-top: 100% !important; overflow: hidden; }
+  .article__photo-wrapper.landscape{ padding-top: 75% !important; overflow: hidden; }
+  .article__photo-wrapper.wide{ padding-top: 56% !important; overflow: hidden; }
+  
+  .article__photo-wrapper.portrait img,
+  .article__photo-wrapper.square img, 
+  .article__photo-wrapper.landscape img,
+  .article__photo-wrapper.wide img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .bloglist-wrapper .blog__item{
+    margin-bottom: 0 !important;
+    padding-bottom: 0px !important;
+  }
+
+  @media(max-width:749px){
+    .blog__item--3 .article__photo-wrapper{
       padding-top: 100% !important;
-      overflow: hidden;
     }
-    .article__photo-wrapper.landscape{
-      padding-top: 75% !important;
-      overflow: hidden;
-    }
-    .article__photo-wrapper.wide{
-      padding-top: 56% !important;
-      overflow: hidden;
-    }
-    .article__photo-wrapper.portrait img,.article__photo-wrapper.square img, .article__photo-wrapper.landscape img,.article__photo-wrapper.wide img{
-      height: 100%;
-      object-fit: cover;
-    }
-    .blog-first .article__photo-wrapper.landscape{
-      padding-top: calc(75% + var(--g-hgutter)) !important;
-    }
-    .blog-first .article__photo-wrapper.portrait{
-      padding-top: calc(120% + var(--g-hgutter)) !important;
-    }
-    .blog-first .article__photo-wrapper.wide{
-      padding-top: calc(56% + var(--g-hgutter)) !important;
-    }
-  </style>
-  {%-liquid
-    assign image_size = section.settings.image_size  
-  -%}
-  <div class="customstyle{{ section.id }} blog-section{{section.id}}" data-aos="{{ section.settings.animation }}">
-    {%- render 'style-section' -%}
-  <div class="{{ section.settings.setwidth }}">
-    <div class="section-block">
-      {%- render 'section-heading' -%}
-      <div class="bloglist-wrapper dots-negative " data-aos="{{ section.settings.animation }}">
-        <div class="bloglist-slider row {% if section.settings.reverse %} flex-lg-row-reverse {% endif %}" >
-          {%- assign blog = blogs[section.settings.blog] -%}
-          {%- assign limit = 3 -%}
-          {%- if blog != blank -%}
-          <div class="col-lg-6">
-          {%- for article in blog.articles limit: 1 -%}
-            <div class="bloglist-item blog-first">
-                <div class="blog__item pb-0">
-                    {%- if article.image -%}
-                        <div class="content-block__image mb-3">
-                            <a href="{{ article.url }}">
-                                <div class="article__photo-container">
-                                <div class="article__photo-wrapper {{ image_size }}" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;">
-                                    {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-                                    <img
-                                      srcset="
-                                        {%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
-                                        {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
-                                        {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
-                                        {%- if article.image.src.width >= 720 -%}{{ article.image.src | image_url: width: 720 }} 720w,{%- endif -%}
-                                        {%- if article.image.src.width >= 1000 -%}{{ article.image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
-                                        {%- if article.image.src.width >= 1500 -%}{{ article.image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
-                                        {{ article.image.src | image_url }} {{ article.image.src.width }}w
-                                      "
-                                      src="{{ article.image.src | image_url: width: 533 }}"
-                                      sizes="(min-width: {{ settings.container }}px) {{ settings.container | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                                      alt="{{ article.image.src.alt | escape }}"
-                                      class="lazyload scale-in"
-                                      loading="lazy"
-                                      width="{{ article.image.width }}"
-                                      height="{{ article.image.height }}"
-                                    >
-                                    {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-                                </div>
-                                </div>
-                            </a>
-                            <a href="{{ article.url }}" class="mask"></a>
-                        </div>
-                        {%- endif -%}
-                        <div class="blog__content p-lg-4 p-4">
-                          <div class="d-flex align-items-center">
-                            <p class="blog__meta mb-3 font-family-2 text-white">
-                            {{ article.published_at | time_tag: format: 'month_day_year' }}
-                            </p>
-                            <div class="blog_comment align-items-center d-flex mb-3 ml-4 text-white">
-                              {% render 'icon-comment' %}
-                              {{ 'blogs.comments.with_count' | t: count: article.comments_count }}
-                            </div>
-                          </div>
-                        <h4 class="blog__title-link text-white"><a class="text-white" href="{{ article.url }}">{{ article.title }}</a></h4>
-                    </div>
-                </div>
-            </div>
-          {%- endfor -%}
+  }
+
+  /* --- NEW ALIGNMENT & TEXT WRAP FIXES --- */
+
+  /* 1. Force Slick Carousel to make all slides equal height */
+  .bloglist-slider .slick-track {
+    display: flex !important;
+  }
+  .bloglist-slider .slick-slide {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column;
+  }
+  .bloglist-slider .slick-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+
+  /* 2. Format the individual blog items */
+  .bloglist-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+
+  .bloglist-item .blog__item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    max-width: 100%; 
+    overflow: hidden; 
+  }
+
+  .bloglist-item .content-block__image {
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  /* 3. Turn the text content into a flex column and push the button down */
+  .bloglist-item .blog__content {
+    text-align: left;
+    padding: 20px 10px;
+    flex-grow: 1;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bloglist-item .blog__content > *:last-child {
+    margin-top: auto !important;
+    align-self: flex-start; 
+  }
+
+  /* 4. Stop text from bleeding into the next slide */
+  .bloglist-item .blog__content p,
+  .bloglist-item .blog__content div,
+  .bloglist-item .blog__content span {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100%;
+  }
+
+  .bloglist-item .blog__title-link {
+    white-space: normal !important;
+    word-break: break-word !important;
+    display: block;
+  }
+</style>
+
+<div class="customstyle{{ section.id }} blog-section{{section.id}}" data-aos="{{ section.settings.animation }}">
+  {%- render 'style-section' -%}
+<div class="{{ section.settings.setwidth }}">
+  <div class="section-block">
+    {%- render 'section-heading' -%}
+    <div class="bloglist-wrapper dots-negative " data-aos="{{ section.settings.animation }}">
+      <div class="bloglist-slider row" id="Bloglist-{{ section.id }}"
+           data-rows="{{ section.settings.rows }}"
+           data-slidesToShow="{{ section.settings.show }}"
+           data-arrows="{{ section.settings.arrows }}"
+           data-dots="{{ section.settings.dots }}" 
+           data-draggable="{{ section.settings.draggable }}" 
+           data-infinite="{{ section.settings.infinite }}" 
+           data-section-id="{{ section.id }}" 
+           data-section-type="slickCarousels">
+        {%- assign blog = blogs[section.settings.blog] -%}
+        {%- assign limit = section.settings.limit -%}
+        {%- if blog != blank -%}
+        {%- for article in blog.articles limit: limit -%}
+        <div class="bloglist-item col">
+          <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" style="height: 100%; display: flex;">
+            {%- liquid
+              case section.settings.item_style
+              when 'blog-1'
+                render 'blog-grid-1', article : article, image_size : image_size, enable_btn_blog : enable_btn_blog, enable_btn_line: enable_btn_line, enable_date : enable_date, enable_tag : enable_tag, enable_comment: enable_comment, enable_short : enable_short, style_btn: style_btn, text_color: text_color
+              when 'blog-3'
+                render 'blog-grid-3', article : article, image_size : image_size, enable_btn_blog : enable_btn_blog, enable_btn_line: enable_btn_line, enable_date : enable_date, enable_tag : enable_tag, enable_comment: enable_comment, enable_short : enable_short
+              when 'blog-5'
+                render 'blog-grid-5', article : article, image_size : image_size, enable_btn_blog : enable_btn_blog, enable_btn_line: enable_btn_line, enable_date : enable_date, enable_tag : enable_tag, enable_comment: enable_comment, enable_short : enable_short, style_btn: style_btn
+              when 'blog-6'
+                render 'blog-grid-6', article : article, image_size : image_size, enable_btn_blog : enable_btn_blog, enable_btn_line: enable_btn_line, enable_date : enable_date, enable_tag : enable_tag, enable_comment: enable_comment, enable_short : enable_short, enable_short, style_btn: style_btn
+              when 'blog-7'
+                render 'blog-grid-7', article : article, image_size : image_size, enable_btn_blog : enable_btn_blog, enable_btn_line: enable_btn_line, enable_date : enable_date, enable_tag : enable_tag, enable_comment: enable_comment, enable_short : enable_short, enable_short, style_btn: style_btn
+              else
+                render 'blog-grid-blank'
+              endcase
+            -%}
           </div>
-          <div class="col-lg-6 blog-list-right">
-          {%- for article in blog.articles limit: limit offset: 1 -%}
-            <div class="bloglist-item ">
-                <div class="blog__item row align-items-center">
-                    {%- if article.image -%}
-                        <div class="content-block__image col-4">
-                            <a href="{{ article.url }}">
-                                <div class="article__photo-container mb-0">
-                                <div class="article__photo-wrapper {{ image_size }}" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;">
-                                  <img
-                                    srcset="
-                                      {%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
-                                      {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
-                                      {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
-                                      {%- if article.image.src.width >= 720 -%}{{ article.image.src | image_url: width: 720 }} 720w,{%- endif -%}
-                                      {%- if article.image.src.width >= 1000 -%}{{ article.image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
-                                      {%- if article.image.src.width >= 1500 -%}{{ article.image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
-                                      {{ article.image.src | image_url }} {{ article.image.src.width }}w
-                                    "
-                                    src="{{ article.image.src | image_url: width: 533 }}"
-                                    sizes="(min-width: {{ settings.container }}px) {{ settings.container | minus: 100 | divided_by: 3 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                                    alt="{{ article.image.src.alt | escape }}"
-                                    class="lazyload scale-in"
-                                    loading="lazy"
-                                    width="{{ article.image.width }}"
-                                    height="{{ article.image.height }}"
-                                  >
-                                </div>
-                                </div>
-                            </a>
-                        </div>
-                        {%- endif -%}
-                        <div class="blog__content col">
-                          <div class="d-flex align-items-center">
-                            <p class="blog__meta mb-2 font-family-2 txt-body-70">
-                            {{ article.published_at | time_tag: format: 'month_day_year' }}
-                            </p>
-                            <div class="blog_comment align-items-center d-flex mb-2 ml-4 txt-body-70">
-                              {% render 'icon-comment' %}
-                              {{ 'blogs.comments.with_count' | t: count: article.comments_count }}
-                            </div>
-                          </div>
-                        <h5 class="blog__title-link"><a href="{{ article.url }}">{{ article.title }}</a></h5>
-                    </div>
-                </div>
-            </div>
-          {%- endfor -%}
         </div>
-          {%- else -%}
-          {%- for i in (1..limit) -%}
-          <div class="bloglist-item col">
-            {%- render 'blog-grid-blank' -%}
-          </div>
-          {%- endfor -%}
-          {%- endif -%}
+        {%- endfor -%}
+        {%- else -%}
+        {%- for i in (1..limit) -%}
+        <div class="bloglist-item col">
+          <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" style="height: 100%; display: flex;">
+          {%- render 'blog-grid-blank' -%}
         </div>
+        </div>
+        {%- endfor -%}
+        {%- endif -%}
       </div>
-      {%- if buttonall != blank -%}
-        <div class="pt-3 text-center">
-          <a href="{{ buttonall_link }}" class="btn {{ style_btn }}">
-            {{ buttonall }}
-          </a>
-        </div>
-      {%- endif -%}
     </div>
   </div>
-  </div>
-  
-  {% schema %}
+</div>
+</div>
+
+{% schema %}
 {
-  "name": "Blog posts special",
+  "name": "Blog posts",
   "class": "index-section",
   "settings": [
     {
@@ -345,32 +338,16 @@
       ]
     },
     {
-      "type": "text",
-      "id": "zindex",
-      "label": "Z Index Section",
-      "default": "0"
-    },
-    {
       "type": "color",
       "id": "bgsection",
       "label": "Background Section",
       "default": "#ffffff"
     },
     {
-      "type": "range",
-      "id": "rangebg",
-      "label": "Height Background sub",
-      "max": 100,
-      "min": 0,
-      "step": 10,
-      "unit": " %",
-      "default": 0
-    },
-    {
       "type": "color",
-      "id": "bgbefore",
-      "label": "Background sub ",
-      "default": "#E3C9B8"
+      "id": "title_color",
+      "label": "Text Color",
+      "default": "transparent"
     },
     {
       "type": "text",
@@ -382,7 +359,7 @@
       "type": "text",
       "id": "title",
       "label": "Title",
-      "default": "Blog posts Special"
+      "default": "Blog posts"
     },
     {
       "type": "textarea",
@@ -415,6 +392,100 @@
       "type": "blog"
     },
     {
+      "type": "header",
+      "content": "Style Item "
+    },
+    {
+      "type": "select",
+      "id": "item_style",
+      "label": "Style Item ",
+      "default": "blog-1",
+      "options": [
+        {
+          "value": "blog-1",
+          "label": "Item Basic"
+        },
+        {
+          "value": "blog-3",
+          "label": "Item Overlay"
+        },
+        {
+          "value": "blog-5",
+          "label": "Item Box"
+        },
+        {
+          "value": "blog-6",
+          "label": "Item Classic"
+        },
+        {
+          "value": "blog-7",
+          "label": "Item Classic Box"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_btn_blog",
+      "label": "Enable Button",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "style_btn",
+      "label": "Style Button",
+      "default": "btn-theme btn-sm",
+      "options": [
+        {
+          "value": "btn-theme btn-sm",
+          "label": "Button Box"
+        },
+        {
+          "value": "btn-theme btn-white btn-sm",
+          "label": "Button Box White"
+        },
+        {
+          "value": "btn-underline",
+          "label": "Button Line"
+        },
+        {
+          "value": "btn-underline btn-underline-white",
+          "label": "Button Line White"
+        },
+        {
+          "value": "btn-outline",
+          "label": "Button Outline"
+        },
+        {
+          "value": "btn-outline btn-outline-white",
+          "label": "Button Outline White"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_date",
+      "label": "Enable Date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_tag",
+      "label": "Enable Tag",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_comment",
+      "label": "Enable comment",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_short",
+      "label": "Enable Excerpt",
+      "default": true
+    },
+    {
       "type": "select",
       "id": "image_size",
       "options": [
@@ -443,56 +514,76 @@
       "label": "Image ratio"
     },
     {
-      "type": "checkbox",
-      "id": "reverse",
-      "label": "Reverse",
-      "default": false
-    },
-    {
       "type": "header",
-      "content": "Section Button "
+      "content": "Config Carousel "
     },
     {
-      "type": "text",
-      "id": "buttonall",
-      "label": "Button Bottom" 
+      "type": "range",
+      "id": "gutter_padding",
+      "label": "Spacing Column",
+      "max": 50,
+      "min": 0,
+      "step": 1,
+      "unit": " px",
+      "default": 30
     },
     {
-      "type": "url",
-      "id": "buttonall_link",
-      "label": "Button Link"
+      "type": "checkbox",
+      "id": "arrows",
+      "label": "Arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "draggable",
+      "label": "Draggable",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "dots",
+      "label": "Dots",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "infinite",
+      "label": "Infinite",
+      "default": true
     },
     {
       "type": "select",
-      "id": "style_btn",
-      "label": "Style Button",
-      "default": "btn-theme",
+      "id": "rows",
+      "label": "Rows",
+      "default": "1",
       "options": [
         {
-          "value": "btn-theme",
-          "label": "Button Box"
+          "value": "1",
+          "label": "1 row"
         },
         {
-          "value": "btn-theme btn-white",
-          "label": "Button Box White"
-        },
-        {
-          "value": "btn-underline",
-          "label": "Button Line"
-        },
-        {
-          "value": "btn-underline btn-underline-white",
-          "label": "Button Line White"
-        },
-        {
-          "value": "btn-outline",
-          "label": "Button Outline"
-        },
-        {
-          "value": "btn-outline btn-outline-white",
-          "label": "Button Outline White"
+          "value": "2",
+          "label": "2 rows"
         }
       ]
+    },
+    {
+      "type": "range",
+      "id": "limit",
+      "min": 2,
+      "max": 30,
+      "step": 1,
+      "label": "Limit items",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "show",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Display items",
+      "default": 3
     },
     {
       "type": "header",
@@ -533,7 +624,7 @@
   ],
   "presets": [
     {
-      "name": "Blog posts special",
+      "name": "Blog posts",
       "category": "Text"
     }
   ]
