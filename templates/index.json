@@ -215,7 +215,7 @@
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
             "title": "7 DAY RETURNS",
-            "description": "Enjoy easy hassle-free 7-day returns for eligible items. Customized orders are non-returnable.",
+            "description": "Enjoy easy hassle-free 7-day returns for eligible items. Customized orders are strictly non-returnable.",
             "type_icon": "svg",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 64 64\"><path d=\"M32 54.52L10 41.95v-19.9L32 9.48l22 12.57v19.9L32 54.52z\"></path><path d=\"M32 54.52v-19.9l22-12.57M32 34.62L10 22.05M41.7 15.02L21 28.33v8.38\"></path></svg>",
             "link_block": "",
