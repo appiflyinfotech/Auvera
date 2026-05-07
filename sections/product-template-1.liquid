@@ -464,23 +464,37 @@
                     {{ form | payment_button }}
                     {% if current_variant.available == false %}<style>.shopify-payment-button{display:none}</style>{% endif %}
                     </div> {% endcomment %}
-                    {%- if settings.enable_term -%}
-                    <buy-now class="checkbox w-100 buy-now" name="checkout">
-                      <div class="d-flex w-100 flex-column">
-                        <div class="d-flex pb-3">
-                          <div class="checkbox">
-                            <input type="checkbox" id="agree_buynow" class="checkbox__input" />
-                            <label class="checkbox__label" for="agree_buynow">
-                              {% if settings.agree_text != blank %} {{ settings.agree_text }} {% endif %} <a href="{{ settings.terms_link }}" class="link">{{ settings.terms_and_condition }}</a>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="product-form__buynow w-100 disabled">
-                          {{ form | payment_button }}
-                          {% if current_variant.available == false %}<style>.shopify-payment-button{display:none}</style>{% endif %}
-                          </div>
-                      </div>
-                    </buy-now>
+                  {%- if settings.enable_term -%}
+  <buy-now class="checkbox w-100 buy-now" name="checkout">
+    <div class="d-flex w-100 flex-column">
+      <div class="d-flex pb-3">
+        <div class="checkbox">
+          <input type="checkbox" id="agree_buynow" class="checkbox__input" />
+          <label class="checkbox__label" for="agree_buynow">
+            {% if settings.agree_text != blank %}
+              {{ settings.agree_text }}
+            {% endif %}
+            
+            <a href="https://auvera-craft.myshopify.com/pages/terms-conditions" class="link">
+              {{ settings.terms_and_condition }}
+            </a>
+          </label>
+        </div>
+      </div>
+
+      <div class="product-form__buynow w-100 disabled">
+        {{ form | payment_button }}
+
+        {% if current_variant.available == false %}
+          <style>
+            .shopify-payment-button {
+              display: none;
+            }
+          </style>
+        {% endif %}
+      </div>
+    </div>
+  </buy-now>
                     {%- else -%}
                     <div class="product-form__buynow w-100 ">
                       {{ form | payment_button }}
