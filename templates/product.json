@@ -124,6 +124,7 @@
         },
         "8d4704f6-d81d-4390-9ec5-af58698bef51": {
           "type": "salepoint",
+          "disabled": true,
           "settings": {
             "icon": "package",
             "free_word": "Free Shipping & Exchanges"
@@ -131,6 +132,7 @@
         },
         "b7034bf2-48fd-492f-a089-3169873730db": {
           "type": "salepoint",
+          "disabled": true,
           "settings": {
             "icon": "lock",
             "free_word": "Flexible and secure payment, pay on delivery"
@@ -138,6 +140,7 @@
         },
         "13c388e5-8dd3-4462-9284-ec3f2c9aabc6": {
           "type": "salepoint",
+          "disabled": true,
           "settings": {
             "icon": "shield",
             "free_word": "2 Year Warranty"
