@@ -110,15 +110,14 @@
         },
         "73a647c7-afc5-4d87-aaea-1438dd5ecb92": {
           "type": "icon_with_text",
-          "disabled": true,
           "settings": {
             "block_style": "ver",
             "icon_1": "truck",
-            "icon_text_1": "Free shipping",
+            "icon_text_1": "Free US shipping $500+",
             "icon_2": "lock",
             "icon_text_2": "Secure payment",
-            "icon_3": "shield",
-            "icon_text_3": "2 Year Warranty",
+            "icon_3": "checkmark",
+            "icon_text_3": "It should show fine jewelery without markups",
             "icon_4": "none",
             "icon_text_4": ""
           }
