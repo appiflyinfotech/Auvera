@@ -213,7 +213,7 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "15 DAY RETURNS",
+            "title": "7 DAY RETURNS",
             "description": "\"Customized order won’t be returned\n\" return policy if you aren’t happy",
             "type_icon": "svg",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 64 64\"><path d=\"M32 54.52L10 41.95v-19.9L32 9.48l22 12.57v19.9L32 54.52z\"></path><path d=\"M32 54.52v-19.9l22-12.57M32 34.62L10 22.05M41.7 15.02L21 28.33v8.38\"></path></svg>",
@@ -806,7 +806,7 @@
           "type": "button",
           "settings": {
             "button": "LEARN MORE",
-            "link": "#",
+            "link": "https://cibjo.org/wp-content/uploads/2024/11/CIBJO-Diamond-Blue-Book-2024-1.pdf",
             "style_btn": "btn-pill-shadow"
           }
         }
