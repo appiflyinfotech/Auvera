@@ -256,7 +256,7 @@
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
             "title": "FREE SHIPPING",
-            "description": "Enjoy fully insured free worldwide shipping with safe and secure delivery within 3–4 weeks.",
+            "description": "Enjoy fully insured worldwide shipping with safe and secure delivery within 3–4 weeks.",
             "type_icon": "svg",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 64 64\"><path d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94M45.42 43.22h-5.4V30.4h17.1v12.82h-4.23M57.12 30.4l-6.41-8.56H40.02\"></path><circle cx=\"20.24\" cy=\"43.76\" r=\"3.74\"></circle><path d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"></path></svg>",
             "link_block": "",
