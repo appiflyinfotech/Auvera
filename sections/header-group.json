@@ -70,7 +70,7 @@
         "buttonall_topbar": "Shop Now",
         "buttonall_link_topbar": "shopify://collections/all",
         "enable_block_link": true,
-        "topbar_phone": "+91 99099 93274",
+        "topbar_phone": "+91 80000 38966",
         "topbar_email": "",
         "topbar_store": "Store",
         "topbar_store_link": "",
@@ -78,7 +78,7 @@
         "topbar_page_appointment": "https://calendly.com/appiflyinfotech/30min",
         "enable_countdown": true,
         "text_countdown": "Ends in",
-        "data_countdown": "2026-05-11T00:00:00"
+        "data_countdown": "2026-08-11T00:00:00"
       }
     },
     "header": {
