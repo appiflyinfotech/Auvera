@@ -313,7 +313,7 @@
       "settings": {
         "logo": "shopify://shop_images/Screenshot_2026-04-06_at_1.12.48_PM-Photoroom.png",
         "logo_max_width": 165,
-        "enable_transparent": false,
+        "enable_transparent": true,
         "hover_transparent": false,
         "enable_white": false,
         "setwidth": "container-fluid",
