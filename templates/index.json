@@ -215,7 +215,7 @@
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
             "title": "7 DAY RETURNS",
-            "description": "\"Customized order won’t be returned\n\" return policy if you aren’t happy",
+            "description": "Enjoy easy 7-day returns for eligible items. Customized orders are non-returnable.",
             "type_icon": "svg",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 64 64\"><path d=\"M32 54.52L10 41.95v-19.9L32 9.48l22 12.57v19.9L32 54.52z\"></path><path d=\"M32 54.52v-19.9l22-12.57M32 34.62L10 22.05M41.7 15.02L21 28.33v8.38\"></path></svg>",
             "link_block": "",
@@ -228,7 +228,7 @@
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
             "title": "IGI CERTIFIED",
-            "description": "Our lab-grown diamonds are IGI certified for authenticity, quality, and brilliance.",
+            "description": "Our lab-grown diamonds are IGI certified for authenticity, brilliance, and quality.",
             "type_icon": "img",
             "icon": "",
             "image_icon": "shopify://shop_images/1a22e4a3d74a59789a5ef535535e4d16-Photoroom.png",
@@ -242,7 +242,7 @@
           "settings": {
             "bgblock": "#ffffff",
             "title": "ETHICAL JEWELRY",
-            "description": "Our jewelry features high-quality, lab-grown diamonds—ethically created, sustainable, and conflict-free.",
+            "description": "Crafted with sustainable lab-grown diamonds for a conflict-free and ethical luxury experience.",
             "type_icon": "img",
             "icon": "",
             "image_icon": "shopify://shop_images/icons8-diamond-100.png",
@@ -256,7 +256,7 @@
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
             "title": "FREE SHIPPING",
-            "description": "Enjoy free, fully insured shipping with safe delivery in approximately 3–4 weeks.",
+            "description": "Enjoy fully insured free shipping with safe and secure delivery within 3–4 weeks.",
             "type_icon": "svg",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 64 64\"><path d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94M45.42 43.22h-5.4V30.4h17.1v12.82h-4.23M57.12 30.4l-6.41-8.56H40.02\"></path><circle cx=\"20.24\" cy=\"43.76\" r=\"3.74\"></circle><path d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"></path></svg>",
             "link_block": "",
@@ -269,7 +269,7 @@
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
             "title": "LIFETIME WARRANTY",
-            "description": "Designed to last a lifetime—our jewelry comes with a lifetime warranty for your peace of mind.",
+            "description": "Every piece is designed to last and includes a lifetime warranty for peace of mind.",
             "type_icon": "img",
             "icon": "",
             "image_icon": "shopify://shop_images/warranty-card.png",
