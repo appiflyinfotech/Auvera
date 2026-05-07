@@ -172,7 +172,7 @@
         "title": "Got Any Questions?",
         "des": "Use the form below to get in touch with the sales team",
         "align-heading": "center",
-        "answer_content": "<p>This site is protected by reCAPTCHA and the Google <a href=\"https://policies.google.com/privacy\">Privacy Policy</a> and <a href=\"https://policies.google.com/terms\">Terms of Service</a> apply.</p>",
+        "answer_content": "",
         "paddingsection": "80px 0px 80px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
