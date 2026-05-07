@@ -29,6 +29,7 @@
         "template--21125500633368__42c9748e-ce08-4187-92e7-c4e3c162c249-item-1",
         "867ea529-0999-4c33-b6fc-903cd11ddf0a"
       ],
+      "disabled": true,
       "custom_css": [
         ".textscroll-item {letter-spacing: 0.15rem;}"
       ],
