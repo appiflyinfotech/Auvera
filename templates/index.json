@@ -1001,7 +1001,7 @@
         "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-2"
       ],
       "custom_css": [
-        ".reviews-title {font-family: \"Cormorant Garamond\", serif; font-size: 2.1rem; font-weight: 600; letter-spacing: 0.8px; color: #111;}"
+        ".reviews-title {font-family: \"Cormorant Garamond\", serif; font-size: 2.1rem; font-weight: 200; letter-spacing: 0.2px; color: #111;}"
       ],
       "settings": {
         "animation": "fade-up",
