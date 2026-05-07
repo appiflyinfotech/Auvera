@@ -118,8 +118,8 @@
             "icon_text_2": "Secure payment",
             "icon_3": "checkmark",
             "icon_text_3": "Fine Jewelery Without Markups",
-            "icon_4": "none",
-            "icon_text_4": ""
+            "icon_4": "shield",
+            "icon_text_4": "Lifetime Warranty"
           }
         },
         "8d4704f6-d81d-4390-9ec5-af58698bef51": {
@@ -443,29 +443,53 @@
         "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0": {
           "type": "faq",
           "settings": {
-            "faq_title": "Is the shipping free?",
-            "faq_des": "<p>Yes. Worldwide shipping is already included in the price. We use DHL express with 3 days delivery time.</p>"
+            "faq_title": "Materials",
+            "faq_des": "<p>At our fine jewelry house, every piece is expertly crafted in solid 14K Yellow, Rose, or White Gold, with 18K Gold available upon request. We use only natural diamonds and genuine gemstones to create timeless jewelry designed to be cherished for years to come.</p><h3></h3>"
+          }
+        },
+        "faq_UPAM8q": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Product Lead Time",
+            "faq_des": "<p>Most of our jewelry pieces are handcrafted to order. Estimated production timelines are listed on each product page, with most orders shipping within 4–8 weeks. For current availability, please contact us at Auvera team. Ready-to-ship items are typically dispatched within 2–4 business days after purchase.</p>"
           }
         },
         "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-1": {
           "type": "faq",
           "settings": {
-            "faq_title": "When will I receive my item?",
-            "faq_des": "<p>When we have received your order, you will automatically receive an e-mail confirming your order. Orders made before 2 PM (CET) will be picked, packed and shipped the same day. Delivery time is usually 2-4 working days with DHL Express.</p>"
+            "faq_title": "Custom Items & Jewelry Revamp",
+            "faq_des": "<p>Looking to create a one-of-a-kind piece or redesign a treasured jewelry item? Our team would be delighted to bring your vision to life with personalized craftsmanship and timeless design. For custom inquiries or jewelry revamps, please contact us at Auvera Support Team</p><h3></h3>"
           }
         },
         "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2": {
           "type": "faq",
           "settings": {
-            "faq_title": "Can I change or return my item?",
-            "faq_des": "<p>If you want to change a product into another model, strap color etc., please contact us so we are able to reserve the new item in our stock immediately. You are always entitled to an exchange or refund within 30 days after you have received your package, as long as the item has not been used.</p>"
+            "faq_title": "Sizing",
+            "faq_des": "<p>Need help finding your perfect fit? We recommend printing our size guide and following the instructions carefully to ensure the most accurate size selection.<br/><a href=\"/pages/size-guide\" target=\"_blank\" title=\"Size Guide\">Size Guide</a></p><p></p>"
+          }
+        },
+        "faq_x94NtC": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Repairs and Resizing",
+            "faq_des": "<p>We are pleased to offer complimentary repairs within 150 days of purchase for eligible items. After this period, repair and shipping fees will apply, with repair services typically starting at $30 plus shipping, depending on the design.</p><p>Most rings can be resized; however, certain styles such as eternity bands cannot be adjusted. Ring resizing services generally begin at $60 plus shipping and vary based on the piece.</p><p>Please note that bangles and eternity bands are not eligible for resizing.</p><p>Any repairs or alterations performed by third-party jewelers will void the warranty on your piece, and we cannot be responsible for work completed outside of our atelier.</p><p>We reserve the right to deny repair or replacement requests for items showing signs of intentional damage or misuse.</p><p>For repair or resizing inquiries, please email your order number along with the requested adjustment details to Auvera Support team</p>"
+          }
+        },
+        "faq_EBxPV6": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Discounts and Promotions",
+            "faq_des": "<p>Please note that promotional offers and discount codes cannot be combined. Only one promotion or discount may be applied per order. Gift Cards are excluded from all discounts and promotional offers.</p><h3></h3>"
           }
         }
       },
       "block_order": [
         "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0",
+        "faq_UPAM8q",
         "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-1",
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2"
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2",
+        "faq_x94NtC",
+        "faq_EBxPV6"
       ],
       "settings": {
         "animation": "",
