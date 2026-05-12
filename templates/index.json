@@ -622,20 +622,20 @@
             "url_customize": ""
           }
         },
-        "collection_PbAFDC": {
+        "collection_rK9B4G": {
           "type": "collection",
           "settings": {
-            "collection": "cusion",
+            "collection": "radiant",
             "enable_customize": false,
             "text_customize": "Shop now",
             "url_customize": ""
           }
         },
-        "collection_rK9B4G": {
+        "collection_PbAFDC": {
           "type": "collection",
           "settings": {
-            "collection": "radiant",
-            "enable_customize": true,
+            "collection": "cusion",
+            "enable_customize": false,
             "text_customize": "Shop now",
             "url_customize": ""
           }
@@ -650,8 +650,8 @@
         "bcd6b727-9c9f-4c33-9b79-0d4ca6070131",
         "collection_nVCphK",
         "d2a18a3e-89a8-4976-8c1b-a5ff9605b0e8",
-        "collection_PbAFDC",
-        "collection_rK9B4G"
+        "collection_rK9B4G",
+        "collection_PbAFDC"
       ],
       "custom_css": [
         "h4 {font-style: italic;}"
