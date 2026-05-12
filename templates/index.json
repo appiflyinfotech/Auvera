@@ -621,6 +621,24 @@
             "text_customize": "heart",
             "url_customize": ""
           }
+        },
+        "collection_PbAFDC": {
+          "type": "collection",
+          "settings": {
+            "collection": "cusion",
+            "enable_customize": true,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "collection_rK9B4G": {
+          "type": "collection",
+          "settings": {
+            "collection": "radiant",
+            "enable_customize": true,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
         }
       },
       "block_order": [
@@ -631,7 +649,9 @@
         "012b04ac-f446-483f-a6aa-c59e3444912d",
         "bcd6b727-9c9f-4c33-9b79-0d4ca6070131",
         "collection_nVCphK",
-        "d2a18a3e-89a8-4976-8c1b-a5ff9605b0e8"
+        "d2a18a3e-89a8-4976-8c1b-a5ff9605b0e8",
+        "collection_PbAFDC",
+        "collection_rK9B4G"
       ],
       "custom_css": [
         "h4 {font-style: italic;}"
