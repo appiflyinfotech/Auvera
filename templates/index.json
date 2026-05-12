@@ -1106,6 +1106,13 @@
     "5e6d27a3-1163-46d3-a128-345487900584": {
       "type": "faq-accordion",
       "blocks": {
+        "faq_bBeHrW": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Do Diamonds Above 1 Ct Come With Certification?",
+            "faq_des": "<p>Yes, all diamonds weighing 1 carat and above come with an official IGI certification to ensure authenticity, quality, and complete transparency in every purchase.</p>"
+          }
+        },
         "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-0": {
           "type": "faq",
           "settings": {
@@ -1129,6 +1136,7 @@
         }
       },
       "block_order": [
+        "faq_bBeHrW",
         "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-0",
         "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-1",
         "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-2"
