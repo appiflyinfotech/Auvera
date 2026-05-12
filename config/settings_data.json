@@ -486,7 +486,7 @@
               "subheading": "Bring your love to life with a handcrafted design that perfectly<br> suits your relationship, budget and style.",
               "subheading_color": "#ffffff",
               "button_label": "Shop Rings",
-              "button_link": "shopify://collections",
+              "button_link": "shopify://collections/all",
               "stylebtns": "btn-theme",
               "bg_button": "#ffffff",
               "color_button": "#202025",
