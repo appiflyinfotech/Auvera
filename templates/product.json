@@ -484,6 +484,13 @@
             "faq_title": "Discounts and Promotions",
             "faq_des": "<p>Please note that promotional offers and discount codes cannot be combined. Only one promotion or discount may be applied per order. Gift Cards are excluded from all discounts and promotional offers.</p><h3></h3>"
           }
+        },
+        "faq_QqjH4L": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Lifetime Warranty Policy",
+            "faq_des": "<p>Our Lifetime Warranty Policy ensures your jewelry is protected against manufacturing defects for life. We are committed to exceptional craftsmanship and lasting quality, giving you complete confidence in every piece you own. If any issue arises due to workmanship, our team will gladly repair or replace the item to maintain its original beauty and elegance.</p>"
+          }
         }
       },
       "block_order": [
@@ -492,7 +499,8 @@
         "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-1",
         "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2",
         "faq_x94NtC",
-        "faq_EBxPV6"
+        "faq_EBxPV6",
+        "faq_QqjH4L"
       ],
       "settings": {
         "animation": "",
