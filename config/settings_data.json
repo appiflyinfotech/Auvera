@@ -492,7 +492,7 @@
               "color_button": "#202025",
               "bg_button_hover": "#eeeeee",
               "color_button_hover": "#202025",
-              "button_label_2": "Shop Diamonds",
+              "button_label_2": "",
               "button_link_2": "shopify://collections/all",
               "stylebtns_2": "btn-outline",
               "bg_button_2": "#ffffff",
