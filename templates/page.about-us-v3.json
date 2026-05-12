@@ -305,7 +305,7 @@
         "setwidth": "container-fluid",
         "bgsection": "#ffffff",
         "rangebg": 0,
-        "bgbefore": "transparent",
+        "bgbefore": "rgba(0,0,0,0)",
         "bg_pos": "left",
         "enable_padding": true,
         "align_center": true,
@@ -321,7 +321,7 @@
         "image_block_CbLEgR": {
           "type": "image_block",
           "settings": {
-            "image": "shopify://shop_images/eU7aV3WmHIXWU9KnFyo-e3guMduTrUEKT7GdGI7bSwhzbeabzbdgGzCN-KxGJrG9Ekmf5RWPme5SF5kSt7CGQdlHQ8q9eeCtBbItlt39QDIsqg2vsCwMJKzZL9YSxKjC3kOmQdT7MYyv23r2jM6uFbX5OdcxJmBHJcH7U8-NiyhdvkIuGEje4z6.jpg"
+            "image": "shopify://shop_images/ChatGPT_Image_May_12_2026_03_02_05_PM.png"
           }
         }
       },
@@ -334,7 +334,36 @@
         "setwidth": "container-fluid",
         "bgsection": "#ffffff",
         "rangebg": 0,
-        "bgbefore": "transparent",
+        "bgbefore": "rgba(0,0,0,0)",
+        "bg_pos": "left",
+        "enable_padding": true,
+        "align_center": true,
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "image_content_DqAKq6": {
+      "type": "image-content",
+      "blocks": {
+        "image_block_qqb4h8": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/eU7aV3WmHIXWU9KnFyo-e3guMduTrUEKT7GdGI7bSwhzbeabzbdgGzCN-KxGJrG9Ekmf5RWPme5SF5kSt7CGQdlHQ8q9eeCtBbItlt39QDIsqg2vsCwMJKzZL9YSxKjC3kOmQdT7MYyv23r2jM6uFbX5OdcxJmBHJcH7U8-NiyhdvkIuGEje4z6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_qqb4h8"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "animation": "",
+        "setwidth": "container-fluid",
+        "bgsection": "#ffffff",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
         "bg_pos": "left",
         "enable_padding": true,
         "align_center": true,
@@ -451,6 +480,7 @@
     "d72bcc8c-88fe-4415-96f0-06511b070083",
     "24a28133-2e01-4361-8b00-ad164f72336f",
     "image_content_CbjC89",
+    "image_content_DqAKq6",
     "image_content_PbegNW",
     "559f6024-64db-446e-a9dc-976582972dce",
     "a035e328-7cfe-4cf0-81d0-e2f5f0188740",
