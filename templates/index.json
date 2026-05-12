@@ -626,7 +626,7 @@
           "type": "collection",
           "settings": {
             "collection": "cusion",
-            "enable_customize": true,
+            "enable_customize": false,
             "text_customize": "Shop now",
             "url_customize": ""
           }
