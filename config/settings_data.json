@@ -2085,10 +2085,10 @@
           "pnewletter_title": "Free Gift on Orders Above ₹1,00,000",
           "pnewletter_title_cl": "",
           "pnew_size_heading": "h3",
-          "pnewletter_description": "<p>Enjoy a complimentary silver chain on jewelry purchases above ₹1,00,000.</p>\n\n<p>Your free gift will be automatically added to the cart once the eligible order value is reached.</p>",
+          "pnewletter_description": "<p>Enjoy a complimentary silver chain on jewelry purchases above ₹1,00,000.</p>",
           "pnewletter_description_cl": "",
           "button": "Get offer",
-          "pnewletter_description_sub": "By completing this form, you are signing up to receive our emails and can unsubscribe at any time"
+          "pnewletter_description_sub": "Your free gift will be automatically added to the cart once the eligible order value is reached."
         }
       },
       "footer": {
