@@ -626,8 +626,9 @@
           "type": "collection",
           "settings": {
             "collection": "radiant",
-            "enable_customize": false,
-            "text_customize": "Shop now",
+            "image": "shopify://shop_images/emerald-Diamond.png",
+            "enable_customize": true,
+            "text_customize": "Radiant",
             "url_customize": ""
           }
         },
@@ -635,8 +636,9 @@
           "type": "collection",
           "settings": {
             "collection": "cusion",
-            "enable_customize": false,
-            "text_customize": "Shop now",
+            "image": "shopify://shop_images/heart-Diamond.png",
+            "enable_customize": true,
+            "text_customize": "Cushion",
             "url_customize": ""
           }
         }
