@@ -677,7 +677,7 @@
         "style_btn": "btn-theme",
         "button_link": "",
         "button": "",
-        "perviewDesktop": 8,
+        "perviewDesktop": 10,
         "spaceBetween": 50,
         "nowrap": true,
         "arrows": true,
