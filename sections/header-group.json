@@ -348,7 +348,7 @@
         "sl_menu_vertical": "click-menu",
         "main_linklist_vertical": "",
         "link_list_search": "",
-        "sidebar_search": true,
+        "sidebar_search": false,
         "e_hd_currency": true,
         "enable_image": true,
         "enable_name": false,
