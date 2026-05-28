@@ -374,73 +374,6 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "70b7f2d2-4c12-4305-88bd-da89e2d18d5b": {
-      "type": "quotes-special",
-      "blocks": {
-        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-0": {
-          "type": "quote",
-          "settings": {
-            "title": "Wonderful !",
-            "quote": "<h4>“Absolutely loved it. The fit, the quality and the color. This is a slim fit jean like none other and the only one I will buy.”</h4>",
-            "rate": 5,
-            "author": "Susan P.",
-            "verified": true,
-            "avatar": "shopify://shop_images/the-4Cs-slot-1-1080x1080px.jpg"
-          }
-        },
-        "quote_BwPbN4": {
-          "type": "quote",
-          "settings": {
-            "title": "Comment",
-            "quote": "<h4>Add customer reviews and testimonials to showcase your store’s happy customers.</h4>",
-            "rate": 5,
-            "author": "Sunny",
-            "verified": true,
-            "avatar": "shopify://shop_images/happy-woman.jpg"
-          }
-        },
-        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-1": {
-          "type": "quote",
-          "settings": {
-            "title": "perfect !",
-            "quote": "<h4>“ The most comfortable shoes ever!! I have them in 3 colors. And I am not done. \"</h4>",
-            "rate": 5,
-            "author": "Jaycie Glove",
-            "verified": true,
-            "avatar": "shopify://shop_images/long-haired-woman.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-0",
-        "quote_BwPbN4",
-        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-1"
-      ],
-      "custom_css": [
-        "/* Testimonials Split – center left content text */.testimonials-split .testimonials-content,.testimonials-split .testimonials-content * {text-align: center;}",
-        " /* Center stars */.testimonials-split .rating,.testimonials-split .stars {justify-content: center;}",
-        " /* Center author name */.testimonials-split .testimonial-author {text-align: center;}",
-        " /* Center slider arrows */.testimonials-split .testimonial-nav {justify-content: center;}"
-      ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container",
-        "bgsection": "#f7f7f7",
-        "title_top": "",
-        "title": "REVIEW\"S",
-        "des": "",
-        "more_love_title": "More Love",
-        "color_rate": "#d8c858",
-        "color_rated": "#000000",
-        "image_size": "landscape",
-        "draggable": true,
-        "infinite": true,
-        "paddingsection": "15px 0px 4px 0px",
-        "paddingmobile": "15px 0px 4px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
     "bcb1cba3-80fc-49a2-a033-40cf0618e9c8": {
       "type": "faq-accordion",
       "blocks": {
@@ -561,15 +494,82 @@
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
+    },
+    "70b7f2d2-4c12-4305-88bd-da89e2d18d5b": {
+      "type": "quotes-special",
+      "blocks": {
+        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-0": {
+          "type": "quote",
+          "settings": {
+            "title": "Wonderful !",
+            "quote": "<h4>“Absolutely loved it. The fit, the quality and the color. This is a slim fit jean like none other and the only one I will buy.”</h4>",
+            "rate": 5,
+            "author": "Susan P.",
+            "verified": true,
+            "avatar": "shopify://shop_images/the-4Cs-slot-1-1080x1080px.jpg"
+          }
+        },
+        "quote_BwPbN4": {
+          "type": "quote",
+          "settings": {
+            "title": "Comment",
+            "quote": "<h4>Add customer reviews and testimonials to showcase your store’s happy customers.</h4>",
+            "rate": 5,
+            "author": "Sunny",
+            "verified": true,
+            "avatar": "shopify://shop_images/happy-woman.jpg"
+          }
+        },
+        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-1": {
+          "type": "quote",
+          "settings": {
+            "title": "perfect !",
+            "quote": "<h4>“ The most comfortable shoes ever!! I have them in 3 colors. And I am not done. \"</h4>",
+            "rate": 5,
+            "author": "Jaycie Glove",
+            "verified": true,
+            "avatar": "shopify://shop_images/long-haired-woman.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-0",
+        "quote_BwPbN4",
+        "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-1"
+      ],
+      "custom_css": [
+        "/* Testimonials Split – center left content text */.testimonials-split .testimonials-content,.testimonials-split .testimonials-content * {text-align: center;}",
+        " /* Center stars */.testimonials-split .rating,.testimonials-split .stars {justify-content: center;}",
+        " /* Center author name */.testimonials-split .testimonial-author {text-align: center;}",
+        " /* Center slider arrows */.testimonials-split .testimonial-nav {justify-content: center;}"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#f7f7f7",
+        "title_top": "",
+        "title": "REVIEW\"S",
+        "des": "",
+        "more_love_title": "More Love",
+        "color_rate": "#d8c858",
+        "color_rated": "#000000",
+        "image_size": "landscape",
+        "draggable": true,
+        "infinite": true,
+        "paddingsection": "15px 0px 4px 0px",
+        "paddingmobile": "15px 0px 4px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
     }
   },
   "order": [
     "main",
     "product-requently",
     "product-content",
-    "70b7f2d2-4c12-4305-88bd-da89e2d18d5b",
     "bcb1cba3-80fc-49a2-a033-40cf0618e9c8",
     "product-recommendations",
-    "product-recent"
+    "product-recent",
+    "70b7f2d2-4c12-4305-88bd-da89e2d18d5b"
   ]
 }
