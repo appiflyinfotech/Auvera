@@ -49,26 +49,6 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "featured_products_kaEEyH": {
-      "type": "featured-products",
-      "custom_css": [],
-      "name": "Product Grid",
-      "settings": {
-        "title": "Product list",
-        "title_top": "Discover the Art of Fine Jewelry",
-        "des": "",
-        "txtbutton": "show all",
-        "urlbtn": "shopify://collections/all",
-        "collection": "radiant",
-        "rows": 4,
-        "cols_desktop": "3",
-        "cols_tablet": "2",
-        "setwidth": "container",
-        "animation": "",
-        "paddingsection": "0px 0px 0px 0px",
-        "paddingmobile": "10px 0px 10px 0px"
-      }
-    },
     "featured_collections_3_BtddcQ": {
       "type": "featured-collections-3",
       "blocks": {
@@ -150,10 +130,30 @@
         "nowrap": true,
         "arrows": false,
         "scrollbar": false,
-        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection": "20px 0px 20px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "featured_products_kaEEyH": {
+      "type": "featured-products",
+      "custom_css": [],
+      "name": "Product Grid",
+      "settings": {
+        "title": "Product list",
+        "title_top": "Discover the Art of Fine Jewelry",
+        "des": "",
+        "txtbutton": "show all",
+        "urlbtn": "shopify://collections/all",
+        "collection": "radiant",
+        "rows": 4,
+        "cols_desktop": "3",
+        "cols_tablet": "2",
+        "setwidth": "container",
+        "animation": "",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "10px 0px 10px 0px"
       }
     },
     "9421016d-7952-4484-96b5-5b341d3d6fe4": {
@@ -1430,8 +1430,8 @@
   },
   "order": [
     "42c9748e-ce08-4187-92e7-c4e3c162c249",
-    "featured_products_kaEEyH",
     "featured_collections_3_BtddcQ",
+    "featured_products_kaEEyH",
     "9421016d-7952-4484-96b5-5b341d3d6fe4",
     "a8f171de-121d-4760-a556-1ad8436ec966",
     "16485444103c52f5e9",
