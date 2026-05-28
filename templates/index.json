@@ -75,7 +75,7 @@
         "collection_W8L8ry": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "rings",
             "enable_customize": false,
             "text_customize": "Shop now",
             "url_customize": ""
@@ -84,7 +84,7 @@
         "collection_Rtbizb": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "earrings",
             "enable_customize": false,
             "text_customize": "Shop now",
             "url_customize": ""
@@ -93,7 +93,25 @@
         "collection_hRg4qe": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "bracelate",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "collection_pTqyBF": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklace",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "collection_fBMPKC": {
+          "type": "collection",
+          "settings": {
+            "collection": "gifts-and-collection",
             "enable_customize": false,
             "text_customize": "Shop now",
             "url_customize": ""
@@ -103,9 +121,10 @@
       "block_order": [
         "collection_W8L8ry",
         "collection_Rtbizb",
-        "collection_hRg4qe"
+        "collection_hRg4qe",
+        "collection_pTqyBF",
+        "collection_fBMPKC"
       ],
-      "disabled": true,
       "name": "Collection list Swiper",
       "settings": {
         "animation": "",
@@ -126,7 +145,7 @@
         "style_btn": "btn-theme",
         "button_link": "",
         "button": "All Products",
-        "perviewDesktop": 4,
+        "perviewDesktop": 5,
         "spaceBetween": 30,
         "nowrap": true,
         "arrows": true,
