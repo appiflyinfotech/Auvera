@@ -130,7 +130,7 @@
         "nowrap": true,
         "arrows": false,
         "scrollbar": false,
-        "paddingsection": "20px 0px 20px 0px",
+        "paddingsection": "20px 0px 30px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
