@@ -69,6 +69,74 @@
         "paddingmobile": "10px 0px 10px 0px"
       }
     },
+    "featured_collections_3_BtddcQ": {
+      "type": "featured-collections-3",
+      "blocks": {
+        "collection_W8L8ry": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "collection_Rtbizb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "collection_hRg4qe": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_W8L8ry",
+        "collection_Rtbizb",
+        "collection_hRg4qe"
+      ],
+      "disabled": true,
+      "name": "Collection list Swiper",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "Sub Title Top",
+        "title": "Collection list",
+        "des": "",
+        "align-heading": "center",
+        "stylecollection": "nameanditem",
+        "size_image_col": "auto",
+        "enable_count_item": true,
+        "enable_gradient": false,
+        "color": "#000000",
+        "bg_overlay": "#222222",
+        "opacity_overlay": 0.2,
+        "size_title": "h4",
+        "style_btn": "btn-theme",
+        "button_link": "",
+        "button": "All Products",
+        "perviewDesktop": 4,
+        "spaceBetween": 30,
+        "nowrap": true,
+        "arrows": true,
+        "scrollbar": true,
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "9421016d-7952-4484-96b5-5b341d3d6fe4": {
       "type": "grid-banner-2",
       "blocks": {
@@ -1343,6 +1411,7 @@
   "order": [
     "42c9748e-ce08-4187-92e7-c4e3c162c249",
     "featured_products_kaEEyH",
+    "featured_collections_3_BtddcQ",
     "9421016d-7952-4484-96b5-5b341d3d6fe4",
     "a8f171de-121d-4760-a556-1ad8436ec966",
     "16485444103c52f5e9",
