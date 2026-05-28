@@ -141,7 +141,7 @@
         "color": "#000000",
         "bg_overlay": "#222222",
         "opacity_overlay": 0.2,
-        "size_title": "h4",
+        "size_title": "h5",
         "style_btn": "btn-theme",
         "button_link": "",
         "button": "",
