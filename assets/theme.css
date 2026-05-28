@@ -11600,5 +11600,65 @@ blockquote::before {
   -webkit-user-select: none;
 }
 
-/*# sourceMappingURL=/s/files/1/1430/7398/t/14/assets/theme.scss.css.map?v=117309441519461084871658374400 */
+/* --- Global Neo-Brutalism Button Style Override (Cadiant Theme) --- */
+.btn-theme,
+.btn-outline,
+.btn-primary,
+.btn,
+.shopify-payment-button .shopify-payment-button__button--unbranded,
+.shopify-payment-button__button,
+.spr-summary-actions-newreview,
+.shopify-challenge__button,
+.jdgm-widget .jdgm-write-rev-link,
+.jdgm-widget .jdgm-btn,
+.jdgm-widget input[type="submit"].jdgm-btn {
+  border: 3px solid #1a1a1a !important;
+  box-shadow: -4px 4px 0px #1a1a1a !important;
+  border-radius: 100px !important;
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.2s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.2s ease, color 0.2s ease !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+}
 
+/* Ensure circular buttons like wishlist or icon-only buttons remain circular */
+.product-card__overlaytop .btn,
+.product-card__overlay .js-btn-wishlist,
+.js-btn-wishlist,
+.btn-wishlist,
+.btn-circle {
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Hover State - Neo-Brutalism satisfying click effect */
+.btn-theme:hover,
+.btn-outline:hover,
+.btn-primary:hover,
+.btn:hover,
+.shopify-payment-button .shopify-payment-button__button--unbranded:hover,
+.shopify-payment-button__button:hover,
+.spr-summary-actions-newreview:hover,
+.shopify-challenge__button:hover,
+.jdgm-widget .jdgm-write-rev-link:hover,
+.jdgm-widget .jdgm-btn:hover,
+.jdgm-widget input[type="submit"].jdgm-btn:hover,
+.product-card__overlaytop .btn:hover,
+.product-card__overlay .js-btn-wishlist:hover,
+.js-btn-wishlist:hover {
+  transform: translate(-4px, 4px) !important;
+  box-shadow: 0px 0px 0px #1a1a1a !important;
+}
+
+/* Active/Focus State - maintain the hover alignment */
+.btn-theme:active, .btn-theme:focus,
+.btn-outline:active, .btn-outline:focus,
+.btn-primary:active, .btn-primary:focus,
+.btn:active, .btn:focus {
+  transform: translate(-4px, 4px) !important;
+  box-shadow: 0px 0px 0px #1a1a1a !important;
+}
