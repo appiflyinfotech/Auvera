@@ -135,7 +135,7 @@
         "des": "",
         "align-heading": "center",
         "stylecollection": "nameanditem",
-        "size_image_col": "auto",
+        "size_image_col": "landscape",
         "enable_count_item": false,
         "enable_gradient": false,
         "color": "#000000",
