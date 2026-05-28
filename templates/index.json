@@ -134,7 +134,7 @@
         "title": "Shop By Categories",
         "des": "",
         "align-heading": "center",
-        "stylecollection": "nameanditem",
+        "stylecollection": "namesup",
         "size_image_col": "landscape",
         "enable_count_item": false,
         "enable_gradient": false,
@@ -144,7 +144,7 @@
         "size_title": "h4",
         "style_btn": "btn-theme",
         "button_link": "",
-        "button": "All Products",
+        "button": "",
         "perviewDesktop": 5,
         "spaceBetween": 30,
         "nowrap": true,
@@ -230,6 +230,7 @@
         "c59df49c-e4a4-42b3-8248-2c7d9bc139fb",
         "1b3d386a-acb0-4451-9149-d898f8d70cd4"
       ],
+      "disabled": true,
       "custom_css": [
         ".reviews-title {font-family: \"Barlow Condensed\", sans-serif; font-size: 2.1rem; font-weight: 700; /* better for this font */ letter-spacing: 1px; color: #111;}"
       ],
