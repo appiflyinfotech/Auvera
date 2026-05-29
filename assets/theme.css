@@ -1,5 +1,4 @@
 .grid {
-  *zoom: 1;
 }
 .grid:after {
   content: "";
@@ -1540,7 +1539,6 @@ textarea {
   outline: none;
 }
 .clearfix {
-  *zoom: 1;
 }
 .clearfix:after {
   content: "";
@@ -3316,7 +3314,6 @@ h6,
   }
 }
 .rte {
-  *zoom: 1;
   margin-bottom: var(--g-hgutter);
 }
 .rte:after {
