@@ -466,9 +466,9 @@
           "108726f6-4aa5-4791-b3da-44f38358c9b2": {
             "type": "image",
             "settings": {
-              "enable_video": true,
+              "enable_video": false,
               "video_hosted": "https://www.tamannaah.com/cdn/shop/videos/c/vp/a2674a9d86264d22bfae29139875230e/a2674a9d86264d22bfae29139875230e.HD-1080p-7.2Mbps-67697116.mp4?v=0",
-              "image": "shopify://shop_images/the-making-of-missoma-fine-378595.jpg",
+              "image": "shopify://shop_images/ChatGPT_Image_Jun_9_2026_05_47_32_PM.png",
               "alignment": "center center",
               "text_alignment": "left center",
               "bgwrap": "#968574",
