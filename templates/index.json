@@ -1303,7 +1303,7 @@
           "type": "button",
           "settings": {
             "button": "Shop gift",
-            "link": "#",
+            "link": "shopify://collections/ready-to-ship",
             "style_btn": "btn-pill-shadow"
           }
         }
