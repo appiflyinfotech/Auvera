@@ -87,6 +87,7 @@
         "template--21109129117976__48a9fffb-7b1f-4bc5-9e0b-4f19556846d2-collection-2",
         "bcd6b727-9c9f-4c33-9b79-0d4ca6070131"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
