@@ -537,6 +537,7 @@
         "quote_BwPbN4",
         "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-1"
       ],
+      "disabled": true,
       "custom_css": [
         "/* Testimonials Split – center left content text */.testimonials-split .testimonials-content,.testimonials-split .testimonials-content * {text-align: center;}",
         " /* Center stars */.testimonials-split .rating,.testimonials-split .stars {justify-content: center;}",
@@ -561,6 +562,33 @@
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
+    },
+    "17817596885ae7861b": {
+      "type": "apps",
+      "blocks": {
+        "doran_product_reviews_product_widget_WEFmMk": {
+          "type": "shopify://apps/doran-product-reviews/blocks/product-widget/ca90c3ee-bc39-4c25-90cd-fdf0519c6d11",
+          "settings": {
+            "topPadding": 36,
+            "bottomPadding": 36,
+            "is_hide_if_no_reviews": false,
+            "is_use_shopify_font": false,
+            "shopify_font": "sans_serif_n4"
+          }
+        }
+      },
+      "block_order": [
+        "doran_product_reviews_product_widget_WEFmMk"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "bgsection": "#ffffff"
+      }
     }
   },
   "order": [
@@ -570,6 +598,7 @@
     "bcb1cba3-80fc-49a2-a033-40cf0618e9c8",
     "product-recommendations",
     "product-recent",
-    "70b7f2d2-4c12-4305-88bd-da89e2d18d5b"
+    "70b7f2d2-4c12-4305-88bd-da89e2d18d5b",
+    "17817596885ae7861b"
   ]
 }
