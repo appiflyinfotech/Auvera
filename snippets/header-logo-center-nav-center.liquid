@@ -56,8 +56,15 @@
     <nav class="nav-bar d-none d-lg-block" role="navigation">
       <ul class="site-nav">
         {%- for link in linklists[main_linklist].links -%}
+          {%- liquid
+            assign link_url = link.url
+            assign titleCheck = link.title | strip | split: '[' | first | downcase
+            if titleCheck == 'shop'
+              assign link_url = '/collections/all'
+            endif
+          -%}
           <li class="site-nav__item site-nav__item-normal {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} site-nav--active{% endif %}" >
-              <a data-link="tab-{{ link.title | strip | downcase | handle }}" href="{{ link.url }}" 
+              <a data-link="tab-{{ link.title | strip | downcase | handle }}" href="{{ link_url }}" 
                 class="site-nav__link {% if link.links != blank %} outer-menu-item site-navtab {% endif %}">
                 <span class="site-nav__title">{%- render 'processMenuTitle' , itemName: link.title -%}</span>
                 {%- render 'processMenuLabel' , itemName: link.title -%}
@@ -86,10 +93,14 @@
             endif 
           endfor
         
+          assign link_url = link.url
+          if titleCheckMega == 'shop'
+            assign link_url = '/collections/all'
+          endif
         -%}
         {%- if hasMega -%}
       <li class="site-nav__item site-nav__item-mega {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} site-nav--active{% endif %}">
-        <a href="{{ link.url }}" class="site-nav__link dropdown-toggle" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
+        <a href="{{ link_url }}" class="site-nav__link dropdown-toggle" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
           <span class="site-nav__title">{%- render 'processMenuTitle' , itemName: link.title -%}</span>
           {%- render 'processMenuLabel' , itemName: link.title -%}
           {% render 'icon-caret' %}
@@ -197,7 +208,7 @@
       </li>
       {%- elsif link.links != blank -%}
       <li class="site-nav__item site-nav__item-normal {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} site-nav--active{% endif %}">
-        <a href="{{ link.url }}" class="site-nav__link dropdown-toggle" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
+        <a href="{{ link_url }}" class="site-nav__link dropdown-toggle" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
           <span class="site-nav__title">{%- render 'processMenuTitle' , itemName: link.title -%}</span>
           {%- render 'processMenuLabel' , itemName: link.title -%}
           {% render 'icon-caret' %}
@@ -210,7 +221,7 @@
       </li>
       {%- else -%}
       <li class="site-nav__item{% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} site-nav--active{% endif %}">
-        <a href="{{ link.url }}" class="site-nav__link"{% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
+        <a href="{{ link_url }}" class="site-nav__link"{% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
           <span class="site-nav__title">{%- render 'processMenuTitle' , itemName: link.title -%}</span>
           {%- render 'processMenuLabel' , itemName: link.title -%}
         </a>
@@ -219,7 +230,7 @@
       {%- endfor -%}
     </ul>
   </nav>
-{%- endif -%}
+  {%- endif -%}
   </div>
 </div>
   

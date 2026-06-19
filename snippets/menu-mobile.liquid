@@ -5,11 +5,18 @@
     </div>
     <ul class="drawer__nav menu-mobile-footer-content">
       {%- for link in linklists[settings.main_linklist].links -%}
-        {%- assign child_list_handle = link.title | handleize -%}
+        {%- liquid
+          assign titleCheck = link.title | strip | split: '[' | first | downcase
+          assign link_url = link.url
+          if titleCheck == 'shop'
+            assign link_url = '/collections/all'
+          endif
+          assign child_list_handle = link.title | handleize
+        -%}
         {%- if link.links != blank -%}
           <li class="drawer__nav-item">
             <div class="drawer__nav-has-sublist">
-              <a href="{{ link.url }}" class="drawer__nav-link drawer__nav-link--top-level drawer__nav-link--split" id="DrawerLabel-{{ child_list_handle }}" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
+              <a href="{{ link_url }}" class="drawer__nav-link drawer__nav-link--top-level drawer__nav-link--split" id="DrawerLabel-{{ child_list_handle }}" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
                 {%- render 'processMenuTitle' , itemName: link.title -%}
                 {%- render 'processMenuLabel' , itemName: link.title -%}
               </a>
@@ -30,7 +37,7 @@
           </li>
         {%- else -%}
           <li class="drawer__nav-item">
-            <a href="{{ link.url }}" class="drawer__nav-link drawer__nav-link--top-level" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
+            <a href="{{ link_url }}" class="drawer__nav-link drawer__nav-link--top-level" {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page"{% endif %}>
               {%- render 'processMenuTitle' , itemName: link.title -%}
               {%- render 'processMenuLabel' , itemName: link.title -%}
             </a>

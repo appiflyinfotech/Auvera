@@ -9,9 +9,16 @@
       <nav class="nav-bar d-flex" role="navigation">
         <ul class="side-menu_nav d-flex list-unstyled">
           {%- for link in linksMenu -%}
+            {%- liquid
+                assign titleCheck = link.title | strip | split: '[' | first | downcase
+                assign link_url = link.url
+                if titleCheck == 'shop'
+                  assign link_url = '/collections/all'
+                endif
+            -%}
             {%- if link.links != blank -%}
             <li class="side-menu__item">
-              <a href="{{ link.url }}" data-link="tab-{{ link.title | strip | downcase | handle }}" class="p-0 tablinks side-menu__link btn site-nav__link " {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page" {% endif %}>
+              <a href="{{ link_url }}" data-link="tab-{{ link.title | strip | downcase | handle }}" class="p-0 tablinks side-menu__link btn site-nav__link " {% if link.active and link.url != '/' or link.active and link.url == '/' and link.handle == 'home' %} aria-current="page" {% endif %}>
                 <span class="site-nav__title" data-link="tab-{{ link.title | strip | downcase | handle }}">
                     {{ link.title }}
                 </span>
@@ -259,8 +266,15 @@
         <div class="menu-link">
             <ul class="menu-link__sub list-unstyled">
                 {%- for link in linksList -%}
+                    {%- liquid
+                        assign titleCheck = link.title | strip | split: '[' | first | downcase
+                        assign link_url = link.url
+                        if titleCheck == 'shop'
+                          assign link_url = '/collections/all'
+                        endif
+                    -%}
                     <li>
-                        <a href="{{ link.url }}" class="sub-menu__link py-1 d-flex">
+                        <a href="{{ link_url }}" class="sub-menu__link py-1 d-flex">
                             {{ link.title }}
                           </a>
                     </li>
