@@ -41,7 +41,7 @@
           "settings": {
             "widthlogofooter": 150,
             "title": "Contact Us",
-            "text": "<div class=\" rte\">\n<p class=\"mt-3\">Email: clientcare@auvera.com<br>\nPhone: +91 80000 38966<br>\nHours: Monday – Thursday: 9AM – 7PM ET, Friday: 9AM – 2PM ET</p>\n</div>",
+            "text": "<div class=\"rte\">\n<p class=\"mt-3\"><strong>Address:</strong> 410 North Scottsdale Road Suite 1000 Tempe, AZ 85288<br>\n<strong>Email:</strong> auveracraft@gmail.com<br>\n<strong>Phone:</strong> +1 (602)330-2510</p>\n</div>",
             "width": "20%"
           }
         },
