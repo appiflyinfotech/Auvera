@@ -1040,8 +1040,8 @@
         "bgsection": "#ffffff",
         "title_color": "rgba(0,0,0,0)",
         "title_top": "",
-        "title": "Latest Articles",
-        "des": "Subscribe for latest news and blog updates from our editor.",
+        "title": " Articles",
+        "des": "Subscribe for news and blog updates from our editor.",
         "align-heading": "left",
         "blog": "news",
         "item_style": "blog-1",
@@ -1064,6 +1064,20 @@
         "paddingmobile": "60px 0px 60px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "map_JX87dQ": {
+      "type": "map",
+      "name": "Map",
+      "settings": {
+        "heading": "Our store",
+        "address": "<p>123 Fake St.<br/>Toronto, Canada</p><p>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 9pm<br/>Sunday, 11am - 5pm</p>",
+        "map_address": "301 Front St W, Toronto",
+        "button_text": "Get directions",
+        "show_pin": true,
+        "api_key": "",
+        "map_code": "",
+        "background_image_position": "center center"
       }
     },
     "advanced_content_PGTUQg": {
@@ -1528,6 +1542,7 @@
     "9614dbf0-b77a-4edf-b0a3-08bea8f76dee",
     "662cf23c-2a28-41c4-9bd8-b6517c99ba49",
     "1660192674d8a6fd50",
+    "map_JX87dQ",
     "advanced_content_PGTUQg",
     "1782287684c31a0eb6",
     "811a6110-0ea8-4aca-b4ad-843c1574e2f6",
