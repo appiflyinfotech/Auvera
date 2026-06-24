@@ -1058,7 +1058,7 @@
         "draggable": true,
         "dots": true,
         "infinite": true,
-        "rows": "2",
+        "rows": "1",
         "limit": 30,
         "show": 6,
         "paddingsection": "60px 0px 40px 0px",
