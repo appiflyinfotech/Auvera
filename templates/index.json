@@ -1059,7 +1059,7 @@
         "infinite": true,
         "rows": "1",
         "limit": 30,
-        "show": 6,
+        "show": 4,
         "paddingsection": "60px 0px 40px 0px",
         "paddingmobile": "60px 0px 60px 0px",
         "marginsection": "0px 0px 0px 0px",
