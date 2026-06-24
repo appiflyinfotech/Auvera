@@ -1047,7 +1047,7 @@
         "blog": "news",
         "item_style": "blog-1",
         "enable_btn_blog": true,
-        "style_btn": "btn-underline",
+        "style_btn": "btn-outline",
         "enable_date": true,
         "enable_tag": true,
         "enable_comment": true,
