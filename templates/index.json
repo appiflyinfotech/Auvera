@@ -1034,7 +1034,6 @@
     },
     "1660192674d8a6fd50": {
       "type": "featured-articles",
-      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
