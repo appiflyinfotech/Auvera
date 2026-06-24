@@ -300,7 +300,7 @@
         "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-0": {
           "type": "service",
           "settings": {
-            "bgblock": "rgba(0,0,0,0)",
+            "bgblock": "#ffffff",
             "title": "7 DAY RETURNS",
             "description": "Enjoy easy hassle-free 7-day returns for eligible items. Customized orders are strictly final and non-returnable.",
             "type_icon": "svg",
@@ -313,7 +313,7 @@
         "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-2": {
           "type": "service",
           "settings": {
-            "bgblock": "rgba(0,0,0,0)",
+            "bgblock": "#ffffff",
             "title": "IGI CERTIFIED",
             "description": "Diamonds 1 carat and above come with an official IGI certification for guaranteed authenticity and quality.",
             "type_icon": "img",
@@ -341,7 +341,7 @@
         "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-1": {
           "type": "service",
           "settings": {
-            "bgblock": "rgba(0,0,0,0)",
+            "bgblock": "#ffffff",
             "title": "FREE SHIPPING",
             "description": "Enjoy fully insured worldwide shipping with safe, secure, reliable, trusted, hassle-free, and timely delivery.",
             "type_icon": "svg",
@@ -354,9 +354,9 @@
         "4273663e-a3ea-49a8-a7c1-c872309fc99c": {
           "type": "service",
           "settings": {
-            "bgblock": "rgba(0,0,0,0)",
+            "bgblock": "#ffffff",
             "title": "LIFETIME WARRANTY",
-            "description": "Every piece is designed to last and includes a lifetime warranty for complete peace of mind.",
+            "description": "Every piece is designed to last, backed by our lifetime warranty. Shipping & repair fees may apply.",
             "type_icon": "img",
             "icon": "",
             "image_icon": "shopify://shop_images/warranty-card.png",
