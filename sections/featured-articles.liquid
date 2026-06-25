@@ -184,6 +184,35 @@
     -webkit-text-stroke: 0px !important; /* Removes outline from icon if present */
     text-shadow: none !important;
   }
+
+  /* Custom clean card overrides matching blog template */
+  .customstyle{{ section.id }} .blog__item--1 .content-block__image {
+    margin-bottom: 15px !important;
+  }
+  .customstyle{{ section.id }} .blog__item--1 .blog__title-link {
+    margin-bottom: 0 !important;
+  }
+  .customstyle{{ section.id }} .blog__item--1 .blog__title-link a {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .customstyle{{ section.id }} .blog__item--1 .blog__title-link a:hover {
+    color: var(--g-color-primary, #007bff);
+  }
+  .customstyle{{ section.id }} .blog__item--1 .article__photo-wrapper {
+    border-radius: 6px !important;
+    overflow: hidden !important;
+  }
+  .customstyle{{ section.id }} .blog__item--1 .article__photo-wrapper img {
+    transition: transform 0.3s ease;
+  }
+  .customstyle{{ section.id }} .blog__item--1:hover .article__photo-wrapper img {
+    transform: scale(1.03);
+  }
 </style>
 
 <div class="customstyle{{ section.id }} blog-section{{section.id}}" data-aos="{{ section.settings.animation }}">
