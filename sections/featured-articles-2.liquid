@@ -62,41 +62,63 @@
     }
   }
 
-  /* --- NEW ALIGNMENT & TEXT WRAP FIXES --- */
+  /* --- VERTICAL STACKED LAYOUT (3 blogs, no horizontal scroll) --- */
 
-  /* 1. Force Slick Carousel to make all slides equal height */
-  .bloglist-slider .slick-track {
+  /* 1. Override Slick so the track/slides stack vertically */
+  #Bloglist-{{ section.id }}.bloglist-slider,
+  #Bloglist-{{ section.id }}.bloglist-slider .slick-list,
+  #Bloglist-{{ section.id }}.bloglist-slider .slick-track {
     display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    overflow: visible !important;
+    transform: none !important;
   }
-  .bloglist-slider .slick-slide {
+
+  #Bloglist-{{ section.id }}.bloglist-slider .slick-slide {
+    width: 100% !important;
+    float: none !important;
     height: auto !important;
-    display: flex !important;
-    flex-direction: column;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 30px;
   }
-  .bloglist-slider .slick-slide > div {
+
+  #Bloglist-{{ section.id }}.bloglist-slider .slick-slide > div {
     height: 100%;
     width: 100%;
     display: flex;
+  }
+
+  /* Hide carousel controls since we're using static vertical layout */
+  #Bloglist-{{ section.id }}.bloglist-slider ~ .slick-dots,
+  #Bloglist-{{ section.id }}.bloglist-slider .slick-dots,
+  #Bloglist-{{ section.id }}.bloglist-slider .slick-prev,
+  #Bloglist-{{ section.id }}.bloglist-slider .slick-next,
+  .bloglist-wrapper #Bloglist-{{ section.id }} ~ .slick-prev,
+  .bloglist-wrapper #Bloglist-{{ section.id }} ~ .slick-next {
+    display: none !important;
   }
 
   /* 2. Format the individual blog items */
-  .bloglist-item {
+  #Bloglist-{{ section.id }} .bloglist-item {
     height: 100%;
     width: 100%;
     display: flex;
   }
 
-  .bloglist-item .blog__item {
+  #Bloglist-{{ section.id }} .bloglist-item .blog__item {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     background: transparent;
-    max-width: 100%; 
-    overflow: hidden; 
+    max-width: 100%;
+    overflow: hidden;
   }
 
-  .bloglist-item .content-block__image {
+  #Bloglist-{{ section.id }} .bloglist-item .content-block__image {
     position: relative;
     margin-bottom: 0;
     overflow: hidden;
@@ -104,7 +126,7 @@
   }
 
   /* 3. Turn the text content into a flex column and push the button down */
-  .bloglist-item .blog__content {
+  #Bloglist-{{ section.id }} .bloglist-item .blog__content {
     text-align: left;
     padding: 20px 10px;
     flex-grow: 1;
@@ -116,22 +138,22 @@
     flex-direction: column;
   }
 
-  .bloglist-item .blog__content > *:last-child {
+  #Bloglist-{{ section.id }} .bloglist-item .blog__content > *:last-child {
     margin-top: auto !important;
-    align-self: flex-start; 
+    align-self: flex-start;
   }
 
-  /* 4. Stop text from bleeding into the next slide */
-  .bloglist-item .blog__content p,
-  .bloglist-item .blog__content div,
-  .bloglist-item .blog__content span {
+  /* 4. Stop text from breaking out */
+  #Bloglist-{{ section.id }} .bloglist-item .blog__content p,
+  #Bloglist-{{ section.id }} .bloglist-item .blog__content div,
+  #Bloglist-{{ section.id }} .bloglist-item .blog__content span {
     white-space: normal !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
     max-width: 100%;
   }
 
-  .bloglist-item .blog__title-link {
+  #Bloglist-{{ section.id }} .bloglist-item .blog__title-link {
     white-space: normal !important;
     word-break: break-word !important;
     display: block;
@@ -145,19 +167,12 @@
     {%- render 'section-heading' -%}
     <div class="bloglist-wrapper dots-negative " data-aos="{{ section.settings.animation }}">
       <div class="bloglist-slider row" id="Bloglist-{{ section.id }}"
-           data-rows="{{ section.settings.rows }}"
-           data-slidesToShow="{{ section.settings.show }}"
-           data-arrows="{{ section.settings.arrows }}"
-           data-dots="{{ section.settings.dots }}" 
-           data-draggable="{{ section.settings.draggable }}" 
-           data-infinite="{{ section.settings.infinite }}" 
-           data-section-id="{{ section.id }}" 
-           data-section-type="slickCarousels">
+           data-section-id="{{ section.id }}">
         {%- assign blog = blogs[section.settings.blog] -%}
         {%- assign limit = section.settings.limit -%}
         {%- if blog != blank -%}
         {%- for article in blog.articles limit: limit -%}
-        <div class="bloglist-item col">
+        <div class="bloglist-item col-12">
           <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" style="height: 100%; display: flex;">
             {%- liquid
               case section.settings.item_style
@@ -180,7 +195,7 @@
         {%- endfor -%}
         {%- else -%}
         {%- for i in (1..limit) -%}
-        <div class="bloglist-item col">
+        <div class="bloglist-item col-12">
           <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" style="height: 100%; display: flex;">
           {%- render 'blog-grid-blank' -%}
         </div>
