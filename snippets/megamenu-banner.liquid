@@ -35,7 +35,14 @@
           <div class="mega-col-inner ">
             
             <div class="menu-title">
-              <a href="{{ childlink.url }}" >
+              {%- liquid
+                assign mega_heading_url = childlink.url
+                assign mega_menu_title_check = block.settings.menu_title | strip | downcase
+                if mega_menu_title_check == 'shop'
+                  assign mega_heading_url = 'https://auveracraft.com/collections/all'
+                endif
+              -%}
+              <a href="{{ mega_heading_url }}" >
                 {%- render 'processMenuTitle' , itemName: childlink.title -%}
                 {%- render 'processMenuLabel' , itemName: childlink.title -%}
               </a>
