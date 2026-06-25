@@ -109,7 +109,9 @@
     margin-bottom: 0;
   }
 {%- endif -%}
-</style>
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'ajaxinate.min.js' | asset_url }}" defer="defer"></script>
+
 {%- render 'style-section' -%}
 <div class="customstyle{{ section.id }}">
   <div class="container">
@@ -127,7 +129,7 @@
           {%- endfor -%}
         </ul>
         </tag-blog>  
-        <div class="row">
+        <div class="row AjaxinateLoop">
           {%- for article in blog.articles -%}
           <div class="{{ col }} {% if forloop.index == 3 %}col--last{% endif %}">
             {%- liquid
@@ -150,9 +152,25 @@
           </div>
           {%- endfor -%}
         </div>
-        {%- if paginate.pages > 1 -%}
-          {% render 'pagination', paginate: paginate, anchor: '', padding-top: 'pagination-blog' %}
-        {%- endif -%}
+        {%- assign type_pagi = section.settings.type_pagination -%}
+        {% case type_pagi %}
+          {% when 'click' %}
+            <div class="AjaxinatePagination text-center" data-pagination="click">
+              {%- if paginate.next -%}
+              <a href="{{ paginate.next.url }}" class="btn btn-outline">{{ 'general.pagination.load_more' | t }}</a>
+              {%- endif -%}
+            </div>
+          {% when 'scroll' %}
+            <div class="AjaxinatePagination text-center" data-pagination="scroll">
+              {%- if paginate.next -%}
+              <a href="{{ paginate.next.url }}" class="btn btn-outline">{{ 'general.pagination.load_more' | t }}</a>
+              {%- endif -%}
+            </div>
+          {% else %}
+            {%- if paginate.pages > 1 -%}
+              {% render 'pagination', paginate: paginate, anchor: '', padding-top: 'pagination-blog' %}
+            {%- endif -%}
+        {% endcase %}
       </div>
       {%- endpaginate -%}
       {%- if section.settings.sidebar_enable -%}
@@ -184,6 +202,22 @@
   }
   customElements.define("tag-blog", TabBlog);
 </script>
+
+{% javascript %}
+    const getpagi = document.querySelector('.AjaxinatePagination');
+    if(typeof(getpagi) !== "undefined" && getpagi !== null){
+      document.addEventListener("DOMContentLoaded", function() {
+        const elem = getpagi.getAttribute('data-pagination');
+        var endlessScroll = new Ajaxinate({
+          container: '.AjaxinateLoop',
+          pagination: '.AjaxinatePagination',
+          loadingText: '<span class="loader-line"></span>',
+          method: elem == 'scroll' ? 'scroll' : 'click'
+        });
+      });
+    }
+{% endjavascript %}
+
 {% schema %}
 {
   "name": "Blog template ",
@@ -470,6 +504,26 @@
       "step": 1,
       "label": "Pagination",
       "default": 8
+    },
+    {
+      "type": "select",
+      "id": "type_pagination",
+      "label": "Type Pagination",
+      "default": "pagi",
+      "options": [
+        {
+          "value": "pagi",
+          "label": "Pagination"
+        },
+        {
+          "value": "scroll",
+          "label": "Infinite scrolling "
+        },
+        {
+          "value": "click",
+          "label": "Click Load more"
+        }
+      ]
     },
     {
       "type": "header",
