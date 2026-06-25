@@ -109,16 +109,89 @@
     margin-bottom: 0;
   }
 {%- endif -%}
+  .blog-header__title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #111111;
+    letter-spacing: -0.03em;
+  }
+  .blog-header__description {
+    color: #555555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 650px;
+  }
+  .blog-header__description a {
+    text-decoration: underline;
+    color: inherit;
+    font-weight: 500;
+  }
+  .blog__item--1 .content-block__image {
+    margin-bottom: 15px !important;
+  }
+  .blog__item--1 .blog__title-link {
+    margin-bottom: 0 !important;
+  }
+  .blog__item--1 .blog__title-link a {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .blog__item--1 .blog__title-link a:hover {
+    color: var(--g-color-primary, #007bff);
+  }
+  .blog__item--1 .article__photo-wrapper {
+    border-radius: 6px !important;
+    overflow: hidden !important;
+  }
+  .blog__item--1 .article__photo-wrapper img {
+    transition: transform 0.3s ease;
+  }
+  .blog__item--1:hover .article__photo-wrapper img {
+    transform: scale(1.03);
+  }
+  .AjaxinateLoop {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .AjaxinateLoop > [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+  }
+</style>
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'ajaxinate.min.js' | asset_url }}" defer="defer"></script>
 
 {%- render 'style-section' -%}
 <div class="customstyle{{ section.id }}">
   <div class="container">
+    {%- if section.settings.show_title or section.settings.show_desc -%}
+      <div class="row justify-content-center text-center mb-5 mt-4">
+        <div class="col-lg-8 col-12">
+          {%- if section.settings.show_title -%}
+            {%- assign blog_title = section.settings.blog_title | default: blog.title -%}
+            {%- if blog_title != blank -%}
+              <h1 class="blog-header__title mb-3">{{ blog_title }}</h1>
+            {%- endif -%}
+          {%- endif -%}
+          {%- if section.settings.show_desc -%}
+            {%- assign blog_desc = section.settings.blog_desc | default: blog.description -%}
+            {%- if blog_desc != blank -%}
+              <div class="blog-header__description mx-auto text-muted">{{ blog_desc }}</div>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
     <div class="row {% if section.settings.sidebar_position == 'left' %}flex-row-reverse{% endif %}">
       {%- assign limit = section.settings.limit -%}
       {%- paginate blog.articles by limit -%}
       <div class="{% if section.settings.sidebar_enable %}col-md-9 {% if section.settings.sidebar_position == 'left' %} pl-lg-5 {% else %} pr-lg-5{% endif %} {% else %}col-12{% endif %}">
+      {%- if section.settings.show_tag_nav -%}
       <tag-blog class="mb-5 d-block" data-aos="{{ animation }}">
         <ul class="list-unstyled template-blog__tags border-bottom border-top d-flex justify-content-center">
           <li class="first-alltag template-tags-item">
@@ -129,6 +202,7 @@
           {%- endfor -%}
         </ul>
         </tag-blog>  
+      {%- endif -%}
         <div class="row AjaxinateLoop">
           {%- for article in blog.articles -%}
           <div class="{{ col }} {% if forloop.index == 3 %}col--last{% endif %}">
@@ -222,6 +296,36 @@
 {
   "name": "Blog template ",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show Blog Title",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "blog_title",
+      "label": "Custom Blog Title",
+      "info": "Leave blank to use default Blog Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_desc",
+      "label": "Show Blog Description",
+      "default": true
+    },
+    {
+      "type": "richtext",
+      "id": "blog_desc",
+      "label": "Custom Blog Description",
+      "info": "Leave blank to use default Blog Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tag_nav",
+      "label": "Show Tag Navigation",
+      "default": false
+    },
     {
       "type": "select",
       "id": "animation",
