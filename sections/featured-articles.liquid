@@ -10,7 +10,7 @@
   assign text_color = section.settings.title_color
   assign style_btn = section.settings.style_btn
   
-  assign show_slider = section.settings.enable_slider
+  assign show_slider = false
   if show_slider
     assign col_grid = "col"
   else
@@ -240,6 +240,24 @@
   .customstyle{{ section.id }} .bloglist-item {
     margin-bottom: 30px;
   }
+
+/* 3 Column Blog Grid */
+#Bloglist-{{ section.id }}{
+ display:flex !important;
+ flex-wrap:wrap !important;
+}
+#Bloglist-{{ section.id }} .bloglist-item{
+ width:33.3333%;
+ flex:0 0 33.3333%;
+ padding:15px;
+}
+@media (max-width:991px){
+ #Bloglist-{{ section.id }} .bloglist-item{width:50%;flex:0 0 50%;}
+}
+@media (max-width:767px){
+ #Bloglist-{{ section.id }} .bloglist-item{width:100%;flex:0 0 100%;}
+}
+
 </style>
 
 <div class="customstyle{{ section.id }} blog-section{{section.id}}" data-aos="{{ section.settings.animation }}">
@@ -260,9 +278,9 @@
            data-section-type="slickCarousels"
            {% endif %}>
         {%- assign blog = blogs[section.settings.blog] -%}
-        {%- assign limit = section.settings.limit -%}
         {%- if blog != blank -%}
-        {%- for article in blog.articles limit: limit -%}
+{% paginate blog.articles by 12 %}
+{%- for article in blog.articles -%}
         <div class="bloglist-item {{ col_grid }}">
           <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" style="height: 100%; display: flex;">
             {%- liquid
@@ -284,6 +302,8 @@
           </div>
         </div>
         {%- endfor -%}
+{% if paginate.pages > 1 %}<div class="blog-pagination text-center mt-5">{{ paginate | default_pagination }}</div>{% endif %}
+{% endpaginate %}
         {%- else -%}
         {%- for i in (1..limit) -%}
         <div class="bloglist-item {{ col_grid }}">

@@ -1,14 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "blog-template-1",
-      "disabled": false,
       "settings": {
-        "show_title": true,
-        "blog_title": "The SaaS Landing Page Blog",
-        "show_desc": true,
-        "blog_desc": "<p>A collection of articles, guides, and inspiration lists to help you create <a href=\"#\">the best SaaS landing pages<\/a> and startup websites.<\/p>",
-        "show_tag_nav": false,
         "animation": "fade-up",
         "blog_layout": "grid",
         "grid_column": "3",
