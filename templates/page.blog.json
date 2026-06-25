@@ -41,7 +41,7 @@
         "infinite": false,
         "rows": "1",
         "limit": 30,
-        "show": 3,
+        "show": 4,
         "paddingsection": "0px 0px 0px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
