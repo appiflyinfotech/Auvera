@@ -42,10 +42,10 @@
                   assign mega_heading_url = 'https://auveracraft.com/collections/all'
                 endif
               -%}
-              <a href="{{ mega_heading_url }}" >
+              <span>
                 {%- render 'processMenuTitle' , itemName: childlink.title -%}
                 {%- render 'processMenuLabel' , itemName: childlink.title -%}
-              </a>
+              </span>
             </div>
 
             <div class="widget-inner">
@@ -53,7 +53,7 @@
                 {%- if childlink.links != blank -%}
                 {%- for grandchildlink in childlink.links -%}
                   <li class="mb-3">
-                    <a href="{{ grandchildlink.url }}" class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
                       
                       {%- if grandchildlink.type == 'collection_link' and grandchildlink.object.image != blank -%}
                         <div class="menu-collection-icon mr-3 flex-shrink-0">
@@ -82,7 +82,7 @@
                         {%- render 'processMenuLabel' , itemName: grandchildlink.title -%}
                       </div>
                       
-                    </a>
+                    </div>
                   </li>
                 {%- endfor -%}
                 {%- endif -%}
