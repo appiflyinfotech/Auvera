@@ -14,7 +14,7 @@
 -%}
 <div class="collection-card-1 text-center {% if column != 'none' %} col-lg-4 col-12  {% endif %}" {{ block.shopify_attributes }}>
   <div class="collection-card__image overflow-hidden position-relative">
-    <a class="hv-image-saturate image-content__image-wrapper {{ size_image }}" href="{{ featured_collection.url | default : '#' }}" 
+    <div class="hv-image-saturate image-content__image-wrapper {{ size_image }}" 
     {%- if featured_image != blank -%}
     style="padding-top:{{ 1 | divided_by: featured_image.aspect_ratio | times: 100 }}%;"
     {% elsif featured_collection.image != blank %} 
@@ -54,12 +54,12 @@
       {%- endif -%}
       {{ 'collection-' | append: current | placeholder_svg_tag: class }}
       {%- endif -%}
-    </a>
+    </div>
   </div>
   <h4 class="pt-3 m-0 {{ headinglist }}">
-    <a class="" href="{{ featured_collection.url | default : '#' }}">
+    <span class="">
       {{ collectionTitle }}
-    </a>
+    </span>
   </h4>
   <p class="pb-5 txt-body-60">{{ featured_collection.products_count | default: 0 }}
   {% assign c = featured_collection.products_count | plus: 0 %}
