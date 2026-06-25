@@ -21,7 +21,7 @@
         "setwidth": "container",
         "bgsection": "#ffffff",
         "title_color": "rgba(0,0,0,0)",
-        "title_top": "Sub Title Top",
+        "title_top": "",
         "title": "Blog posts",
         "des": "",
         "align-heading": "center",
