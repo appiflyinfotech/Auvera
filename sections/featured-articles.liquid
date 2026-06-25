@@ -10,6 +10,28 @@
   assign text_color = section.settings.title_color
   assign style_btn = section.settings.style_btn
   
+  assign show_slider = section.settings.enable_slider
+  if show_slider
+    assign col_grid = "col"
+  else
+    case section.settings.show
+      when 1
+        assign col_grid = "col-12"
+      when 2
+        assign col_grid = "col-md-6 col-12"
+      when 3
+        assign col_grid = "col-lg-4 col-md-6 col-12"
+      when 4
+        assign col_grid = "col-lg-3 col-md-6 col-12"
+      when 5
+        assign col_grid = "col-lg-2-5 col-md-4 col-6"
+      when 6
+        assign col_grid = "col-lg-2 col-md-4 col-6"
+      else
+        assign col_grid = "col-lg-4 col-md-6 col-12"
+    endcase
+  endif
+
 -%}
 <style>
   .customstyle{{ section.id }}{
@@ -213,6 +235,11 @@
   .customstyle{{ section.id }} .blog__item--1:hover .article__photo-wrapper img {
     transform: scale(1.03);
   }
+
+  /* Grid layout overrides when slider is disabled */
+  .customstyle{{ section.id }} .bloglist-item {
+    margin-bottom: 30px;
+  }
 </style>
 
 <div class="customstyle{{ section.id }} blog-section{{section.id}}" data-aos="{{ section.settings.animation }}">
@@ -220,8 +247,9 @@
 <div class="{{ section.settings.setwidth }}">
   <div class="section-block">
     {%- render 'section-heading' -%}
-    <div class="bloglist-wrapper dots-negative " data-aos="{{ section.settings.animation }}">
-      <div class="bloglist-slider row" id="Bloglist-{{ section.id }}"
+    <div class="bloglist-wrapper {% if show_slider %}dots-negative{% endif %}" data-aos="{{ section.settings.animation }}">
+      <div class="row {% if show_slider %}bloglist-slider{% endif %}" id="Bloglist-{{ section.id }}"
+           {% if show_slider %}
            data-rows="{{ section.settings.rows }}"
            data-slidesToShow="{{ section.settings.show }}"
            data-arrows="{{ section.settings.arrows }}"
@@ -229,12 +257,13 @@
            data-draggable="{{ section.settings.draggable }}" 
            data-infinite="{{ section.settings.infinite }}" 
            data-section-id="{{ section.id }}" 
-           data-section-type="slickCarousels">
+           data-section-type="slickCarousels"
+           {% endif %}>
         {%- assign blog = blogs[section.settings.blog] -%}
         {%- assign limit = section.settings.limit -%}
         {%- if blog != blank -%}
         {%- for article in blog.articles limit: limit -%}
-        <div class="bloglist-item col">
+        <div class="bloglist-item {{ col_grid }}">
           <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" style="height: 100%; display: flex;">
             {%- liquid
               case section.settings.item_style
@@ -257,7 +286,7 @@
         {%- endfor -%}
         {%- else -%}
         {%- for i in (1..limit) -%}
-        <div class="bloglist-item col">
+        <div class="bloglist-item {{ col_grid }}">
           <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" style="height: 100%; display: flex;">
           {%- render 'blog-grid-blank' -%}
         </div>
@@ -593,6 +622,12 @@
     {
       "type": "header",
       "content": "Config Carousel "
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_slider",
+      "label": "Enable Carousel / Slider",
+      "default": true
     },
     {
       "type": "range",
