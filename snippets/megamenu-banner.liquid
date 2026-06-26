@@ -42,10 +42,10 @@
                   assign mega_heading_url = 'https://auveracraft.com/collections/all'
                 endif
               -%}
-              <a href="{{ mega_heading_url }}">
+              <span>
                 {%- render 'processMenuTitle' , itemName: childlink.title -%}
                 {%- render 'processMenuLabel' , itemName: childlink.title -%}
-              </a>
+              </span>
             </div>
 
             <div class="widget-inner">
